@@ -1,3 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.text__p1 {
+    font-family: Cuprum;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.68px;
+    text-align: left;
+    color: white;
+}
+
+.navbar {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.navbar__body {
+    max-width: 1440px;
+    margin: auto;
+    width: 95%;
+    display: grid;
+    align-items: center;
+    padding-top: 3px;
+    height: 125px;
+    grid-template-columns: 327px auto 283px 100px;
+
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-top: 24px;
+}
+
+.navbar__logo_img {
+
+    padding-right: 18px;
+}
+
+.navbar__logo_p {
+    width: 50%;
+}
+
+.navbar_nav {
+    display: flex;
+    gap: 11px;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 660px;
+}
+
+.navbar__logo__item {
+    display: flex;
+}
+
+.navbar_nav__item {
+    letter-spacing: 0.4px;
+    padding: 6px;
+    /* width: 125px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__line__vertical {
+    width: 1px;
+    background-color: white;
+    height: 40px;
+}
+
+.navbar__contact {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.navbar_button {
+    background: #F8B806;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.68px;
+    text-align: left;
+    color: #242424;
+    border: none;
+    padding: 17px 8px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.navbar_nav__phone {
+    font-size: 20px;}
 
 
 
@@ -16,12 +117,149 @@
 
 
 
-
-
-
-
-
-header.header{
+header.header {
     min-height: 1024px;
-    background: url();
+    background: url("/img/Rectangle\ 1864.svg");
+    background-size: cover;
+    background-position: center;
+}
+.navbar_nav__img{
+    display: none;
+}
+.navbar__toolbar{
+    width: 100%;
+position: absolute;
+top: 0px;
+background-color: #242424;
+transition: 1s;
+padding-bottom: 20px;
+}
+.navbar__close{
+    position: absolute;
+    top: 23px;
+    right: 30px;
+     z-index: 12;
+     position: absolute;
+     right: 24px;
+     z-index: 5;
+     display: block;
+     font-size: 40px;
+   font-weight: 100 !important;
+   color: white;
+     cursor: pointer;
+}
+.navbar__toolbar .navbar__logo{
+    max-width: 97px;
+    margin-top: 23px;
+margin-left: 10px;
+}
+.navbar__toolbar .navbar_nav{
+    display: flex;
+flex-direction: column;
+margin-top: 30px;
+
+}
+.navbar__toolbar .navbar_nav .navbar_nav__item{
+display: block;
+}
+.navbar__toolbar .navbar__contact{
+display: flex;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.navbar__toolbar .navbar__line__vertical{
+display: block;
+}
+.navbar__toolbar .navbar__yandex__image{
+display: block;
+}
+.navbar__toolbar .navbar_button{
+width: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media(max-width:1382px){
+    .navbar__body {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 327px auto 283px;
+    }  
+    .navbar__yandex__image{
+        display: none;
+    }
+}
+@media(max-width:1276px){
+    .navbar__body {
+        display: grid;
+        grid-template-columns: 327px auto;
+    }    
+    .navbar__contact{
+        display: none;
+    }
+}
+@media(max-width:991px){
+    .navbar{
+        border-bottom: 0px;
+    }
+    .navbar__logo{
+display: block;
+    }
+    .navbar__body {
+        display: grid;
+        grid-template-columns: 97px auto;
+        gap: 30px;
+    }    
+    .navbar__line__vertical{
+        display: none;
+    }
+    .navbar__logo_p{
+        width: 100%;
+    }
+    .navbar__logo_img{
+        width: 100%;
+    }
+    .navbar__logo_p{
+        font-size: 10px;
+        line-height: 13px;
+    }
+}
+@media(min-width:800px){
+    .navbar__toolbar{
+        display: none !important; 
+
+    }
+}
+@media(max-width:800px){
+    .navbar__body {
+  
+        height: 103px;
+       
+    }
+    .navbar__logo {
+
+        margin-top: 0px;
+    }
+    .navbar_nav{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .navbar_nav__item{
+        display: none;
+    }  
+    .navbar_nav__phone{
+        display: block;
+        text-align: right;
+        font-size: 16px;
+    }
+    .navbar_nav__img{
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #24242461;
+display: flex;
+justify-content: center;align-items: center;
+    }
 }
