@@ -473,7 +473,8 @@ height: 58px;
 /* chosen */
 .chosen{
     background: #3F3D42;
-
+min-height:481px ;
+padding-bottom: 20px;
 }
 .chosen__p{
     font-family: Montserrat;
@@ -482,7 +483,9 @@ height: 58px;
     line-height: 28px;
     text-align: center;
     color: #F8A606;
-    
+    padding-top: 35px;
+    padding-bottom: 16px;
+
 }
 .chosen__h1{
     font-family: Montserrat;
@@ -492,13 +495,15 @@ height: 58px;
     letter-spacing: -2px;
     text-align: center;
 color: white;    
+margin-bottom: 50px;
 }
 .chosen_cards{
-max-width: 1440px;
-margin: auto;
-width: 95%;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1365px;
+    margin: auto;
+    gap: 60px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .chosen__card__img{
     background: #F8A60633;
@@ -515,10 +520,287 @@ width: 60px;
 }
 .chosen__card__img__second{
     position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+top: 20px;
+left: 20px;
     width: 60px;
     height: 60px;
+}
+.chosen__card__h6{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+    color: white;
+    margin-top: 24px;
+    margin-bottom: 9px;}
+.chosen__card__p{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    color: #C5C5C5;
+
+}
+@media(max-width:932px){
+    .chosen_cards{
+        max-width: 1365px;
+        margin: auto;
+        gap: 30px;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:428px){
+    .chosen_cards{
+        max-width: 1365px;
+        margin: auto;
+        gap: 30px;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr;
+  
+    }
+    .chosen__p{
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: center;
+        
+    }
+    .chosen__h1{
+        font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 34.13px;
+text-align: center;
+
+    }
+    .chosen__card__p{
+        text-align: center;
+    }
+    .chosen__card__h6{
+        text-align: center;
+    }
+    .chosen__card__img{
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* zakaz */
+.zakaz{
+    background: #242424;
+
+}
+.zakaz__body{
+ max-width: 1440px;
+margin: auto;
+width: 95%;   
+}
+.zakaz_title{
+    font-family: Montserrat;
+font-size: 50px;
+font-weight: 700;
+line-height: 60.95px;
+text-align: left;
+color: white;
+
+padding-top: 60px;
+text-transform: uppercase;
+}
+.zakaz_title span{
+  color: #F8A606;
+}
+
+.zakaz_sectiontitle{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.zakaz_homeType{
+    background: #3F3D42;
+padding: 34px;
+border-radius: 10px;
+margin-top: 33px;
+position: relative;
+overflow: hidden;
+
+}
+.zakaz__shag{ font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+  color: white;
+}
+.zakaz__shag span{
+     font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+    
+color: #F8A606;    
+}
+.zakaz__h4{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+line-height: 35px;
+text-align: left;
+color: white;
+}
+.zakaz_homeType__button{
+    background: #333335;
+width: 100%;
+height: 76px;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.94px;
+text-align: center;
+color: #CCCCCC;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.zakaz_homeType__buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1108px;
+    gap: 32px;
+    position: relative;
+    z-index: 12;
+    margin-top: 30px;
+}
+.zakaz_homeType__imgAbs{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 300px;
+background: url('/img/Abstract Design.svg');
+/* background-size: cover; */
+box-shadow:inset 137px -61px 61px #3F3D42;
+opacity: 0.3;
+}
+.zakaz__select{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 16px 24px;
+    background: #333335;
+    border-radius: 10px;
+    z-index: 12;
+    position: relative;
+    margin-top: 29px;
+    height: 40px;
+cursor: pointer;
+}
+.zakaz__select__h5{
+    color: #CCCCCC;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    text-align: left;
+}
+.zakaz__select__h5 sup{
+    margin-left: -8px;
+}
+.zakaz__buttons{
+    margin: auto;
+    background: #FFFFFF66;
+    border: 2px solid #F4F4F4;
+border-radius: 22px;
+   padding: 16px;
+    margin-top: -24px;
+    position: relative;
+    z-index: 12;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 696px;
+    gap: 25px;
+    margin-bottom: 92px;
+}
+.zakaz__buttons__first{
+    background: #00000078;
+    color: #F8B806;
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.94px;
+text-align: center;
+height: 60px;
+border-radius: 10px;
+border: 1px solid #979797;
+height: 57px;
+}
+.zakaz__buttons__second{
+    background: #F8B806;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #F8B806;
+}
+.zakaz__buy{
+    font-family: Montserrat;
+font-size: 36px;
+font-weight: 700;
+line-height: 35px;
+text-align: left;
+color: white;
+}
+.zakaz__buttons__dr{
+   margin-top: 0px; 
+}
+.zakaz_title__margin{
+    margin-top: -60px;
+}
+@media(max-width:888px){
+    .zakaz_homeType__buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .zakaz_title{
+        font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 34.13px;
+text-align: left;
+
+    }
+    .zakaz__buttons,.zakaz_homeType__dn{
+        display: none;
+    }
+     .zakaz_sectiontitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+}
+@media(max-width:450px){
+    .zakaz_homeType__buttons{
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
+   
 }
