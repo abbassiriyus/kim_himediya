@@ -349,6 +349,7 @@ color: white;
     padding-right: 15px;
     display: none;
     margin-bottom: 18px;
+    transition: 1s;
 }
 
 .plusOpen_answer{
@@ -537,6 +538,7 @@ color: white;
 
 .app_BgMain{
     background-color: #2A2A2A;
+    padding-bottom: 50px;
 }
 .MainGet_money{
     width: 95%;
@@ -658,8 +660,9 @@ color: #F8B806;
     display: grid;
     grid-template-columns: 2.8fr 2fr;
     margin-top: 51px;
- 
+    position: relative;
     gap: 20px;
+    z-index: 121;
 }
 .firstVideo{
     display: flex;
@@ -668,7 +671,9 @@ color: #F8B806;
     background: url('/img/Rectangle\ 1893.png') no-repeat;
     width: 100%;
     height:728px;
+    background-position: center;
     border-radius: 7px;
+    z-index: 1;
 }
 .secondDescribe h2{
     font-family: Montserrat;
@@ -739,4 +744,88 @@ font-weight: 400;
 line-height: 24.6px;
 text-align: left;
 color: white;
+}
+
+
+ .Country_input{
+    background: #333335;
+    width: 77%;
+    padding-left: 10px;
+    height: 56px;
+    border-radius: 10px;
+    margin-top: 8px;
+    outline: none;
+ }
+ .Evaluate_btn{
+    width: 79%;
+    height: 72px;
+    background: #F8B806;
+    border-radius: 10px;
+    font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 22.14px;
+margin-top: 15px;
+border: none;
+ }
+ .Object_arrow{
+    position: absolute;
+    bottom: 0;
+    transform: rotate(99deg);
+    width: 16%;
+    right: 50px;
+ }
+ .inputArrowAbsolute{
+    position: relative;
+ }
+ .PersonalData{
+    display: flex;
+    gap: 14px;
+    margin-top: 41px;
+
+ }
+ .PersonalData h3{
+    font-family: Montserrat;
+font-size: 22px;
+font-weight: 400;
+line-height: 27.06px;
+text-align: left;
+color: white;
+ }
+ .PersonalData h3 span{
+    color: #F8B806;
+    font-family: Montserrat;
+font-size: 22px;
+font-weight: 400;
+line-height: 27.06px;
+text-align: left;
+position: relative;
+top: 9px;
+ }
+ .PersonalData input{
+    width: 30px;
+    height: 30px;
+ }
+ .CircularImg{
+    position: absolute;
+    position: absolute;
+    top: 309px;
+    left: -121px;
+    z-index: -1;
+ }
+ .firstVideo{
+    position: relative;
+ }
+ .ApplicationSwiper{
+    margin-top: 101px;
+ }
+ .ApplicationSwiper h1{
+    font-family: Montserrat;
+font-size: 50px;
+font-weight: 700;
+line-height: 75px;
+text-align: left;
+color: white;
+text-transform: uppercase;
+margin-bottom: 50px;
 }
