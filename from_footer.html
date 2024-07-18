@@ -383,26 +383,26 @@
 
 <script>
     function selectFlag(flag,numberp) {
-        document.querySelector(".Country_input_action").innerHTML=`<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
-        document.querySelector(".Country_input__modal__select").innerHTML=`<img style="width: 27px;" src="${flag}" alt=""> 
+        document.querySelector(".inputArrowAbsolute .Country_input_action").innerHTML=`<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
+        document.querySelector(".inputArrowAbsolute .Country_input__modal__select").innerHTML=`<img style="width: 27px;" src="${flag}" alt=""> 
                     <div class="Country_input__phone">${numberp}</div></div>
                     `
-        document.querySelector(".Country_input__phone_12").innerHTML=numberp
-    document.querySelector('.Country_input__modal').style='display:none'
+        document.querySelector(".inputArrowAbsolute .Country_input__phone_12").innerHTML=numberp
+    document.querySelector('.inputArrowAbsolute .Country_input__modal').style='display:none'
     }
    
 function data_plus() {
-    var value1=document.getElementById('phone-input').value
+    var value1=document.querySelector('.inputArrowAbsolute #phone-input').value
     if (value1.length === 0) {
     value1 = '(' + value1;
   } 
-  document.getElementById('phone-input').value=value1
+  document.querySelector('.inputArrowAbsolute #phone-input').value=value1
   }
-const phoneInput = document.getElementById('phone-input');
+const phoneInput = document.querySelector('.inputArrowAbsolute #phone-input');
 let isFirstDigitAdded = false;
 
 phoneInput.addEventListener('keydown', function(e) {
-  var value=document.getElementById('phone-input').value
+  var value=document.querySelector('.inputArrowAbsolute #phone-input').value
 if(e.key!="Backspace"){
   if (value.length === 0) {
     value = '('
