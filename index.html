@@ -35,7 +35,9 @@
                 <div class="navbar__line__vertical"></div>
                 <img src="/img/Telegram.svg" alt="">
 
-                <button class="navbar_button"> Перезвоните мне</button>
+                <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " class="navbar_button"> Перезвоните мне</button>
             </div>
             <img class="navbar__yandex__image" style="margin-left: -7px;" src="/img/Frame 39.svg" alt="">
         </div>
@@ -585,11 +587,61 @@
                 <span>В ближайшее время с вами свяжется менеджер</span>
             </div>
     </div>
-        <i class="bx bx-x"></i>
+        <i onclick="
+        document.querySelector('.CallMe_back_modal').style='display:none'
+        " class="bx bx-x"></i>
     </div>
+    <div class="lineBottom"></div>
+    <div class="callModal_bottom">
+        <img class="ImgDesign" src="/img/Abstract Design (2).png" alt="">
+   <div class="bigWith_back">
+    <div class="ClickButtonsBig">
+        <button onclick="ClickBtn(0)"><img src="/img/phone-line.png" alt=""> Заказать звонок</button>
+        <button onclick="ClickBtn(1)"><img src="/img/WhatsApp.png" alt=""> Whatsapp</button>
+        <button onclick="ClickBtn(2)"><img src="/img/Telegram.png" alt=""> Telegram</button>
+        <button onclick="ClickBtn(3)"><img src="/img/Viber.png" alt=""> Viber</button>
+    </div>
+   </div>
+   <div class="inputWith_login">
+    <label for="">Ваше Имя <span>*</span></label>
+    <div class="inputGrey extraGreyInp">
+        <i class='bx bx-user'></i>
+        <input type="text" placeholder="Ваше имя">
+    </div>
+    
+   </div>
+   <div class="inputWith_login1">
+    <label for="">Номер телефона<span>*</span></label>
+    <div class="inputGrey">
+        <i class='bx bx-user'></i>
+        <input type="text" placeholder="Ваше имя">
+    </div>
+    </div>
+    <h4>* — поле, обязательное для заполнения</h4>
+
+    <div class="lineBottom"></div>
+<div class="FullWidth_btn">
+        <button >Отправить</button>
+</div>
+
 </div>
 </div>
 
+
+
+<script>
+    function ClickBtn(params) {
+        let buttonClick=document.querySelectorAll('.ClickButtonsBig button')
+        for (let i = 0; i < buttonClick.length; i++) {
+            if(i==params){
+                buttonClick[i].style='background-color:#505050a8'
+            }else{
+                buttonClick[i].style='background-color:#303030'
+
+            }
+        }
+    }
+</script>
 
 </body>
 

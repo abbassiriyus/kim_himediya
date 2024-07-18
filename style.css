@@ -1937,26 +1937,316 @@ color: white;
     right: 0;
     background: #6C6C6CC7;
     z-index: 12121;
+    overflow: auto;
+    display: none;
+
 }
 .CallMe_back_modal_body{
     width: 100%;
     background: #3F3D42;
     box-shadow: 0px 22.07px 55.18px -11.04px #585C5F29;
     max-width: 740px;
-    height: 595px;
+    /* height: 595px; */
+    overflow: auto;
     border-radius: 16px;
+    padding-bottom: 15px;
 }
 .callMe_header{
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 .header_bodyBig{
     display: flex;
     justify-content: space-between;
-    width: 95%;
+    width: 93%;
     margin: auto;
     margin-top: 20px;
+color: white;
+
 }
 .headerText{
-    margin-top: 10px;
+    /* margin-top: 10px; */
+}
+.headerText h3{
+    font-family: Montserrat;
+font-size: 22.07px;
+font-weight: 600;
+line-height: 33.11px;
+letter-spacing: -0.011em;
+text-align: left;
+margin-bottom: 6px;
+}
+.headerText span{
+    font-family: Montserrat;
+font-size: 19.31px;
+font-weight: 400;
+line-height: 27.59px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+.header_bodyBig .bx-x{
+    font-size: 27px;
+
+}
+.lineBottom{
+    width: 100%;
+    height: 1px;
+    background-color: #716f74;
+    margin-top: 22px;
+}
+.ImgDesign{
+    position: absolute;
+    width: 26%;
+    margin-top: -34px;
+}
+.ClickButtonsBig button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 2.76px 5.52px 0px #FFFFFF05;
+    background-color: #303030;
+    height: 39.04px;
+    border-radius: 4px;
+    font-family: Inter;
+font-size: 19.31px;
+font-weight: 500;
+line-height: 27.59px;
+letter-spacing: -0.006em;
+text-align: left;
+color: white;
+    border: 1px solid #303030
+}
+.ClickButtonsBig{
+    display: grid;
+    grid-template-columns: 2fr 1.6fr 1.3fr 1fr;
+    width: 98%;
+    margin: auto;
+    /* margin-top: 35px; */
+    position: relative;
+    z-index: 1112;
+    gap: 5px;
+}
+.bigWith_back{
+    width: 92%;
+    margin: auto;
+    background: var(--bg-surface-700, #20232D);
+    margin-top: 26px;
+    min-height: 49px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    align-items: center;
+}
+.inputGrey{
+    display: flex;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    border: 1px solid var(--stroke-soft-200, #E2E4E9);
+    background: #333335;
+    height: 50px;
+    border-radius: 6px;
+    padding-left: 17px;
+    gap: 11px;
+    position: relative;
+    z-index: 344343;
+    margin-top: 4px;
+}
+.inputGrey .bx-user{
+    font-size: 27px;
+    color: var(--icon-soft-400, #868C98);
+}
+
+.inputGrey input{
+    width: 88%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: Inter;
+font-size: 19.31px;
+font-weight: 400;
+line-height: 27.59px;
+letter-spacing: -0.006em;
+text-align: left;
+
+}
+.extraGreyInp:hover{
+    background-color:#413f3f;
+}
+.inputWith_login label{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.78px;
+letter-spacing: -0.006em;
+text-align: left;
+color: white;
+ 
+}
+.inputWith_login{
+    width: 92%;
+    margin: auto;
+    margin-top: 31px;
+    
+}
+.inputWith_login label span{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+letter-spacing: -0.006em;
+text-align: left;
+
+
+}
+
+.inputWith_login1 label{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.78px;
+letter-spacing: -0.006em;
+text-align: left;
+ color: white;
+}
+.inputWith_login1{
+    width: 92%;
+    margin: auto;
+    margin-top: 28px;
+}
+.inputWith_login1 label span{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+letter-spacing: -0.006em;
+text-align: left;
+
+
+}
+
+.callModal_bottom h4{
+    color: white;
+    width: 92%;
+    margin: auto;
+    font-family: Inter;
+font-size: 19.31px;
+font-weight: 400;
+line-height: 27.59px;
+letter-spacing: -0.006em;
+text-align: left;
+margin-top: 27px;
+}
+.FullWidth_btn button{
+width: 97%;
+height: 43px;
+background: none;
+border-radius: 10px;
+border: 1px solid #F8B806; 
+transition: 0.3s;
+}
+.FullWidth_btn button:hover{
+border: 1px solid black; 
+
+}
+.FullWidth_btn { 
+      width: 92%;
+    margin: auto;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.68px;
+    background: #F8B806;
+    height: 56px;
+    border-radius: 10px;
+    margin-top: 25px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.callMe_header img{
+    width: 77px;
+    height: 77px;
+}
+@media (max-width:661px) {
+    .ImgDesign {
+        position: absolute;
+        width: 100%;
+        margin-top: -24px;
+    }
+    .ClickButtonsBig{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .CallMe_back_modal_body{
+        height: 100vh;
+        border-radius: 1px;
+    }
+}
+@media (max-width:445px) {
+    .ImgDesign {
+   display: none;
+    }
+    .ClickButtonsBig{
+        display: grid;
+        grid-template-columns: 1fr   ;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .callMe_header img{
+        display: none;
+    }
+    .headerText h3{
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 6px;
+    }
+    .headerText span{
+        font-size: 16px;
+        line-height: 180%;
+    }
+    .header_bodyBig{
+        width: 90%;
+        margin-top: 29px;
+    }
+ 
+    .bigWith_back{
+        width: 100%;
+        border-radius: 1px;
+    }
+    .ClickButtonsBig button{
+        height: 33.04px;
+        width: 90%;
+        display: flex;
+        justify-content: left;
+        font-size: 16px;
+        padding-left: 10px;
+        border-radius: 4px;
+        margin: auto;
+        margin-bottom: 4px;
+        box-shadow: 0px 2.76px 5.52px 0px #FFFFFF05, 0px 0px 13.79px 0px #FFFFFF0F;
+    }
+    .lineBottom{
+        display: none;
+    }  
+    .inputWith_login1{
+        width: 90%;
+    }
+    .inputWith_login{
+        width: 90%;
+    }
+    .callModal_bottom h4{
+        font-size: 12px;
+    }
+    .FullWidth_btn button{
+        border-radius: 16px;
+    }
 }
