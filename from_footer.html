@@ -357,10 +357,47 @@
             <span>как ускорить продажу</span>
         </div>
 <div class="inputArrowAbsolute">
-    <input class="Country_input" type="text">
+    <div class="Country_input" type="text">
+        <div onmouseleave="document.querySelector('.Country_input__modal').style='display:none'" class="Country_input__modal">
+            <div  onclick="document.querySelector('.Country_input__modal').style='display:none'" class="Country_input__modal__active">
+
+                <div class="Country_input__modal__select" ><img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""> 
+                    <div class="Country_input__phone">+375</div></div>
+                    <i class='bx bx-chevron-up' ></i>
+            </div>
+            <div class="Country_input__modal__option" onclick="selectFlag('/img/Frame 2085655518.svg','+375')" ><img style="width: 27px;" src="/img/Frame 2085655518.svg" alt="">  <div class="Country_input__phone">+375</div></div>
+            <div class="Country_input__modal__option" 
+            onclick="selectFlag('/img/24х24_interface.png','+75')"
+            ><img style="width: 27px;" src="/img/24х24_interface.png" alt=""> <div class="Country_input__phone">+75</div></div>
+
+        </div>
+        <div class="Country_input_action" onclick="document.querySelector('.Country_input__modal').style='display:block'">
+            <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i class='bx bx-chevron-down'></i>
+        </div>
+        <div class="Country_input__phone Country_input__phone_12">+375</div>
+        <input class="phone__send"  onkeyup="phoneSend()" placeholder="(_) ___-__-__" type="text">
+    </div>
     <button class="Evaluate_btn">Оценить недвижимость</button>
     <img class="Object_arrow" src="/img/OBJECTS.png" alt="">
 </div>
+
+<script>
+    function selectFlag(flag,numberp) {
+        document.querySelector(".Country_input_action").innerHTML=`<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
+        document.querySelector(".Country_input__modal__select").innerHTML=`<img style="width: 27px;" src="${flag}" alt=""> 
+                    <div class="Country_input__phone">${numberp}</div></div>
+                    `
+        document.querySelector(".Country_input__phone_12").innerHTML=numberp
+    document.querySelector('.Country_input__modal').style='display:none'
+    }
+function phoneSend() {
+    var inp=document.querySelector('.phone__send')
+    var inp_value=inp.value
+    if(inp_value.length===0){
+   
+    }
+}
+</script>
 <div class="PersonalData">
     <input type="checkbox" name="" id="">
     <h3>Я согласен(а) с условиями обработки <span>персональных данных.</span></h3>
