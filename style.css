@@ -977,8 +977,23 @@ font-size: 20px;
 /* kamanda */
 .komanda {
     background-color: #3F3D42;
+    position: relative;
 }
-
+.komanda__absimg{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 70%;
+    width: 600px;
+    background: url('/img/Abstract Design.svg');
+    box-shadow: inset 137px -61px 61px #3F3D42;
+    background-size: cover;
+    opacity: 0.3;
+}
+.komanda_cards{
+    position: relative;
+    z-index: 12;
+}
 .komanda_cards__first{
     display: grid;
    grid-template-columns:1fr 1fr;
@@ -1133,6 +1148,8 @@ text-align: left;
 .free_etap{
     background: #3F3D42;
     padding-top: 118px;
+    position: relative;
+    z-index: 1;
 }
 .universal__title{
     font-family: Montserrat;
@@ -1335,7 +1352,7 @@ width: 95%;
 margin: auto;
 min-height: 921px;
 position: relative;
-
+/* overflow-y: hidden; */
 }
 .agent__title__h1{
     width: 80%;
@@ -1422,7 +1439,21 @@ width: 100%;
     width: 132%;
     left: -15.5%;
 }
-
+.agent__img__decor__second{
+    position: absolute;
+    top: -100px;
+    left: -20%;
+}
+.agent__img__decor__three{
+    position: absolute;
+    bottom: 20%;
+    right: 34%;
+}
+.agent__img__decor__four{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
 @media(max-width:1350px){
     .agent__img__decor {
         position: absolute;
@@ -1508,7 +1539,7 @@ width: 100%;
 }
 .rielter_cards{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: 15px;
     margin-top: 50px;
@@ -1944,4 +1975,66 @@ width: 100%;
     .posmotry__img__media{
         display: none;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* kvartira */
+
+.kvartira{
+    background-color: #242424;
+}
+.kvartira_chags{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1440px;
+    margin: auto;
+    width: 95%;
+    margin-top: 48px;
+}
+.kvartira_shag{
+    width: 200px;
+}
+.kvartira_shag_img{
+    width: 93%;
+}
+.kvartira_shag__circle_1{
+margin-top: 29px;
+}
+.kvartira_shag__p{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+width: 324px;
+text-align: left;
+color: white;
+}
+.kvartira_shag_img_1{
+    position: relative;
+    top: -79px;
+    left: 51px;
+}
+.kvartira_shag__circle{
+    width: 36.79px;
+    height: 36.79px;
+    border-radius: 50%;
+    border: 7px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8A606;
+    color: #242424;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
 }
