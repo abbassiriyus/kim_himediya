@@ -117,6 +117,9 @@ text-align: left;
 .IconsImg img:hover{
     opacity: 0.7;
 }
+.worldSquard:hover{
+    opacity: 0.7;
+}
 .Footer_center_p{
     display: flex;
     justify-content: center;
@@ -559,7 +562,7 @@ color: white;
 
 .app_BgMain{
     background-color: #2A2A2A;
-    padding-bottom: 76px;position: relative;
+    padding-bottom: 90px;position: relative;
 }
 .MainGet_money{
     width: 95%;
@@ -627,6 +630,10 @@ text-align: left;
  
     max-width: 1327px;
 }
+.ApplicationSwiper .mySwiper{
+    padding-left: 70px;
+    padding-right: 70px;
+}
 .endOpen_other span{
     font-family: Montserrat;
 font-size: 18px;
@@ -641,7 +648,7 @@ text-decoration: underline;
     justify-content: end;
     align-items: end;
     padding-right: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 25px;
 }
 
 
@@ -869,7 +876,7 @@ text-transform: uppercase;
 margin: auto;
 
 margin-bottom: 50px;
-margin-top: 101px;
+margin-top: 79px;
 width: 95%;
 max-width: 1440px;
 }
@@ -1269,6 +1276,7 @@ color: #F8B806;
     width: 95%;
     max-width: 1440px;
     margin: auto;
+    padding-bottom: 168px;
  }
  .oneCategoryBtn{
     display: flex;
@@ -1401,7 +1409,7 @@ text-align: left;
 }
 .bodyDescribe_Home{
     background: #3F3D42;
-
+    padding-bottom: 17px;
 }
 .bodyDescribe_Home p{
     font-family: Montserrat;
@@ -1425,10 +1433,7 @@ text-align: center;
 
 
 /* rielter */
-.rielter{
-    background: #3F3D42;
-    
-}
+  
 .rielter_header{
     max-width: 1440px;
     margin: auto;
@@ -1475,7 +1480,9 @@ text-align: center;
  
 }
 
-
+.ExtraRielter{
+    padding-top: 3px;
+}
 .rielter_p p{
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
@@ -1517,7 +1524,7 @@ text-align: center;
     margin: auto;
     /* margin-left: 27px; */
     padding: 27px;
-
+    padding-bottom: 7px;
 }
 .rielter_insider{
     width: 94%;
