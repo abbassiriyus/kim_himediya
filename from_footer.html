@@ -375,7 +375,7 @@
             <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i class='bx bx-chevron-down'></i>
         </div>
         <div class="Country_input__phone Country_input__phone_12">+375</div>
-        <input class="phone__send"  onkeyup="phoneSend()" placeholder="(_) ___-__-__" type="text">
+        <input id="phone-input"  onkeyup="data_plus()" placeholder="(_) ___-__-__" type="text">
     </div>
     <button class="Evaluate_btn">Оценить недвижимость</button>
     <img class="Object_arrow" src="/img/OBJECTS.png" alt="">
@@ -390,13 +390,45 @@
         document.querySelector(".Country_input__phone_12").innerHTML=numberp
     document.querySelector('.Country_input__modal').style='display:none'
     }
-function phoneSend() {
-    var inp=document.querySelector('.phone__send')
-    var inp_value=inp.value
-    if(inp_value.length===0){
    
-    }
+function data_plus() {
+    var value1=document.getElementById('phone-input').value
+    if (value1.length === 0) {
+    value1 = '(' + value1;
+  } 
+  document.getElementById('phone-input').value=value1
+  }
+const phoneInput = document.getElementById('phone-input');
+let isFirstDigitAdded = false;
+
+phoneInput.addEventListener('keydown', function(e) {
+  var value=document.getElementById('phone-input').value
+if(e.key!="Backspace"){
+  if (value.length === 0) {
+    value = '('
+  } else if (value.length === 3) {
+    value = value.slice(0, 3) + ') ' + value.slice(3);
+  } else if (value.length === 8) {
+    value = value.slice(0, 8) + '-' + value.slice(8);
+  } else if (value.length === 11) {
+    value = value.slice(0, 11) + '-' + value.slice(11);
+  } else if (value.length === 14) {
+    value = value.slice(0, 13)
+  }
+  phoneInput.addEventListener('keypress', function(e) {
+  const allowedChars = /[\+\(\)\d]/;
+  if (!allowedChars.test(e.key)) {
+    e.preventDefault();
+  }
+});
+  
+  this.value = value;
+
 }
+
+});
+
+
 </script>
 <div class="PersonalData">
     <input type="checkbox" name="" id="">
