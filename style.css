@@ -1512,174 +1512,6 @@ width: 100%;
 
 
 
-/* rielter */
-.rielter{
-    background: #3F3D42;
-    
-}
-.rielter_header{
-    max-width: 1440px;
-    margin: auto;
-    width: 100%;
-}
-
-.rielter_title {
-    width: 85%;
-}
-.rielter_title h1{
-  font-family: "Montserrat", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 75px;
-   color: white;
-
-}
-.rielter_title h1 span{
-    color: #F8B806;
-}
-.rielter_cards{
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-}
-.rielter_card{
-    width:710px;
-    
-    padding: 30px 0px 0px 0px; 
-    border-radius: 10px;
-    background: rgba(128, 128, 128, 0.357);
-    margin-bottom: 20px;
-}
-.rielter_card h2{
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    line-height: 36px;
-    font-weight: 700;
-    color: #F8B806;
-    width: 54%;
- 
-}
-
-
-.rielter_p p{
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    margin-top: 16px;
-    letter-spacing: 0.  1px;
-    line-height: 30px;
-}
-.rielter_text{
-    padding-top: 7px;
-}
-
-.rielter_finis{
- 
-    margin-top: 28px;
-
-}
-
-.rielter_finis p{
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    line-height: 30px;
-    color: white;
-    margin-bottom: 24px;
-    letter-spacing: 0.01px;
-}
-.rielter_p2 p{
-      font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    margin-top: 19px;
-    letter-spacing: 0.001px;
-    line-height: 30px;
-}
-.rielter_inside
-{
-    width: 94%;
-    margin: auto;
-    /* margin-left: 27px; */
-    padding: 27px;
-
-}
-.rielter_insider{
-    width: 94%;
-    margin: auto;
-    margin-left: 30px;
-    
-}
-.rielter_text4{
-    padding-top: 1.5px;
-}
-@media(max-width:725px){
-    .rielter_title{
-        /* margin-left: 20px; */
-        width: 95%;
-        margin: auto;
-    }
-    .rielter_title h1{
-        width: 312px;
-        font-size: 27px;
-        line-height: 40.5px;
-    }
-    .rielter_card{
-        width: 90%;
-    }
-    
-    .rielter_card h2{
-        color: white;
-        line-height: 30px;
-        width: 280px;
-        font-family: 20px;
-        margin-top: -10px;
-        font-size: 20px;
-    }
-    .rielter_cards{
-        margin-top: 30px;
-        gap: 1px;
-     
-    }
-    .rielter_inside{
-        /* margin-left: 20px; */
-        padding: 20px;
-    }.rielter_p{
-        margin-top: -10px;
-        width: 280px;
-    }
-    .rielter_p p{
-        font-size: 16px;
-        line-height: 24px;
-        margin-top: 13px;
-        width: 98%;
-    }
-     .rielter_finis p{
-        font-size: 16px ;
-        line-height: 24px;
-        width: 98%;
-     }
-     .rielter_finis{
-        margin-top: 15px;
-     }
-     .rielter_insider{
-        margin-left: 20px;
-     }
-     .rielter_p2{
-        margin-top: -10px;
-        width: 93%;
-     }
-     .rielter_p2 p{
-        font-size: 16px;
-        line-height: 24px;
-     }
-   
-}
-
-
 
 
 
@@ -2000,6 +1832,7 @@ width: 100%;
     margin: auto;
     width: 95%;
     margin-top: 48px;
+    gap: 10px;
 }
 .kvartira_shag{
     width: 200px;
@@ -2023,6 +1856,26 @@ color: white;
     position: relative;
     top: -79px;
     left: 51px;
+} 
+.kvartira_shag_img_2{
+    position: relative;
+    left: 51px;
+    top: 15px;
+}
+.kvartira_shag__p__1{
+    width: 220px;
+}
+.kvartira_shag__circle_2{
+    margin-top: -64px;
+    margin-bottom: 29px;
+}
+.kvartira_shag__p__3{
+    width: 299px;
+}
+.kvartira_shag__p__4{
+    width: 230px;
+    letter-spacing: -1px;
+    line-height: 27px;
 }
 .kvartira_shag__circle{
     width: 36.79px;
@@ -2036,5 +1889,6 @@ color: white;
     color: #242424;
     font-family: Montserrat;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
+    letter-spacing: -3px;
 }
