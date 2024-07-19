@@ -126,6 +126,7 @@
     background-color: #242424;
     transition: 1s;
     padding-bottom: 20px;
+    z-index: 1;
 }
 
 .navbar__close {
@@ -1400,6 +1401,7 @@ background: #242424;
 position: relative;
 width: 100vw;
 overflow: hidden;
+display: none;
 }
 .agent__body{
 min-height: 921px;
@@ -4031,7 +4033,7 @@ margin: auto;
 }
  
 
-@media (max-width: 700px) {
+@media (max-width: 991px) {
     .mySwiper2 .swiper-button-prev , .mySwiper2 .swiper-button-next {
         display: none;
     }
@@ -4067,3 +4069,113 @@ margin: auto;
     .komanda_card_img_second{
         height: 230px;
     }
+    @media (max-width:800px) {
+    .MainGet_money{
+    width:95% ;
+    }
+    .mySwiper2 .swiper-button-next{
+        right:   0 !important;
+    }
+    .mySwiper2 .swiper-button-prev{
+        left: 0 !important;
+    }
+    .header__body{
+        padding-top: 100px;
+    }
+    .categoryBtns{
+        display: none;
+    }
+    .swipper__button_df{
+        margin-bottom: 20px;
+    }
+    .posmotry__body{
+        padding-bottom: 20px;
+    }
+
+}
+
+
+@media (max-width:610px) {
+    .header__body{
+        padding-top: 100px;
+    }
+    .header__body__p{
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+    }
+    .header__ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header__body h5{
+        font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.68px;
+text-align: left;
+
+    }
+    .chosen__p{
+        font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+ 
+
+    }
+    .chosen__h1{
+        font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 34.13px;
+text-align: center;
+
+    }
+    .chosen__card__h6{
+        font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+line-height: 35px;
+text-align: left;
+
+    }
+    .chosen__card__p{
+        font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+    }
+    .chosen{
+        padding-bottom: 15px;
+    }
+    .newOffersMarket h1{
+        font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 42px;
+text-align: left;
+
+    }    .newOffersMarket h1 span{
+        font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 42px;
+text-align: left;
+
+    }
+    .app_BgMain{
+        padding-top: 20px;
+    }
+    .newOffersMarket{
+        padding-bottom: 66px;
+    }
+ .otziv h1{
+    font-family: Montserrat;
+font-size: 28px;
+font-weight: 700;
+line-height: 42px;
+text-align: left;
+
+ }
+}
