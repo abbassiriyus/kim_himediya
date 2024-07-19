@@ -4023,10 +4023,27 @@ text-align: center;
 
 
 
-
+@media(max-width:1200px){
+    .newOffersMarket_body{
+width: calc(100% -200px);
+margin: auto;
+    }
+}
  
 
- 
+@media (max-width: 700px) {
+    .mySwiper2 .swiper-button-prev , .mySwiper2 .swiper-button-next {
+        display: none;
+    }
+    .mySwiper2 .swiper-button__media{
+        display: block !important;
+        position: relative !important;
+        top: 0px !important;
+        left: 0px !important;
+        right: 0px !important;
+        bottom: 0px !important;
+    }
+}
     .bodyDescribe_Home button{
         width: 92% ;
         margin: auto;
