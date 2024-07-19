@@ -135,16 +135,20 @@
     </div>
     <header class="header">
         <div class="header__body">
-            <h1 class="header__body__h1">Продадим вашу недвижимость за 28 дней</h1>
-            <p class="header__body__p">повысим стоимость квартиры стоимость до 15%</p>
+          
+            <h1 class="header__body__h1">Продадим вашу недвижимость <span>за 28 дней...</span></h1>
+            <p class="header__body__p">Повысим стоимость квартиры стоимость до 15%</p>
+            <h5>Укажите номер телефона и узнайте через 1 минуту
+            </h5>
             <div class="header__ul">
+                <img src="/img/OBJECTS (1).png" alt="">
                 <div class="header__li">
                     <div class="header_check"><i class='bx bx-check'></i></div>
                     <p>Стоимость вашей недвижимости</p>
                 </div>
                 <div class="header__li">
                     <div class="header_check"><i class='bx bx-check'></i></div>
-                    <p>Как повысить её ценность в
+                    <p>Как повысить её ценность в <br>
                         глазах покупателя на 20%</p>
                 </div>
                 <div class="header__li">
@@ -585,57 +589,7 @@
     </section>
    
 
-    <section class="kvartira">
-        <h1 class="universal__title">
-            <span> Продайте квартиру в 2 раза
-                быстрее </span><br>
-            за счет отработанной
-            схемы продаж
-        </h1>
-
-        <div class="kvartira_chags">
-            <div class="kvartira_shag">
-                <p class="kvartira_shag__p">Бесплатно оцениваем объект по выгодной стоимости с учетом всех преимуществ
-                </p>
-                <div class="kvartira_shag__circle kvartira_shag__circle_1">01</div>
-                <img src="/img/OBJECTS (1).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
-            </div>
-            <div class="kvartira_shag">
-                <img src="/img/OBJECTS.png" alt="" class="kvartira_shag_img kvartira_shag_img_2">
-                <div class="kvartira_shag__circle kvartira_shag__circle_2">02</div>
-                <p class="kvartira_shag__p kvartira_shag__p__1">Заключаем договор на срочную
-                    продажу недвижимости</p>
-            </div>
-            <div class="kvartira_shag">
-                <p class="kvartira_shag__p">Проводим профессиональную
-                    фотосъемку для повышения
-                     стоимости недвижимости</p>
-                <div class="kvartira_shag__circle kvartira_shag__circle_1">03</div>
-                <img src="/img/OBJECTS (1).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
-            </div>
-
-            <div class="kvartira_shag"> <img src="/img/OBJECTS.png" alt="" class="kvartira_shag_img kvartira_shag_img_2">
-                <div class="kvartira_shag__circle kvartira_shag__circle_2">04</div>
-                <p class="kvartira_shag__p kvartira_shag__p__3">Рассылаем объявление 2000+
-                    агентам и размещаем на более 10
-                    площадках</p>
-            </div>
-            <div class="kvartira_shag">
-                <p class="kvartira_shag__p">Организуем и проводим
-                    просмотры квартиры,
-                    ведем переговоры</p>
-                <div class="kvartira_shag__circle kvartira_shag__circle_1">05</div>
-                <img src="/img/OBJECTS (1).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
-            </div>
-            <div class="kvartira_shag"> <img style="opacity: 0;" src="/img/OBJECTS.png" alt="" class="kvartira_shag_img kvartira_shag_img_2">
-                <div class="kvartira_shag__circle kvartira_shag__circle_2">06</div>
-                <p class="kvartira_shag__p kvartira_shag__p__4">Гарантируем полное юридическое
-                    сопровождение для безопасной
-                    продажи</p>
-            </div>
-
-        </div>
-    </section>
+  
 
 <div class="CallMe_back_modal">
 <div class="CallMe_back_modal_body">
@@ -672,10 +626,32 @@
    </div>
    <div class="inputWith_login1">
     <label for="">Номер телефона<span>*</span></label>
-    <div class="inputGrey">
-        <i class='bx bx-user'></i>
-        <input type="text" placeholder="Ваше имя">
-    </div>
+ 
+        <div class="inputArrowAbsolute">
+            <div class="Country_input  inputGrey" type="text">
+                <div onmouseleave="document.querySelector('.Country_input__modal').style='display:none'" class="Country_input__modal">
+                    <div  onclick="document.querySelector('.Country_input__modal').style='display:none'" class="Country_input__modal__active">
+        
+                        <div class="Country_input__modal__select" ><img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""> 
+                            <div class="Country_input__phone">+375</div></div>
+                            <i class='bx bx-chevron-up' ></i>
+                    </div>
+                    <div class="Country_input__modal__option" onclick="selectFlag('/img/Frame 2085655518.svg','+375')" ><img style="width: 27px;" src="/img/Frame 2085655518.svg" alt="">  <div class="Country_input__phone">+375</div></div>
+                    <div class="Country_input__modal__option" 
+                    onclick="selectFlag('/img/24х24_interface.png','+75')"
+                    ><img style="width: 27px;" src="/img/24х24_interface.png" alt=""> <div class="Country_input__phone">+75</div></div>
+        
+                </div>
+                <div class="Country_input_action" onclick="document.querySelector('.Country_input__modal').style='display:block'">
+                    <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="Country_input__phone Country_input__phone_12">+375</div>
+                <input id="phone-input"  onkeyup="data_plus()" placeholder="(_) ___-__-__" type="text">
+            </div>
+            
+          
+        </div>
+ 
     </div>
     <h4>* — поле, обязательное для заполнения</h4>
 
@@ -883,7 +859,57 @@
    
    </section>
    
+   <section class="kvartira">
+        <h1 class="universal__title">
+            <span> Продайте квартиру в 2 раза
+                быстрее </span><br>
+            за счет отработанной
+            схемы продаж
+        </h1>
 
+        <div class="kvartira_chags">
+            <div class="kvartira_shag">
+                <p class="kvartira_shag__p">Бесплатно оцениваем объект по выгодной стоимости с учетом всех преимуществ
+                </p>
+                <div class="kvartira_shag__circle kvartira_shag__circle_1">01</div>
+                <img src="/img/OBJECTS (1).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
+            </div>
+            <div class="kvartira_shag">
+                <img src="/img/OBJECTS.png" alt="" class="kvartira_shag_img kvartira_shag_img_2">
+                <div class="kvartira_shag__circle kvartira_shag__circle_2">02</div>
+                <p class="kvartira_shag__p kvartira_shag__p__1">Заключаем договор на срочную
+                    продажу недвижимости</p>
+            </div>
+            <div class="kvartira_shag">
+                <p class="kvartira_shag__p">Проводим профессиональную
+                    фотосъемку для повышения
+                     стоимости недвижимости</p>
+                <div class="kvartira_shag__circle kvartira_shag__circle_1">03</div>
+                <img src="/img/OBJECTS (1).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
+            </div>
+
+            <div class="kvartira_shag"> <img src="/img/OBJECTS.png" alt="" class="kvartira_shag_img kvartira_shag_img_2">
+                <div class="kvartira_shag__circle kvartira_shag__circle_2">04</div>
+                <p class="kvartira_shag__p kvartira_shag__p__3">Рассылаем объявление 2000+
+                    агентам и размещаем на более 10
+                    площадках</p>
+            </div>
+            <div class="kvartira_shag">
+                <p class="kvartira_shag__p">Организуем и проводим
+                    просмотры квартиры,
+                    ведем переговоры</p>
+                <div class="kvartira_shag__circle kvartira_shag__circle_1">05</div>
+                <img src="/img/OBJECTS (1).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
+            </div>
+            <div class="kvartira_shag"> <img style="opacity: 0;" src="/img/OBJECTS.png" alt="" class="kvartira_shag_img kvartira_shag_img_2">
+                <div class="kvartira_shag__circle kvartira_shag__circle_2">06</div>
+                <p class="kvartira_shag__p kvartira_shag__p__4">Гарантируем полное юридическое
+                    сопровождение для безопасной
+                    продажи</p>
+            </div>
+
+        </div>
+    </section>  
     <img class="AbstractDesign" src="/img/Abstract Design.png" alt=""> 
    <img class="AbstractDesign_Second" src="/img/Abstract Design (1).png" alt="">
    <main class="MainGet_money">
@@ -1344,11 +1370,25 @@
            <li>Настройка cookie</li>
        </ul>
        <ul class="IconsImg">
-           <img src="/img/Telegram icon.png" alt="">
-           <img src="/img/Instagram icon.png" alt="">
-           <div class="worldSquard">
-               <img src="/img/image 125.png" alt="">
+      <div class="firstDivIcon">
+        <div class="worldSquard">
+            <img src="/img/image 127.png" alt="">
            </div>
+           <div class="worldSquard">
+         <img src="/img/image 128.png" alt="">
+        </div> 
+      </div>
+   <div class="secondDivIcon">
+    <img src="/img/Telegram icon.png" alt="">
+    <img src="/img/Instagram icon.png" alt="">
+  
+    <div class="worldSquard">
+        <img src="/img/image 125.png" alt="">
+    </div>
+   </div>
+       
+        </div>
+        
        </ul>
    </div>
        </footer>
@@ -1398,7 +1438,9 @@
        }
    </script>
      <!-- Swiper JS -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+
+     </script>
    
      <script>
        var swiper = new Swiper(".mySwiper2", {

@@ -294,7 +294,7 @@
 
 /* header */
 header.header {
-    height: 1024px;
+    height: 1016px;
     background: url("/img/Rectangle\ 1864.svg");
     background-size: cover;
     background-position: center;
@@ -308,7 +308,7 @@ header.header {
     width: 95%;
     margin: auto;
 
-    padding-top: 51px;
+    padding-top: 10px;
 
 
 }
@@ -320,10 +320,21 @@ header.header {
     line-height: 88.56px;
     text-align: left;
     color: white;
-    max-width: 755px;
+    max-width: 760px;
     margin-bottom: 17px;
     text-transform: uppercase;
     padding-left: 2px;
+}
+.header__body__h1 span {
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 88.56px;
+    text-align: left;
+    color: white;
+    
+    text-transform: uppercase;
+    color: #F8A606;
 }
 
 .header__li {
@@ -338,11 +349,17 @@ header.header {
 .header__body__p {
     font-family: Montserrat;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 34.44px;
     text-align: left;
-    color: white;
+    color: white;    
     margin-bottom: 36px;
+    width: 32%;
+    border-left: 4px solid #F8A606;
+    padding-left: 14px;
+    padding-top: 15px;
+    margin-left: -17px;
+ 
 }
 
 .header__ul {
@@ -354,15 +371,35 @@ header.header {
     color: white;
     padding-left: 8px;
     margin-bottom: 38px;
+    display: grid;
+    grid-template-columns: 1.2fr 1.7fr 1fr;
+    align-items: center;
+    width: 62%;position: relative;
+    top: 19px;
 }
-
+.header__body h5{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 500;
+line-height: 29.52px;
+text-align: left;
+color: white;
+}
 .header__buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 833px;
     gap: 25px;
+    position: relative;
+    top: 24px;
 }
-
+.header__body img{
+    position: absolute;
+    transform: rotate(92deg);
+    left: -89px;
+    width: 15%;
+    top: -5px;
+}
 .header__buttons__first {
     background: #00000078;
     border: 1px solid #979797;
@@ -413,6 +450,14 @@ header.header {
     }
 
     .header__body__h1 {
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39.36px;
+        text-align: left;
+
+    }
+    .header__body__h1 span{
         font-family: Montserrat;
         font-size: 32px;
         font-weight: 700;
@@ -475,7 +520,7 @@ height: 58px;
 .chosen{
     background: #3F3D42;
 min-height:481px ;
- 
+margin-top: 10px;
 }
 .chosen__p{
     font-family: Montserrat;
@@ -484,9 +529,9 @@ min-height:481px ;
     line-height: 28px;
     text-align: center;
     color: #F8A606;
-    padding-top: 35px;
+    padding-top: 30px;
     padding-bottom: 16px;
-
+    margin-left: 12px;
 }
 .chosen__h1{
     font-family: Montserrat;
@@ -497,9 +542,10 @@ min-height:481px ;
     text-align: center;
 color: white;    
 margin-bottom: 50px;
+margin-left: 10px;
 }
 .chosen_cards{
-    max-width: 1365px;
+    max-width: 1350px;
     margin: auto;
     gap: 60px;
     width: 95%;
@@ -618,7 +664,7 @@ line-height: 60.95px;
 text-align: left;
 color: white;
 width: 101%;
-padding-top: 62px;
+padding-top:59px;
 text-transform: uppercase;
 }
 .zakaz_title span{
@@ -718,6 +764,8 @@ cursor: pointer;
     font-size: 18px;
     font-weight: 500;
     line-height: 21.94px;
+    display: flex;
+    align-items: center;
     text-align: left;
 }
 .zakaz__select__h5 sup{
@@ -1013,7 +1061,7 @@ font-size: 20px;
 
 }
 .komanda_card_img{
- max-width: 100%; 
+  width: 100%; 
     margin-bottom: 9px;
     height: 323px;
     /* object-fit: contain; */
@@ -1147,7 +1195,7 @@ text-align: left;
 /* free_etap */
 .free_etap{
     background: #3F3D42;
-    padding-top: 118px;
+    padding-top: 91px;
     position: relative;
     z-index: 1;
 }
@@ -1173,7 +1221,7 @@ text-transform: uppercase;
     display: grid;
     grid-template-columns: auto 307px;
     align-items: end;
-    padding-bottom: 30px;
+ 
 }
 .free_etap__p{
     font-family: Montserrat;
@@ -1220,7 +1268,7 @@ text-transform: uppercase;
     display: grid;
     grid-template-columns: 128px auto;
     align-items: start;
-    margin-bottom: 79px;
+    margin-bottom: 67px;
     gap: 10px;
 
 }
@@ -1525,7 +1573,7 @@ width: 100%;
 /* yuridik */
 .yuridik{
     background: #3F3D42;
-    padding-top: 53px;
+    padding-top: 48px;
     padding-bottom: 59px;
 }
 .yuridik .universal__title{
@@ -1829,6 +1877,7 @@ width: 100%;
 
 .kvartira{
     background-color: #242424;
+    padding-top: 146px;
 }
 .kvartira_chags{
     display: grid;
@@ -2044,7 +2093,7 @@ color: white;
 .inputGrey{
     display: flex;
     align-items: center;
-    width: 98%;
+    width: 98% !important;
     margin: auto;
     border: 1px solid var(--stroke-soft-200, #E2E4E9);
     background: #333335;
@@ -2062,7 +2111,7 @@ color: white;
 }
 
 .inputGrey input{
-    width: 88%;
+    width: 88% !important;
     height: 30px;
     border: none;
     outline: none;
@@ -2363,7 +2412,7 @@ text-align: left;
     margin-bottom: 10px;
 }
 .IconsImg{
-    display: flex;
+    display: block;
     align-items: center;
     gap: 17px;
     position: relative;
@@ -2375,6 +2424,17 @@ text-align: left;
 }
 .IconsImg img:hover{
     opacity: 0.7;
+}
+.firstDivIcon{
+   gap: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.secondDivIcon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .worldSquard:hover{
     opacity: 0.7;
@@ -2822,6 +2882,8 @@ color: white;
 .app_BgMain{
     background-color: #2A2A2A;
     padding-bottom: 90px;position: relative;
+    padding-top: 183px;
+
 }
 .MainGet_money{
     width: calc(95% - 200px);
@@ -2978,11 +3040,12 @@ color: #F8B806;
 .MainGet_money{
     width: calc(95% - 200px) ;
     max-width: 1440px;
+    padding-top: 65px;
     margin: auto;
 }
 .bigGrid_templateDiv_body{
     display: grid;
-    grid-template-columns: 2.8fr 2fr;
+    grid-template-columns: 3fr 2fr;
     margin-top: 51px;
     position: relative;
     gap: 20px;
@@ -3162,7 +3225,7 @@ color: #858585;
  }
 
  .Evaluate_btn{
-    width: 79%;
+    width:81%;
     height: 72px;
     background: #F8B806;
     border-radius: 10px;
@@ -3170,7 +3233,7 @@ color: #858585;
 font-size: 18px;
 font-weight: 500;
 line-height: 22.14px;
-margin-top: 15px;
+margin-top: 25px;
 border: none;
  }
  .Object_arrow{
@@ -3186,7 +3249,7 @@ border: none;
  .PersonalData{
     display: flex;
     gap: 14px;
-    margin-top: 41px;
+    margin-top: 42px;
 
  }
  .PersonalData h3{
@@ -3235,7 +3298,7 @@ text-transform: uppercase;
 margin: auto;
 
 margin-bottom: 50px;
-margin-top: 79px;
+margin-top:99px;
 width: 95%;
 max-width: 1440px;
 }
@@ -3978,4 +4041,12 @@ text-align: center;
     text-align: center;
     color: #F8B806;    
     border-radius: 10px;
+    }
+
+
+    .komanda_card{
+        margin-bottom: 26px;
+    }
+    .komanda_card_img_second{
+        height: 230px;
     }
