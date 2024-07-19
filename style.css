@@ -475,7 +475,7 @@ height: 58px;
 .chosen{
     background: #3F3D42;
 min-height:481px ;
-padding-bottom: 20px;
+ 
 }
 .chosen__p{
     font-family: Montserrat;
@@ -606,7 +606,7 @@ text-align: center;
 
 }
 .zakaz__body{
- max-width: 1440px;
+ max-width: 1429px;
 margin: auto;
 width: 95%;   
 }
@@ -617,8 +617,8 @@ font-weight: 700;
 line-height: 60.95px;
 text-align: left;
 color: white;
-
-padding-top: 60px;
+width: 101%;
+padding-top: 62px;
 text-transform: uppercase;
 }
 .zakaz_title span{
@@ -784,7 +784,7 @@ color: white;
 .our__team{
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-    gap: 24px;
+    gap: 47px;
     margin-top: 31px;
     padding-bottom: 95px;
 }
@@ -1199,6 +1199,8 @@ text-transform: uppercase;
     border: none;
     margin-top: 35px;
     background-color: #F8A606; position: relative;
+    top: -21px;
+    left: 9px;
 }
 .free__etap__buttons {
     padding-bottom: 26%;
@@ -2822,7 +2824,7 @@ color: white;
     padding-bottom: 90px;position: relative;
 }
 .MainGet_money{
-    width: 95%;
+    width: calc(95% - 200px);
     max-width: 1440px;
     margin: auto;
 }
@@ -2891,6 +2893,10 @@ text-align: left;
     left: var(--swiper-navigation-sides-offset, -69px);
     right: auto;
 }
+.swipper__button_df{
+    display: flex;
+    justify-content: space-between;
+}
 .endOpen_other span{
     font-family: Montserrat;
 font-size: 18px;
@@ -2910,22 +2916,7 @@ text-decoration: underline;
 .swiper-button__media{
     display: none !important;
 }
-@media(max-width:700px){
-  .swiper-button__pk{
-    display: none !important;
-  } 
-  .swiper-button__media{
-    display: block !important;
-    position: relative !important;
-    top: 0px !important;
-    left: 0px !important;
-    right: 0px !important;
-    bottom: 0px !important;
-} 
-  .ApplicationSwiper{
-    width: 95%;
-  }
-}
+
 
 
 .swiper-button-next, .swiper-button-prev{
@@ -2946,6 +2937,22 @@ text-decoration: underline;
 .swiper-button-next{
     position: absolute !important;
     right: -67px !important;
+}
+@media(max-width:700px){
+  .swiper-button__pk{
+    display: none !important;
+  } 
+  .swiper-button__media{
+    display: block !important;
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    bottom: 0px !important;
+} 
+  .ApplicationSwiper{
+    width: 95%;
+  }
 }
 .MainGet_money h1{
     font-family: Montserrat;
@@ -2969,7 +2976,7 @@ color: #F8B806;
     display: none;
 }
 .MainGet_money{
-    width: 95%;
+    width: calc(95% - 200px) ;
     max-width: 1440px;
     margin: auto;
 }
