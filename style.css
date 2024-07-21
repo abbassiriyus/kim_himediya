@@ -4010,7 +4010,6 @@ text-align: center;
         font-size: 16px;
         line-height: 24px;
         margin-top: 13px;
-        width: 98%;
     }
      .rielter_finis p{
         font-size: 16px ;
@@ -4097,8 +4096,8 @@ margin: auto;
     .categoryBtns{
         display: none;
     }
-    .swipper__button_df{
-        margin-bottom: 20px;
+    .swipper__button_df{       
+         margin-bottom: 11px;
     }
     .posmotry__body{
         padding-bottom: 20px;
@@ -4391,7 +4390,7 @@ margin-top: 22px;
             padding-bottom: 70px;
         }
         .yuridik{
-            padding-top: 28px;
+            padding-top: 37px;
             padding-bottom: 41px;
         }
         .yuridik__cards{
@@ -4453,15 +4452,17 @@ margin-bottom: 9px;
                 width: 98%;
                 margin: auto;}
                 .newOffersMarket h1{
-                    width: 90%;
+                    width: 88%;
+                    margin-left: 13px;
                 }
                 .select_forMedia select{
-                    width: 100%;
                     height:56px ;
                     background: #3E3E3E;
                     color: white;
                     padding-left: 20px;
                     font-family: Montserrat;
+                    width: 93%;
+                    margin-left: 10px;
 font-size: 16px;
 font-weight: 500;
 line-height: 19.5px;
@@ -4486,9 +4487,87 @@ text-align: center;
                     width: 310px;
                 }
                 .mySwiper2 .swiper-slide img{
-                    height: 193px;
+                    height: 200px;
                 }
                 .otherRomb img{
                     height: 20px !important;
                 }
+                .zakaz_title{
+                    padding-top: 24px;
+                    padding-bottom: 33px;
+                }
+                .zakaz__buttons__media{
+                    margin-top: 14px;
+                }
+                .bodyDescribe_Home{
+                    padding-top: 14px;
+                }
+                .oneRomb span{
+                    font-family: Montserrat;
+font-size: 14px !important;
+font-weight: 400 !important;
+line-height: 17.22px !important;
+text-align: center !important;
+
+                }
+                .romb_bigFlex{
+                    margin-top: 39px;
+                }
+                .otherRomb span{
+                    font-family: Montserrat;
+font-size: 14px !important;
+font-weight: 400 !important;
+line-height: 17.22px !important;
+text-align: left !important;
+
+                }
+                .bodyDescribe_Home span{
+                    font-family: Montserrat;
+font-size: 20px;
+font-weight: 700;
+line-height: 24.6px;
+text-align: center;
+
+                }
+                .bodyDescribe_Home p{
+                    font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.68px;
+text-align: center;
+
+                }
+                .bodyDescribe_Home button{
+                    font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: center;
+
+                }
+                .mySwiper2 .swiper-slide img{
+                    height: 200px;
+                }
+
+                .rielter{
+                    padding-top: 33px;
+                }
+                .rielter_title{
+                    width: 89%;
+                }
+        .rielter_inside{
+            padding-top: 11px;
+            padding-bottom: 0;
         }
+        .rielter_finis p{
+            margin-bottom: 0;
+        }
+        .ExtraRielter{
+            padding: 20px 0px 0px 0px;
+
+        }
+        .rielter_card{
+            padding: 26px 0px 0px 0px;
+            padding-bottom: 18px;
+        }
+            }
