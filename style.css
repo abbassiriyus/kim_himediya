@@ -3221,6 +3221,7 @@ color: white;
     font-family: Montserrat;
 font-size: 18px;
 font-weight: 500;
+width: 100%;
 line-height: 21.94px;
 
 color: #858585;
@@ -4148,7 +4149,8 @@ text-align: center;
 font-size: 20px;
 font-weight: 600;
 line-height: 35px;
- 
+
+text-align: center;
 
     }
     .chosen__card__p{
@@ -4571,3 +4573,143 @@ text-align: center;
             padding-bottom: 18px;
         }
             }
+
+
+@media (max-width: 491px) {
+    .navbar__body {
+        display: grid;
+        grid-template-columns: 82px auto;
+        gap: 30px;
+        height: 99px;
+        max-width: 319px;
+    }
+  .navbar_nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 28px;
+    }
+    .navbar_nav__img {
+        display: block;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: #24242461;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__body__h1 {
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39.36px;
+        text-align: left;
+        margin-top: 44px;
+        width: 92%;
+        margin: auto;
+        margin-top: 43px;
+    }
+    .header__body__p {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.68px;
+        text-align: left;
+        margin-top: 17px;
+        max-width: 300px;
+        border: none;
+    }
+    .header__body h5 {
+    
+        display: none;
+    }
+    .header__li {
+        display: grid;
+        grid-template-columns: 30px auto;
+        margin-bottom: 21px;
+        max-width: 441px;
+        gap: 17px;
+        align-items: start;
+    }
+    .header__ul {
+        top: 0px;
+        width: 96%;
+        margin-bottom: 0px;
+    }
+    .header__body__h1{
+        margin-top: 0px;
+    }
+    .header__body {
+        padding-top: 79px;
+    }
+    .header__li {
+        display: grid;
+        grid-template-columns: 30px auto;
+        margin-bottom: 21px;
+        max-width: 441px;
+        gap: 17px;
+        align-items: start;
+        margin-left: 11px;
+        margin-top: -8px;
+    }
+    .header__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 833px;
+        gap: 16px;
+        margin-top: -13px;
+    }
+    .header__body__p {
+margin-bottom: 32px;
+    }
+    .chosen {
+        padding-bottom: 66px;
+        padding-top: 40px;
+    }
+    .chosen__p {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+    .chosen__h1 {
+margin-bottom: 32px;
+    }
+    .chosen__card__h6 {
+        margin-top: 10px;
+    }
+    .chosen_cards {
+        max-width: 1365px;
+        margin: auto;
+        gap: 15px;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .zakaz {
+        background: #242424;
+        padding-top: 15px;
+    }
+    .zakaz__h4 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        /* line-height: 17px; */
+        text-align: left;
+        color: white;
+    }
+    .zakaz_sectiontitle {
+        display: flex;
+        gap: 11px;
+    }
+    .zakaz_homeType__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1108px;
+        gap: 7px;
+        position: relative;
+        z-index: 12;
+        margin-top: 30px;
+    }
+}
