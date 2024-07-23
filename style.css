@@ -273,7 +273,10 @@ body{
     .navbar_nav__phone {
         display: block;
         text-align: right;
-        font-size: 16px;
+        font-size: 15.8px;
+        margin-top: -10px;
+        margin-right: 4px;
+
     }
 
     .navbar_nav__img {
@@ -288,7 +291,20 @@ body{
     }
 }
 
-
+@media (max-width:380px) {
+    .navbar__logo_img {
+        width: 109%;
+        margin-left: 4px;
+        margin-top: -10px;
+    }
+    .navbar__logo_p {
+        width: 118%;
+        font-size: 10px;
+        line-height: 13px;
+        margin-left: 4px;
+        margin-top: 7px;
+    }
+}
 
 
 
@@ -425,11 +441,8 @@ color: white;
     width: 30px;
     height: 30px;
     background: #F8A606;
-
     border-radius: 50%;
     box-shadow: 0px 0px 3px #F8A606;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -439,7 +452,18 @@ color: white;
 .header_check p br{
     display: block;
 }
-
+@media (max-width:380px) {
+    .header_check {
+        position: relative;
+        top: 10px;
+        left: 8px;
+    }
+    .header__li p{
+        position: relative;
+        top: 4px;
+        left: 3px;
+    }
+}
 .header__buttons__second {
     background: #F8B806;
     border: 1px solid #F8B806;
@@ -521,7 +545,20 @@ height: 58px;
     }
 }
 
-
+@media (max-width:360px) {
+    .header__buttons__first{
+    width: 91.8%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    height: 58px;
+    position: relative;
+    right: -15px;
+    padding-right: 48px;
+}
+}
 
 
 
@@ -2434,7 +2471,7 @@ text-align: left;
     align-items: center;
     gap: 17px;
     position: relative;
-    top: 60px;
+    top: 10px;
     left: 10px;
 }
 .IconsImg img{
@@ -4762,6 +4799,8 @@ text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: -11px;
+        padding-right: 10px;
     }
     .header__body__h1 {
         font-family: Montserrat;
