@@ -379,12 +379,8 @@ header.header {
     display: grid;
     grid-template-columns: 1.2fr 1.7fr 1fr;
     align-items: center;
-<<<<<<< Updated upstream
     width: 100%;
     max-width: 921px;
-=======
-    width: 62%;
->>>>>>> Stashed changes
     position: relative;
     top: 19px;
 }
@@ -2038,9 +2034,6 @@ color: white;
     margin-top: 20px;
 color: white;
 
-}
-.headerText{
-    /* margin-top: 10px; */
 }
 .headerText h3{
     font-family: Montserrat;
