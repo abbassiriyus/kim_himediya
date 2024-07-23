@@ -781,7 +781,8 @@ cursor: pointer;
     text-align: left;
 }
 .zakaz__select__h5 sup{
-    margin-left: -8px;
+    margin-left: -0px;
+    margin-top: -10px;
 }
 .zakaz__buttons{
     margin: auto;
@@ -1043,7 +1044,7 @@ font-size: 20px;
     position: absolute;
     right: 0px;
     top: 0px;
-    height: 70%;
+    height: 59%;
     width: 600px;
     background: url('/img/Abstract Design.svg');
     box-shadow: inset 137px -61px 61px #3F3D42;
@@ -1745,6 +1746,7 @@ color: white;
     grid-template-columns: 1fr 1.4fr;
     margin-top: 53px;
     gap: 14px;
+    margin-bottom: 5%;
 }
 .posmotry__img img{
     width: 100%;
@@ -1850,6 +1852,7 @@ color: white;
         grid-template-columns: 1fr ;
         margin-top: 53px;
         gap: 14px;
+        margin-bottom: 5%;
     }
 }
 
@@ -2191,6 +2194,7 @@ text-align: left;
 
 
 }
+
 
 .callModal_bottom h4{
     color: white;
@@ -3985,9 +3989,11 @@ text-align: center;
         margin: auto;
     }
     .rielter_title h1{
-        width: 312px;
-        font-size: 27px;
+        width: 100%;
+        font-size: 37px;
         line-height: 40.5px;
+        max-width: 688px;
+        margin: auto;
     }
     .rielter_card{
         width: 90%;
@@ -4112,6 +4118,34 @@ margin: auto;
 
 }
 
+.select_forMedia{
+    display: none;
+}
+.rielter_text br{
+    display: block;
+}
+@media (max-width:800px) {
+    .select_forMedia select{
+        height:56px ;
+        background: #3E3E3E;
+        color: white;
+        padding-left: 20px;
+        font-family: Montserrat;
+        width: 96%;
+        margin-left: 10px;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+display: block;
+
+
+    }
+    .select_forMedia{
+        margin-top: 29px;
+        padding-left: 6px;
+        display: block;
+    }
+}
 
 @media (max-width:610px) {
     .header__body{
@@ -4183,6 +4217,38 @@ font-weight: 700;
 line-height: 42px;
 text-align: left;
 
+    }
+    .rielter_title h1{
+        width: 100%;
+        font-size: 25px;
+        line-height: 42px;
+        max-width: 688px;
+        margin: auto;
+    }
+    .select_forMedia select{
+        height:56px ;
+        background: #3E3E3E;
+        color: white;
+        padding-left: 20px;
+        font-family: Montserrat;
+        width: 100%;
+        margin-left: 10px;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+display: block;
+max-width: 1440px;
+margin: auto;
+
+
+    }
+    .select_forMedia{
+        margin-top: 29px;
+        padding-right: 6px;
+        display: block;
+    }
+    .rielter_text br{
+        display: none;
     }
     .app_BgMain{
         padding-top: 20px;
@@ -4463,23 +4529,7 @@ margin-bottom: 9px;
                     width: 88%;
                     margin-left: 13px;
                 }
-                .select_forMedia select{
-                    height:56px ;
-                    background: #3E3E3E;
-                    color: white;
-                    padding-left: 20px;
-                    font-family: Montserrat;
-                    width: 93%;
-                    margin-left: 10px;
-font-size: 16px;
-font-weight: 500;
-line-height: 19.5px;
- 
-
-                }
-                .select_forMedia{
-                    margin-top: 29px;
-                }
+                
                 .mySwiper2{
                     margin-top: 45px;
                 }
