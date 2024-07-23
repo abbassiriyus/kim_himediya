@@ -16,8 +16,11 @@
     color: white;
 }
 
+body{
+    width: 100vw;
+    overflow-x: hidden;
 
-
+}
 
 
 
@@ -353,9 +356,10 @@ header.header {
     font-weight: 700;
     line-height: 34.44px;
     text-align: left;
-    color: white;    
+    color: white;
     margin-bottom: 36px;
-    width: 32%;
+    width: 100%;
+    max-width: 500px;
     border-left: 4px solid #F8A606;
     padding-left: 14px;
     padding-top: 15px;
@@ -375,7 +379,9 @@ header.header {
     display: grid;
     grid-template-columns: 1.2fr 1.7fr 1fr;
     align-items: center;
-    width: 62%;position: relative;
+    width: 100%;
+    max-width: 921px;
+    position: relative;
     top: 19px;
 }
 .header__body h5{
