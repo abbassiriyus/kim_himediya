@@ -718,7 +718,7 @@ font-weight: 700;
 line-height: 60.95px;
 text-align: left;
 color: white;
-width: 101%;
+width: 105%;
 padding-top:59px;
 text-transform: uppercase;
 }
@@ -896,6 +896,7 @@ color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
+
 }
 .out__team__logos__item{
     display: flex;
@@ -904,15 +905,16 @@ color: white;
     background: #3f3d42b6;
 height: 120px;
 border-radius: 10px;
-
 }
 .our__team__text__item__p{
     font-family: Montserrat;
-font-size: 32px;
-font-weight: 500;
-line-height: 48px;
-text-align: left;
-color: white;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    color: white;
+    margin-left: -8px;
+    margin-top: 1px;
 }
 .our__team__text__item{
     display: grid;
@@ -921,10 +923,9 @@ color: white;
     margin-bottom: 38px;
 }
 .our__team__text__item__line{
-    height: 5px;
+    height: auto;
     width: 100%;
-    background-color: #F8A606;
-    margin-top: 25px;
+    margin-top: 27px;
 }
 @media (max-width:1250px){
     .our__team {
@@ -941,9 +942,8 @@ color: white;
     line-height: 24px;
   }  
   .our__team__text__item__line {
-    height: 5px;
+    height: auto;
     width: 100%;
-    background-color: #F8A606;
     margin-top: 9px;
 }
 .our__team__text__item {
@@ -1000,8 +1000,8 @@ margin-top: 14px;
 }
 }
 .out__team__logos__item img{
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 80%;
+    max-height: 80%;
 }
 @media(max-width:530px){
     .out__team__logos__itemDom{
