@@ -1270,7 +1270,7 @@ text-align: left;
 
 /* free_etap */
 .free_etap{
-    background: #3F3D42;
+    background: rgba(249, 249, 249, 1);
     padding-top: 91px;
     position: relative;
     z-index: 1;
@@ -1291,7 +1291,7 @@ padding-left: 7px;
 .universal__title span{
     color: #F8A606;
     position: relative;
-    top: 16px;
+    top: 2px;
 }
 .free__etap__body{
     width: 95%;
@@ -1308,7 +1308,7 @@ padding-left: 7px;
     font-weight: 400;
     line-height: 36px;
     text-align: left;
-    color: white;
+    color: #1E1E1E;
     max-width: 1440px;
     width: 95%;
     margin: auto;
@@ -1350,7 +1350,7 @@ padding-left: 7px;
     align-items: start;
     margin-bottom: 80px;
     gap: 10px;
-
+    margin-left: 2px;
 }
 .freeEtap_shugNumber{
     color: #F8B806;
@@ -1369,7 +1369,7 @@ padding-left: 7px;
     font-weight: 600;
     line-height: 36px;
     text-align: left;
-    color: white;
+    color: #1E1E1E;
     margin-bottom: 16px;
 }
 .freeEtap__text__p{
@@ -1378,13 +1378,16 @@ padding-left: 7px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
-color: white;    
+color: #1E1E1E;    
 }
 .free__etap__button__img{
     width: 300px;
-height: 380px;
-gap: 0px;
-border-radius: 7px ;
+    height: 380px;
+    gap: 0px;
+    border-radius: 7px;
+    position: relative;
+    top: -19px;
+    left: 7px;
 
 
 }
@@ -1443,9 +1446,8 @@ text-align: left;
         max-width: 100%;
     }
     .freeEtap_shugNumber{
-        color: #3F3D42;
+        color: white;
         text-shadow: 0px 0px  3px white;
-        
     }
     .freeEtap__text__h4{
         font-family: Montserrat;
@@ -4581,7 +4583,8 @@ text-align: left;
             max-width: 310px;
             width: 95%;
             margin: auto;
-            padding-top: 11px;
+            padding-top: 14px;
+            padding-left: 0px;
         
         }
         .freeEtap_shugNumber{
@@ -4628,7 +4631,7 @@ text-align: center;
                 padding-bottom: 0;
             }
             .free__etap__body{
-                padding-bottom: 4px;
+                padding-bottom: 34px;
             }
             .agent__title__h1{
                 width: 92%;
