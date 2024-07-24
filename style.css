@@ -484,8 +484,8 @@ header.header {
 
 @media(max-width:816px) {
     header.header {
-        /* height: auto;
-        height: 729px; */
+         height: auto;
+        height: 729px; 
         padding-bottom: 100px;
     }
 
@@ -914,7 +914,7 @@ border-radius: 10px;
     text-align: left;
     color: white;
     margin-left: -8px;
-    margin-top: 1px;
+    margin-top: 0px;
 }
 .our__team__text__item{
     display: grid;
@@ -926,6 +926,9 @@ border-radius: 10px;
     height: auto;
     width: 100%;
     margin-top: 27px;
+}
+.our__team__text__item__line .img_insted_of_line{
+    margin-top: 22px;
 }
 @media (max-width:1250px){
     .our__team {
@@ -1117,27 +1120,29 @@ font-size: 20px;
 
 }
 .komanda_card_img{
-  width: 100%; 
-    margin-bottom: 9px;
+    width: 100%;
+    margin-bottom: -13px;
     height: 323px;
-    /* object-fit: contain; */
+    margin-left: 10px;
 }
 .komanda_card_img_second{
     width: 100%;
     height: 256px;
-    margin-bottom: 10px;
-
+    margin-bottom: -14px;
+    margin-left: 4px;
 }
 .komanda__title{
     font-family: Montserrat;
-font-size: 40px;
-font-weight: 700;
-line-height: 50px;
-text-align: left;
-color: white;
-max-width: 1440px;width: 95%;
-margin: auto;
-padding-top: 57px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    color: white;
+    max-width: 1440px;
+    width: 95%;
+    margin: auto;
+    padding-top: 21px;
+    padding-left: 11px;
 }
 .komanda__title span{
 color: #F8A606;
@@ -1154,6 +1159,7 @@ color: #F8A606;
     color: white;
     padding-top: 19px;
     padding-bottom: 47px;
+    padding-left: 11px;
 
 }
 .komanda_card_p{
@@ -1266,6 +1272,7 @@ max-width: 1440px;
 width: 95%;
 margin: auto;
 text-transform: uppercase;
+padding-left: 7px;
 }
 .universal__title span{
     color: #F8A606;
@@ -1292,6 +1299,7 @@ text-transform: uppercase;
     width: 95%;
     margin: auto;
     padding-top: 33px;
+    padding-left: 7px;
 }
 .free__etap__button{
     width: 300px;
@@ -1326,7 +1334,7 @@ text-transform: uppercase;
     display: grid;
     grid-template-columns: 128px auto;
     align-items: start;
-    margin-bottom: 67px;
+    margin-bottom: 80px;
     gap: 10px;
 
 }
@@ -1456,15 +1464,17 @@ body{
 .agent{
 background: #242424;
 position: relative;
+left: 2px;
 width: 100vw;
 overflow: hidden;
 /* display: none; */
 }
 .agent__body{
-min-height: 921px;
-max-width: 1440px;
-width: 95%;
-margin: auto;  
+    min-height: 826px;
+    max-width: 1440px;
+    width: 95%;
+    margin: auto;
+    margin-top: -26px;
 }
 .agent__title__h1{
     width: 80%;
@@ -1475,7 +1485,7 @@ line-height: 75px;
 text-align: left;
 color: white;
 text-transform: uppercase;
-padding-top: 76px;
+padding-top: 70px;
 }
 .agent__title__h1 span{
     color: #F8B806;
@@ -1487,10 +1497,11 @@ font-weight: 400;
 line-height: 30px;
 text-align: left;
 color: white;
-max-width: 400px;
+max-width: 403px;
 }
 .agent__img{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    margin-top: 2px;
 }
 .agent__cards{
     display: grid;
@@ -1503,6 +1514,7 @@ max-width: 400px;
 }
 .agent__card__three{
     margin-top: -222px;
+    margin-left: -2px;
 }
 .agent__card__circle{
     width: 28.7px;
@@ -1547,7 +1559,7 @@ width: 100%;
 }
 .agent__img__decor{
     position: absolute;
-    bottom: 21%;
+    bottom: 12%;
     width: 100%;
     left: 0;
 }
@@ -4879,12 +4891,13 @@ text-align: center;
         margin-top: 0px;
     }
     .header__body {
-        padding-top: 79px;
+        padding-top: 63px;
+        height: 551px;
     }
     .header__li {
         display: grid;
         grid-template-columns: 30px auto;
-        margin-bottom: 21px;
+        margin-bottom: 9px;
         max-width: 441px;
         gap: 17px;
         align-items: start;
@@ -4898,12 +4911,15 @@ text-align: center;
         gap: 16px;
         margin-top: -13px;
     }
+    .header__li_margin__13px{
+        margin-top: 13px;
+    }
     .header__body__p {
 margin-bottom: 32px;
     }
     .chosen {
         padding-bottom: 66px;
-        padding-top: 40px;
+        padding-top: 60px;
     }
     .chosen__p {
         font-family: Montserrat;
@@ -4912,7 +4928,9 @@ margin-bottom: 32px;
         line-height: 22px;
     }
     .chosen__h1 {
-margin-bottom: 32px;
+        margin-bottom: 32px;
+        width: 90%;
+        margin-bottom: 61px;
     }
     .chosen__card__h6 {
         margin-top: 10px;
@@ -4926,8 +4944,19 @@ margin-bottom: 32px;
         grid-template-columns: 1fr;
     }
     .zakaz {
-        background: #242424;
-        padding-top: 15px;
+       
+        padding-top: 0px;
+    }
+    .zakaz_title {
+        padding-top: 7px;
+        padding-bottom: 33px;
+    }
+    .chosen__card__img {
+        margin: auto;
+        margin-bottom: -6px;
+    }
+    .chosen__card {
+        margin-bottom: 3px;
     }
     .zakaz__h4 {
         font-family: Montserrat;
@@ -4937,6 +4966,7 @@ margin-bottom: 32px;
         text-align: left;
         color: white;
     }
+    
     .zakaz_sectiontitle {
         display: flex;
         gap: 11px;
@@ -4945,11 +4975,46 @@ margin-bottom: 32px;
         display: grid;
         grid-template-columns: 1fr;
         max-width: 1108px;
-        gap: 7px;
+        gap: 10px;
         position: relative;
         z-index: 12;
-        margin-top: 30px;
+        margin-top: 25px;
     }
+
+.header__body__p {
+    left: 0px;
+    margin-top: 36px;
+}
+.header__body__h1 span{
+    color: white;
+}
+.header__buttons__second {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    width: 90%;
+    margin-left: 5%;
+    line-height: 19.36px;
+    text-align: center;
+    height: 58px;
+}
+.header__buttons__first {
+    width: 90.8%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    height: 58px;
+    position: relative;
+    right: -15px;
+    padding-right: 48px;
+    margin-top: 4px;
+    margin-bottom: -5px;
+}
+header.header {
+    padding-bottom: 0px !important;
+}
 }
 
 
