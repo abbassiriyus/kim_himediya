@@ -703,6 +703,7 @@ text-align: center;
 .zakaz{
     background: #F9F9F9;
 padding-top: 30px;
+padding-bottom: 1px;
 }
 .zakaz__body{
  max-width: 1429px;
@@ -888,9 +889,13 @@ color: #1E1E1E;
 .our__team{
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-    gap: 47px;
+    gap: 28px;
     margin-top: 31px;
-    padding-bottom: 95px;
+    max-width: 1440px;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 62px;
+    margin-top: 31px;
 }
 .out__team__logos{
     display: grid;
@@ -912,7 +917,7 @@ border-radius: 10px;
     font-weight: 500;
     line-height: 48px;
     text-align: left;
-    color: white;
+    color:white;
     margin-left: -8px;
     margin-top: 0px;
 }
@@ -1083,8 +1088,9 @@ font-size: 20px;
 
 /* kamanda */
 .komanda {
-    background-color: #3F3D42;
+    background-color: white;
     position: relative;
+    padding-top: 33px;
 }
 .komanda__absimg{
     position: absolute;
@@ -1093,7 +1099,7 @@ font-size: 20px;
     height: 59%;
     width: 600px;
     background: url('/img/Abstract Design.svg');
-    box-shadow: inset 137px -61px 61px #3F3D42;
+    box-shadow: inset 137px -61px 61px white;
     background-size: cover;
     opacity: 0.3;
 }
@@ -1137,15 +1143,23 @@ font-size: 20px;
     font-weight: 700;
     line-height: 50px;
     text-align: left;
-    color: white;
+    color: #1E1E1E;
     max-width: 1440px;
     width: 95%;
     margin: auto;
     padding-top: 21px;
-    padding-left: 11px;
+    padding-left: 4px;
 }
 .komanda__title span{
-color: #F8A606;
+color: #1E1E1E;
+position: relative;
+}
+.komanda__title span img{
+    width: 102%;
+    position: absolute;
+    left: -10px;
+    z-index: 0;
+    top: -20px;
 }
 .komanda__p{
     max-width: 1440px;
@@ -1156,10 +1170,10 @@ color: #F8A606;
     font-weight: 500;
     line-height: 24px;
     text-align: left;
-    color: white;
+    color: #1E1E1E;
     padding-top: 19px;
     padding-bottom: 47px;
-    padding-left: 11px;
+    padding-left: 3px;
 
 }
 .komanda_card_p{
@@ -4819,7 +4833,18 @@ text-align: center;
             padding-bottom: 18px;
         }
             }
-
+            .zakaz_title__margin{
+            max-width: 1440px;
+            margin: auto;
+            width: 95%;color: white;
+            }
+            
+            
+            .partnyor{
+                background-color: #2A2A2A;
+                margin-top: -49px;
+                padding-top: 22px;
+            }
 
 @media (max-width: 491px) {
     .navbar__body {
@@ -4901,6 +4926,12 @@ text-align: center;
         align-items: start;
         margin-left: 11px;
         margin-top: -8px;
+    }
+    .zakaz_title__margin{
+        width: 85%;
+        margin-top: 29px;
+        left: -3px;
+ 
     }
     .header__buttons {
         display: grid;
