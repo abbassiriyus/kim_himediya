@@ -39,21 +39,19 @@ body{
 }
 
 .navbar__body {
-    max-width: 1440px;
+    max-width: 1441px;
     margin: auto;
     width: 95%;
     display: grid;
     align-items: center;
     padding-top: 3px;
     height: 125px;
-    grid-template-columns: 327px auto 283px 100px;
-
+    grid-template-columns: 335px auto 279px 84px;
 }
-
 .navbar__logo {
     display: flex;
     align-items: center;
-    gap: 17px;
+    gap: 15px;
     margin-top: 24px;
 }
 
@@ -314,21 +312,22 @@ body{
 
 /* header */
 header.header {
-    /* height: 1016px; */
+    height: 1016px;
     background: url("/img/Rectangle\ 1864.svg");
     background-size: cover;
     background-position: center;
-    display: flex;
+    display: grid;
     /* justify-content: center; */
     align-items: center;
     overflow: hidden;
+/* position: relative; */
 }
 
 .header__body {
-    max-width: 1440px;
-    width: 95%;
+    max-width: 1433px;
+    width: calc(95% - 100px);
     margin: auto;
-    margin-top: 190px;
+    margin-top: 191px;
     padding-top: 10px;
 
 
@@ -362,9 +361,9 @@ header.header {
 
 .header__li {
     display: grid;
-    grid-template-columns: 30px auto;
+    grid-template-columns: 32px auto;
     margin-bottom: 21px;
-    max-width: 441px;
+    max-width: 542px;
     gap: 17px;
     align-items: center;
 }
@@ -376,14 +375,14 @@ header.header {
     line-height: 34.44px;
     text-align: left;
     color: white;
-    margin-bottom: 36px;
+    margin-bottom: 37px;
     width: 100%;
     /* max-width: 500px; */
     border-left: 4px solid #F8A606;
-    padding-left: 14px;
-    padding-top: 18px;
-    margin-left: -17px;
- 
+    padding-left: 18px;
+    padding-top: 19px;
+    position: relative;
+    left: -17px;
 }
 
 .header__ul {
@@ -396,34 +395,37 @@ header.header {
     padding-left: 8px;
     margin-bottom: 38px;
     display: grid;
-    grid-template-columns: 1.2fr 1.7fr 1fr;
+    grid-template-columns: 1.2fr 1.66fr 1fr;
     align-items: center;
-    width: 61%;
+    max-width: 870px;
     position: relative;
     top: 12px;
+    gap: 10px;
 }
 .header__body h5{
     font-family: Montserrat;
-font-size: 24px;
-font-weight: 500;
-line-height: 29.52px;
-text-align: left;
-color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.52px;
+    text-align: left;
+    color: white;
+    margin-left: 2px;
 }
 .header__buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 833px;
-    gap: 25px;
+    max-width: 835px;
+    gap: 23px;
     position: relative;
-    top: 24px;
+    top: 27px;
+    left: 2px;
 }
 .header__body img{
     position: absolute;
     transform: rotate(92deg);
-    left: -89px;
-    width: 15%;
-    top: -5px;
+    left: -83px;
+    width: 123px;
+    top: 0px;
 }
 .header__buttons__first {
     background: #00000078;
@@ -573,21 +575,12 @@ height: 58px;
 
 /* chosen */
 .chosen{
-    background: #3F3D42;
-min-height:481px ;
-margin-top: 10px;
+    background: #FFFFFF;
+    min-height: 481px;
+    padding-top: 56px;
+    padding-bottom: 32px;
 }
-.chosen__p{
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 28px;
-    text-align: center;
-    color: #F8A606;
-    padding-top: 30px;
-    padding-bottom: 16px;
-    margin-left: 12px;
-}
+
 .chosen__h1{
     font-family: Montserrat;
     font-size: 50px;
@@ -595,9 +588,9 @@ margin-top: 10px;
     line-height: 60.95px;
     letter-spacing: -2px;
     text-align: center;
-color: white;    
-margin-bottom: 50px;
-margin-left: 10px;
+    color: #1E1E1E;
+    margin-bottom: 61px;
+    margin-left: 10px;
 }
 .chosen_cards{
     max-width: 1350px;
@@ -607,23 +600,28 @@ margin-left: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.chosen__card{
+    margin-bottom: 47px;
+}
 .chosen__card__img{
-    background: #F8A60633;
-    width: 100px;
-    height: 100px;
+    background: 
+    #1E1E1E;
+    width: 90px;
+    height: 90px;
     border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    border: 5px solid #F8A606
 }
 .chosen__card__img img{
 width: 60px;
 }
-.chosen__card__img__second{
+.chosen__card__img__second {
     position: absolute;
-top: 20px;
-left: 20px;
+    top: 15px;
+    left: 15px;
     width: 60px;
     height: 60px;
 }
@@ -633,7 +631,7 @@ left: 20px;
     font-weight: 600;
     line-height: 35px;
     text-align: left;
-    color: white;
+    color: #1E1E1E;
     margin-top: 24px;
     margin-bottom: 9px;}
 .chosen__card__p{
@@ -642,7 +640,7 @@ left: 20px;
     font-weight: 500;
     line-height: 19.5px;
     text-align: left;
-    color: #C5C5C5;
+    color: #1E1E1E;
 
 }
 @media(max-width:932px){
@@ -703,8 +701,8 @@ text-align: center;
 
 /* zakaz */
 .zakaz{
-    background: #242424;
-
+    background: #F9F9F9;
+padding-top: 30px;
 }
 .zakaz__body{
  max-width: 1429px;
@@ -717,8 +715,10 @@ font-size: 50px;
 font-weight: 700;
 line-height: 60.95px;
 text-align: left;
-color: white;
-width: 105%;
+
+color: #1E1E1E;
+width: 101%;
+
 padding-top:59px;
 text-transform: uppercase;
 }
@@ -732,7 +732,7 @@ text-transform: uppercase;
     gap: 28px;
 }
 .zakaz_homeType{
-    background: #3F3D42;
+    background: #FFFFFF;
 padding: 34px;
 border-radius: 10px;
 margin-top: 33px;
@@ -745,7 +745,7 @@ overflow: hidden;
     font-weight: 700;
     line-height: 35px;
     text-align: left;
-  color: white;
+  color: #1E1E1E;
 }
 .zakaz__shag span{
      font-family: Montserrat;
@@ -762,10 +762,10 @@ font-size: 24px;
 font-weight: 400;
 line-height: 35px;
 text-align: left;
-color: white;
+color: #1E1E1E;
 }
 .zakaz_homeType__button{
-    background: #333335;
+    background: #F5F5F5;
 width: 100%;
 height: 76px;
 font-family: Montserrat;
@@ -773,7 +773,7 @@ font-size: 18px;
 font-weight: 500;
 line-height: 21.94px;
 text-align: center;
-color: #CCCCCC;
+color: #1E1E1E;
 border-radius: 10px;
 display: flex;
 justify-content: center;
@@ -797,7 +797,7 @@ cursor: pointer;
     width: 300px;
 background: url('/img/Abstract Design.svg');
 /* background-size: cover; */
-box-shadow:inset 137px -61px 61px #3F3D42;
+box-shadow:inset 137px -61px 61px white;
 opacity: 0.3;
 }
 .zakaz__select{
@@ -805,7 +805,7 @@ opacity: 0.3;
     display: flex;
     justify-content: space-between;
     padding: 16px 24px 16px 24px;
-    background: #333335;
+    background: #F5F5F5;
     border-radius: 10px;
     z-index: 12;
     position: relative;
@@ -814,7 +814,7 @@ opacity: 0.3;
 cursor: pointer;
 }
 .zakaz__select__h5{
-    color: #CCCCCC;
+    color: #1E1E1E;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -843,7 +843,7 @@ border-radius: 22px;
     margin-bottom: 92px;
 }
 .zakaz__buttons__first{
-    background: #00000078;
+    background: black;
     color: #F8B806;
     font-family: Montserrat;
 font-size: 18px;
@@ -871,7 +871,7 @@ font-size: 36px;
 font-weight: 700;
 line-height: 35px;
 text-align: left;
-color: white;
+color: #1E1E1E;
 }
 .zakaz__buttons__dr{
    margin-top: 0px; 
