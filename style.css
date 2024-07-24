@@ -1274,11 +1274,10 @@ margin: auto;
 text-transform: uppercase;
 padding-left: 7px;
 }
-.universal__title span{
+/* .universal__title span{
     color: #F8A606;
-    position: relative;
-    top: 16px;
-}
+ 
+} */
 .free__etap__body{
     width: 95%;
     max-width: 1449px;
@@ -1658,8 +1657,7 @@ width: 100%;
     max-width: 1440px;
     width: 95%;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+ 
     align-items: stretch;
     gap: 15px;
     border-radius: 10px;
@@ -5102,6 +5100,11 @@ text-align: left;
     .LayerLogoRes{
         margin-bottom: 9px;
     }
+    .universal__title span {
+        color: #F8A606;
+        position: relative;
+        top: 16px;
+    }
 }
 @media (max-width:360px) {
     .posmotry__body {
@@ -5241,4 +5244,20 @@ text-align: left;
         margin-top: 10px;
     }
 
+}
+
+
+
+.universal__title{
+    position: relative;
+}
+.universal__title span{
+    z-index: 1;
+    position: relative;
+}
+.universal__title img{
+    position: absolute;
+    right: 284px;
+    z-index: 0;
+    top: -10px;
 }
