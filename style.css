@@ -1155,10 +1155,11 @@ color: #1E1E1E;
 position: relative;
 }
 .komanda__title span img{
-width: 100%;
-position: absolute;
-left: -10px;
-z-index: 0;
+    width: 102%;
+    position: absolute;
+    left: -10px;
+    z-index: 0;
+    top: -20px;
 }
 .komanda__p{
     max-width: 1440px;
