@@ -1936,7 +1936,8 @@ width: 100%;
 
 .kvartira{
     background-color: #242424;
-    padding-top: 146px;
+    padding-top: 76px;
+    padding-bottom: 12px;
 }
 .kvartira_chags{
     display: grid;
@@ -1994,7 +1995,7 @@ color: white;
     width: 36.79px;
     height: 36.79px;
     border-radius: 50%;
-    border: 7px solid white;
+    border: 7px solid   #1E1E1E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2372,12 +2373,12 @@ border: 1px solid black;
 
 .resultFooter_body{
     display: grid;
-    grid-template-columns: 2.8fr 2fr 1fr;
+    grid-template-columns: 2.8fr 1.6fr 1fr;
     margin: auto;
     width: 95%;
     align-items: center;
     justify-content: space-between;
-    max-width: 1416px;
+    max-width: 1440px;
 }
 .Result_siteFooter{
     background: #242424;
@@ -2413,7 +2414,7 @@ margin-bottom: 25px;
 transition: 1s;
 position: relative;
 top: 16px;
-margin-top: 14px;
+margin-top:7px;
 }
 .resultFooter_body ul li:hover{
     cursor: pointer;
@@ -2426,7 +2427,7 @@ font-size: 16px;
 font-weight: 500;
 line-height: 19.68px;
 text-align: left;
-
+width: 51%;
 }
 .resultFooter_body ul span{
     font-family: Montserrat;
@@ -2450,7 +2451,7 @@ margin-bottom: 10px;
     align-items: center;
     gap: 7px;
     width: 100%;
-    max-width: 194px;
+    max-width: 178px;
     background: #F8B806;
     height: 50px;
     border-radius: 7px;
@@ -2466,7 +2467,7 @@ text-align: left;
 }
 .LayerLogoRes{
     width: 208px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .IconsImg{
     display: block;
@@ -2582,9 +2583,10 @@ text-align: left;
 
 }
 .Come_AndVisitUs_body {
-    background-color: #242424;
-    color: white;
-    padding-top: 74px;
+    background: #F9F9F9;
+
+    color: black;
+    padding-top: 79px;
 }
 .Come_AndVisitUs_body h1{
     font-family: Montserrat;
@@ -2592,9 +2594,7 @@ font-size: 49px;
 font-weight: 700;
 line-height: 73.5px;
 text-align: left;
-width: 95%;
-max-width: 1440px;
-margin: auto;
+
 text-transform: uppercase;
 }
 .Come_AndVisitUs_grid{
@@ -2603,13 +2603,14 @@ text-transform: uppercase;
     width: 95%;
     max-width: 1440px;
     margin: auto;
-    margin-top: 47px;
+    margin-top: 28px;
     align-items: center;
-    padding-bottom: 56px;
+    padding-bottom: 40px;
 }
 .first_guest img{
-    width: 82%;
+    width: 92%;
     /* width: 589px; */
+    height: 449px;
     margin-top: 17px;
     margin-bottom: 16px;
 }
@@ -2690,19 +2691,19 @@ text-align: left;
 
 .Main_for_Question{
     width: 100%;
-    background-color: #3F3D42;
+    background: #FFFFFF;
     padding-bottom: 156px;
     padding-top: 50px;
 }
 .Main_for_QuestionBody h1{
     text-transform: uppercase;
-    color: white;
+    color: black;
     font-family: Montserrat;
 font-size: 50px;
 font-weight: 700;
 line-height: 75px;
 text-align: left;
-margin-bottom: 36px;
+margin-bottom: 41px;
 }
 .Main_for_QuestionBody h1 span{
     font-family: Montserrat;
@@ -2720,7 +2721,7 @@ color: #F8B806;
 .accorQuestion_body{
     width: 97%;
     height: 96px;
-    background: #2A2A2A;
+    background: #F5F5F5;
     border-radius: 7px;
     display: flex;
     align-items: center;
@@ -2735,13 +2736,14 @@ font-size: 24px;
 font-weight: 600;
 line-height: 36px;
 text-align: left;
-color: white;
+color: black;
 }
 .accorAnswer_body {
     width: 97%;
     padding-left: 26px;
     min-height: 74px;
-    background-color: #2A2A2A;
+    background: #F5F5F5;
+
     margin-top: -12px;
     border-radius: 7px;
     display: flex;
@@ -2771,7 +2773,7 @@ font-size: 20px;
 font-weight: 400;
 line-height: 30px;
 text-align: left;
-color: white;
+color: black;
 }
 .close_answer{
     width: 100%;
@@ -2940,8 +2942,8 @@ color: white;
 
 
 .app_BgMain{
-    background-color: #2A2A2A;
-    padding-bottom: 90px;position: relative;
+    background: #F9F9F9;
+    padding-bottom: 88px;position: relative;
     padding-top: 183px;
 
 }
@@ -2949,7 +2951,7 @@ color: white;
     width: calc(95% - 200px);
     max-width: 1440px;
     margin: auto;
-    display: none;
+    /* display: none; */
 }
 .AbstractDesign{
 position: absolute;
@@ -2966,9 +2968,9 @@ opacity: 0.37;
 .swiperYandex{
     width: 100%;
     height: auto;
-    background-color: #3F3D42;
+    background-color: white;
     /* max-width: 310px; */
-    color: white;
+    color: black;
     border-radius: 6px;
 }
 .swiperHeader{
@@ -3083,7 +3085,7 @@ font-size: 50px;
 font-weight: 700;
 line-height: 75px;
 text-align: left;
-color: white;
+color: black;
 text-transform: uppercase;
 }
 .MainGet_money h1 span{
@@ -3099,17 +3101,17 @@ color: #F8B806;
     display: none;
 }
 .MainGet_money{
-    width: calc(95% - 200px) ;
-    max-width: 1440px;
-    padding-top: 65px;
+    width: calc(95% - 200px);
+    max-width: 1434px;
     margin: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 .bigGrid_templateDiv_body{
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2.9fr 2fr;
     margin-top: 51px;
     position: relative;
-    gap: 20px;
     z-index: 121;
 }
 .firstVideo{
@@ -3117,7 +3119,7 @@ color: #F8B806;
     justify-content: center;
     align-items: center;
     background: url('/img/Rectangle\ 1893.png') no-repeat;
-    width: 100%;
+    width: 98%;
     height:728px;
     background-position: center;
     border-radius: 7px;
@@ -3130,7 +3132,7 @@ font-size: 24px;
 font-weight: 600;
 line-height: 36px;
 text-align: left;
-color: white;
+color: black;
 margin-bottom: 26px;
 
 }
@@ -3147,7 +3149,7 @@ font-size: 20px;
 font-weight: 400;
 line-height: 30px;
 text-align: left;
-color: white;
+color: black;
 }
 .dataDisplayFlex p{
     font-family: Montserrat;
@@ -3155,7 +3157,7 @@ font-size: 20px;
 font-weight: 700;
 line-height: 24.6px;
 text-align: center;
-color: white;
+color: black;
 }
 .secondDescribe h4{
     font-family: Montserrat;
@@ -3163,7 +3165,7 @@ font-size: 24px;
 font-weight: 700;
 line-height: 36px;
 text-align: left;
-color: white;
+color: black;
 margin-top: 32px;
 margin-bottom: 20px;
 }
@@ -3192,12 +3194,12 @@ font-size: 20px;
 font-weight: 400;
 line-height: 24.6px;
 text-align: left;
-color: white;
+color: black;
 }
 
 
  .Country_input{
-    background: #333335;
+    background: white;
     width: 77%;
     padding-left: 10px;
     height: 56px;
@@ -3218,6 +3220,9 @@ color: white;
   background: #333335;
   overflow: hidden;
   display: none;
+ }
+ .Country_input_action .bx-chevron-down{
+    color: black;
  }
  .Country_input__modal__option{
     width: 90%;
@@ -3301,8 +3306,7 @@ border: none;
  .Object_arrow{
     position: absolute;
     bottom: 0;
-    transform: rotate(99deg);
-    width: 16%;
+        width: 16%;
     right: 50px;
  }
  .inputArrowAbsolute{
@@ -3320,7 +3324,7 @@ font-size: 22px;
 font-weight: 400;
 line-height: 27.06px;
 text-align: left;
-color: white;
+color: black;
  }
  .PersonalData h3 span{
     color: #F8B806;
@@ -3355,12 +3359,12 @@ font-size: 50px;
 font-weight: 700;
 line-height: 75px;
 text-align: left;
-color: white;
+color: black;
 text-transform: uppercase;
 margin: auto;
 
 margin-bottom: 50px;
-margin-top:99px;
+margin-top:37px;
 width: 95%;
 max-width: 1440px;
 }
@@ -3760,7 +3764,7 @@ color: #F8B806;
     width: 95%;
     max-width: 1440px;
     margin: auto;
-    padding-bottom: 168px;
+    padding-bottom:0px;
     position: relative;
     z-index: 234;
  }
@@ -3924,6 +3928,7 @@ text-align: center;
     max-width: 1440px;
     margin: auto;
     width: 100%;
+    padding-bottom: 67px;
 }
 
 .rielter_title {
@@ -3934,14 +3939,15 @@ text-align: center;
   font-size: 50px;
   font-weight: 700;
   line-height: 75px;
-   color: white;
+   color: black;
 
 }
 .rielter_title h1 span{
     color: #F8B806;
 }
 .rielter_cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: stretch;
     justify-content: center;
     gap: 15px;
@@ -3949,11 +3955,12 @@ text-align: center;
     flex-wrap: wrap;
 }
 .rielter_card{
-    width:710px;
+    width:100%;
     
     padding: 30px 0px 0px 0px; 
     border-radius: 10px;
-    background: rgba(128, 128, 128, 0.357);
+    background: white;
+    box-shadow: 0px 4px 20px 0px #0000000F;
     margin-bottom: 20px;
 }
 .rielter_card h2{
@@ -3972,10 +3979,13 @@ text-align: center;
 .rielter_p p{
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
-    color: white;
+    color: black;
     margin-top: 16px;
     letter-spacing: 0.  1px;
     line-height: 30px;
+}
+.rielter_p2 p{
+    color: black;
 }
 .rielter_text{
     padding-top: 7px;
@@ -3992,26 +4002,28 @@ text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     line-height: 30px;
-    color: white;
+    color: black;
     margin-bottom: 24px;
     letter-spacing: 0.01px;
 }
 .rielter_p2 p{
       font-size: 20px;
     font-family: "Montserrat", sans-serif;
-    color: white;
+    color: black;
     margin-top: 19px;
     letter-spacing: 0.001px;
     line-height: 30px;
+    margin-bottom: 31px;
 }
-.rielter_inside
-{
+.rielter_inside {
     width: 94%;
     margin: auto;
     /* margin-left: 27px; */
-    padding: 27px;
+    padding: 32px;
+    padding-top: 28px;
     padding-bottom: 7px;
 }
+ 
 .rielter_insider{
     width: 94%;
     margin: auto;
@@ -4020,6 +4032,12 @@ text-align: center;
 }
 .rielter_text4{
     padding-top: 1.5px;
+}
+.rielter_text2{
+    margin-top: 29px !important;
+}
+.rielter_text3{
+    margin-top: 30px !important;
 }
 #carf{
     display: none;
@@ -4930,4 +4948,46 @@ margin-bottom: 32px;
         z-index: 12;
         margin-top: 30px;
     }
+}
+
+
+.IconDivNav{
+    background: #F8B806;
+    width: 52px;
+    height: 52px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.IconDivNav:hover{
+    opacity: 0.37;
+}
+.IconNavigate{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    height: 52px;
+    width: 22%;
+    border-radius: 8px;
+}
+.NavigateFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+max-width: 1440px;
+margin: auto;
+}
+.IconNavigate span{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+text-align: left;
+text-decoration: underline;
+}
+.UlFor_pk{
+    margin-top: 27px;
 }
