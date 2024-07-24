@@ -321,6 +321,7 @@ header.header {
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    overflow: hidden;
 }
 
 .header__body {
@@ -3759,6 +3760,8 @@ color: #F8B806;
     max-width: 1440px;
     margin: auto;
     padding-bottom: 168px;
+    position: relative;
+    z-index: 234;
  }
  .oneCategoryBtn{
     display: flex;
@@ -3816,7 +3819,7 @@ color: white;
     padding-top: 20px;
 }
 .mySwiper2 {
-    width: 93%;
+    width: calc(95% - 91px);
     height: 100%;
   overflow: visible !important;
   margin-top: 28px;
@@ -4159,8 +4162,10 @@ text-align: center;
 
 @media(max-width:1200px){
     .newOffersMarket_body{
-width: calc(100% -200px);
+width: 100%;
 margin: auto;
+position: relative;
+z-index: 123;
     }
 }
  
@@ -4242,6 +4247,14 @@ margin: auto;
         width: 98%;
         position: relative;
         top: 19px;
+    }
+    .mySwiper2 {
+        width: 100%;
+        /* width: calc(95% - 91px); */
+        height: 100%;
+        overflow: visible !important;
+        margin-top: 28px;
+        max-width: 1308px;
     }
 }
 @media (max-width:854px) {
@@ -4687,7 +4700,8 @@ text-align: center;
 
                 }
                 .SwiperAboutHome{
-                    width: 310px;
+                    width: 90%;
+                   margin-left: 5%;
                 }
                 .mySwiper2 .swiper-slide img{
                     height: 200px;
