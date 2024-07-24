@@ -1288,11 +1288,7 @@ margin: auto;
 text-transform: uppercase;
 padding-left: 7px;
 }
-.universal__title span{
-    color: #F8A606;
-    position: relative;
-    top: 2px;
-}
+
 .free__etap__body{
     width: 95%;
     max-width: 1449px;
@@ -1659,9 +1655,9 @@ width: 100%;
 
 /* yuridik */
 .yuridik{
-    background: #3F3D42;
+    background: white;
     padding-top: 48px;
-    padding-bottom: 59px;
+    padding-bottom: 203px;
 }
 .yuridik .universal__title{
     letter-spacing: -0.8px;
@@ -1669,124 +1665,69 @@ width: 100%;
 }
 .yuridik .free_etap__p{
     padding-top: 15px;
+    color: black;
 }
 .yuridik__cards{
     max-width: 1440px;
     width: 95%;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     align-items: stretch;
     gap: 15px;
     border-radius: 10px;
-    margin-top: 47px;
-}
-.yuridik__card{
-    background: #2A2A2A;
-    padding: 18px;
-border-radius: 10px;
-}
-.yuridik__card__h5{
+    margin-top: 53px;
+ }
+ .oneYuridik_card{
+    display: grid;
+    grid-template-columns: 91px 2fr 5fr;
+    width: 100%;
+    align-items: center;
+    background: #F5F5F5;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    border-radius: 7px;
+    margin-bottom: 17px; 
+ }
+ .oneYuridik_card h3{
+    transform: rotate(-90deg);
     font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 36px;
-    text-align: left;
-    
-    color: #F8B806;
-
-}
-.yuridik__card__h6{
+font-size: 30px;
+font-weight: 600;
+line-height: 45px;
+text-align: left;
+color: #F8B806;
+ }
+ .oneYuridik_card p{
     font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    text-align: left;
-    color: #F8B806;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-.yuridik__card__p{
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+ }
+ .oneYuridik_card h2{
     font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-color: white;    
-}
-.yuridik__card{
-    padding-bottom: 17px;
-}
-.yuridik__card__1{
-    padding-bottom: 104px;
-}
-.yuridik__card__5{
-    margin-bottom: 27px;
-}
-@media(max-width:1048px){
-    .yuridik__card__1{
-        padding-bottom: 17px;
-    }
-}
-@media(max-width:991px){
-    .yuridik__cards{
-        max-width: 1440px;
-        width: 95%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: stretch;
-        gap: 15px;
-        border-radius: 10px;
-        margin-top: 47px;
-    }
-    .yuridik__card__5{
-        margin-bottom: 0px;
-    }
-}
-@media(max-width:550px){
-    .yuridik__cards{
-        max-width: 1440px;
-        width: 95%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr ;
-        align-items: stretch;
-        gap: 15px;
-        border-radius: 10px;
-        margin-top: 47px;
-    } 
-    .yuridik__card__h5{
-        font-family: Montserrat;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 30px;
-        text-align: center;
-         
-    }
-    .yuridik__card__h6{
-        font-family: Montserrat;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 30px;
-        text-align: center;
-color: white;        
-    }
-    .yuridik__card__p{
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: center;
-        
-    }
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+text-align: left;
+margin-left: 8px;
+ }
+ 
+ .secondYuridik_step{
+    padding-top: 60px;
+    padding-bottom: 55px;
+ }
+
+.thirdYuridik_step{
+    padding-top: 67px;
+    padding-bottom: 57px;
 }
 
 
 
-
-
-
+.fourthYuridik_step{
+    padding-top: 39px;
+padding-bottom: 41px;
+}
 
 
 
@@ -1802,9 +1743,10 @@ color: white;
 
 .posmotry{
     background: #F9F9F9;
-    padding-top: 106px;
     position: relative;
     overflow: hidden;
+    padding-top: 69px;
+
 }
 .posmotry__decore_img{
     position: absolute;
@@ -1916,6 +1858,9 @@ color: black;
 .posmotry .universal__title{
     position: relative;
     z-index: 1;
+}
+.posmotry .universal__title span{
+    color: #F8B806;
 }
 .posmotry__actoin__click__first{
     display: none;
@@ -2053,6 +1998,8 @@ color: white;
     }
     
 }
+
+
 @media (max-width: 1110px) and (min-width: 991px) {
     .kvartira_shag__p {
         font-family: Montserrat;
@@ -2065,11 +2012,33 @@ color: white;
     }
 }
 @media(max-width:991px){
-    .kvartira{
-        display: none;
+    .kvartira_chags{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
     }
 }
-
+@media(max-width:632px){
+    .kvartira_chags{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .kvartira_shag{
+        position: relative;
+        max-width: 90% !important;
+    }
+    .kvartira_shag__p{
+width: 100%;
+    }
+    .kvartira_shag_img{
+        width: 58px;
+    }
+    .kvartira_shag_img_1 {
+        position: absolute;
+        top: 79px;
+        right: -51px;
+        transform: rotateZ(-274deg) rotateX(180deg);
+    }    
+}
 .CallMe_back_modal{
     display: flex;
     justify-content: center;
@@ -3325,7 +3294,12 @@ text-align: center;
 color: #858585;
 
  }
-
+.universal__title_second{
+    color: white;
+}
+.universal__title_second span{
+    color: #F8A606;
+} 
  .Evaluate_btn{
     width:81%;
     height: 72px;
@@ -5136,6 +5110,11 @@ text-align: left;
     .LayerLogoRes{
         margin-bottom: 9px;
     }
+    .universal__title span {
+        color: #F8A606;
+        position: relative;
+        top: 16px;
+    }
 }
 @media (max-width:360px) {
     .posmotry__body {
@@ -5275,4 +5254,20 @@ text-align: left;
         margin-top: 10px;
     }
 
+}
+
+
+
+.universal__title{
+    position: relative;
+}
+.universal__title span{
+    z-index: 1;
+    position: relative;
+}
+.universal__title img{
+    position: absolute;
+    right: 284px;
+    z-index: 0;
+    top: -10px;
 }
