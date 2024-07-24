@@ -1999,6 +1999,8 @@ color: white;
     }
     
 }
+
+
 @media (max-width: 1110px) and (min-width: 991px) {
     .kvartira_shag__p {
         font-family: Montserrat;
@@ -2011,11 +2013,33 @@ color: white;
     }
 }
 @media(max-width:991px){
-    .kvartira{
-        display: none;
+    .kvartira_chags{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
     }
 }
-
+@media(max-width:632px){
+    .kvartira_chags{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .kvartira_shag{
+        position: relative;
+        max-width: 90% !important;
+    }
+    .kvartira_shag__p{
+width: 100%;
+    }
+    .kvartira_shag_img{
+        width: 58px;
+    }
+    .kvartira_shag_img_1 {
+        position: absolute;
+        top: 79px;
+        right: -51px;
+        transform: rotateZ(-274deg) rotateX(180deg);
+    }    
+}
 .CallMe_back_modal{
     display: flex;
     justify-content: center;
@@ -3271,7 +3295,12 @@ text-align: center;
 color: #858585;
 
  }
-
+.universal__title_second{
+    color: white;
+}
+.universal__title_second span{
+    color: #F8A606;
+} 
  .Evaluate_btn{
     width:81%;
     height: 72px;
