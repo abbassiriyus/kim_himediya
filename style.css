@@ -3958,10 +3958,12 @@ text-align: center;
   font-weight: 700;
   line-height: 75px;
    color: black;
+   text-transform: uppercase;
 
 }
 .rielter_title h1 span{
     color: #F8B806;
+    text-transform: uppercase;
 }
 .rielter_cards{
     display: flex;
@@ -3973,7 +3975,7 @@ text-align: center;
     flex-wrap: wrap;
 }
 .rielter_card{
-    width:713px;
+    width:49%;
     
     padding: 30px 0px 0px 0px; 
     border-radius: 10px;
@@ -4674,9 +4676,7 @@ text-align: left;
             margin-right: 20px;
             margin-top: 24px;
             align-items: center;}
-            .posmotry__body{
-                max-width:310px;
-            }
+ 
             .posmotry__text__p{
                 font-family: Montserrat;
 font-size: 16px;
@@ -4981,6 +4981,7 @@ margin-bottom: 32px;
     width: 95%;
 max-width: 1440px;
 margin: auto;
+flex-wrap: wrap;
 }
 .IconNavigate span{
     font-family: Montserrat;
@@ -4992,4 +4993,187 @@ text-decoration: underline;
 }
 .UlFor_pk{
     margin-top: 27px;
+}
+.Phonenum_for_media{
+    display: none;
+}
+@media (max-width:520px) {
+    .first_guest img{
+        height: auto;
+    }
+    .IconNavigate{
+        width: 100%;
+        background: none;
+    
+        margin-top: 10px;
+    }
+    .IconNavigate span{
+        font-family: Montserrat;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+
+    }
+    .IconDivNav{
+        width: 44px;
+        height: 44px;
+    }
+    .IconDivNav img{
+        width: 20px;
+    }
+    .resultFooter_body ul h3{
+        display: none;
+    }
+    .Phonenum_for_media{
+        display: block;
+        font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.22px;
+text-align: left;
+
+    }
+    .LayerLogoRes{
+        margin-bottom: 9px;
+    }
+}
+@media (max-width:360px) {
+    .posmotry__body {
+        max-width: 318px;
+    }
+    .posmotry__body{
+        gap: 11px;
+    }
+    .posmotry__text__p{
+        width: 98%;
+    }
+    .posmotry__img img {
+        width: 98%;
+        margin-top: 6px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
+    .posmotry__actoin__button {
+        width: 98%;
+    }
+    .newOffersMarket h1 {
+        width: 88%;
+        margin-left: 7px;
+    }
+    .app_BgMain {
+        padding-top: 62px;
+    }
+    .select_forMedia select{
+        margin-left: 0;
+    }
+    .swipper__button_df{
+        max-width: 320px;
+    }
+    .rielter_header{
+        padding-top: 0px;
+    }
+    .rielter_title h1{
+        font-size: 27px;
+    }
+    .rielter_card{
+        padding: 0px 0px 0px 0px;
+    }
+    .rielter_text{
+        margin-top: 6px !important;
+    }
+    .rielter_inside{
+        padding: 14px;
+    }
+    .rielter_text2 {
+        margin-top: 21px !important;
+    }
+    .rielter_text3 {
+        margin-top: 25px !important;
+    }
+    .extraText br{
+        display: none;
+    }
+    .rielter_finis {
+        margin-top: 23px;
+    }
+    .rielter_p2 p{
+        margin-top: 26px;
+        margin-bottom: 25px;
+    }
+    .rielter_insider {
+        margin-left: 15px;
+    }
+    .rielter_text4 br{
+        display: none;
+    }
+ .MediaStrong_p{
+    width: 101%;
+ }
+ .MainGet_money h1 br{
+    display: none;
+ }
+ .secondDescribe{
+    width: 91%;
+    margin-top: 20px;
+ }
+ .Evaluate_btn{
+    margin-top: 18px;
+    height: 73px;
+ }
+ .PersonalData {
+    display: flex;
+    gap: 5px;
+    margin-top: 9px;
+    margin-left: 0px;
+}
+.otziv h1{
+    margin-top: 49px;
+    margin-bottom: 29px;
+}
+.extraSwip_btns{
+    max-width: 313px;
+    margin-left: 2px;
+    margin-top: 32px;
+}
+.ApplicationSwiper .swiper-slide {
+    width: 310px !important;
+}
+.ApplicationSwiper{
+    max-width: 310px;
+}
+.swiperHeader {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 17px;
+    left: 20px;
+}
+.BelowHeader p{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.68px;
+    text-align: left;
+    margin-top: 8px;
+    margin-left: 3px;
+    }
+    .Main_for_QuestionBody h1{
+        margin-bottom: 33px;
+    }
+    .Come_AndVisitUs_body{
+        padding-top: 80px;
+    }
+    .Come_AndVisitUs_body h1 {
+        max-width: 312px;
+        margin: auto;
+    }
+    .IconNavigate{
+        width: 100%;
+        background: none;
+        max-width: 312px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
 }
