@@ -579,7 +579,7 @@ height: 58px;
     min-height: 481px;
     margin-top: 0px;
     padding-top: 59px;
-    padding-bottom: 114px;
+    padding-bottom: 61px;
 }
 .chosen__p{
     font-family: Montserrat;
@@ -727,7 +727,7 @@ font-weight: 700;
 line-height: 60.95px;
 text-align: left;
 color: #1e1e1e;
-width: 105%;
+width: 100%;
 padding-top:59px;
 text-transform: uppercase;
 }
@@ -1031,6 +1031,9 @@ margin-top: 14px;
         height: 60px;
         border-radius: 10px;
     }  
+    .zakaz_homeType__dr {
+        padding-bottom: 63px !important;
+    }
     .out__team__logos__itemYoutobe{
         display: none;
     }
@@ -1045,6 +1048,9 @@ margin-top: 14px;
         gap: 24px;
         margin-top: 31px;
         padding-bottom: 39px;
+    }
+    .zakaz__buttons__first{
+        margin-top: 19px;
     }
 }
 @media(max-width:450px){
@@ -1152,7 +1158,7 @@ font-size: 20px;
     line-height: 50px;
     text-align: left;
     color: #1E1E1E;
-    max-width: 1440px;
+    max-width: 1423px;
     width: 95%;
     margin: auto;
     padding-top: 21px;
@@ -1163,14 +1169,15 @@ color: #1E1E1E;
 position: relative;
 }
 .komanda__title span img{
-    width: 102%;
+    width: 103%;
     position: absolute;
-    left: -10px;
+    left: -8px;
     z-index: 0;
     top: -20px;
+
 }
 .komanda__p{
-    max-width: 1440px;
+    max-width: 1427px;
     width: 95%;
     margin: auto;
     font-family: Montserrat;
@@ -1291,7 +1298,7 @@ font-weight: 700;
 line-height: 75px;
 text-align: left;
 color: #1E1E1E;
-max-width: 1440px;
+max-width: 1431px;
 width: 95%;
 margin: auto;
 text-transform: uppercase;
@@ -1666,8 +1673,8 @@ width: 100%;
 .yuridik{
     background: white;
     padding-top: 48px;
-    display: none;
     padding-bottom: 203px;
+    /* display: none; */
 }
 .yuridik .universal__title{
     letter-spacing: -0.8px;
@@ -1753,7 +1760,7 @@ padding-bottom: 41px;
 
 .posmotry{
     background: #F9F9F9;
-    background-color: #1E1E1E;
+    /* background-color: #1E1E1E; */
     padding-top: 106px;
     position: relative;
     overflow: hidden;
@@ -1772,7 +1779,7 @@ padding-bottom: 41px;
     display: grid;
     grid-template-columns: 1fr 1.4fr;
     margin-top: 53px;
-    gap: 14px;
+    gap: 25px;
     margin-bottom: 5%;
 }
 .posmotry__img img{
@@ -1798,7 +1805,7 @@ margin-bottom: 16px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
-    color: white;
+    /* color: white; */
     margin-bottom: 25px;
 }
 .posmotry__actoin{
@@ -1819,6 +1826,10 @@ margin-bottom: 16px;
     line-height: 21.78px;
     text-align: center;
     color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .posmotry__arrow{
     display: flex;
@@ -1923,7 +1934,7 @@ width: 100%;
 
 .kvartira{
     background-color: #242424;
-    padding-top: 146px;
+    padding-top: 75px;  
 }
 .kvartira_chags{
     display: grid;
@@ -2383,7 +2394,7 @@ border: 1px solid black;
 
 .resultFooter_body{
     display: grid;
-    grid-template-columns: 2.8fr 2fr 1fr;
+    grid-template-columns: 3.5fr 2fr 1fr;
     margin: auto;
     width: 95%;
     align-items: center;
@@ -2411,6 +2422,18 @@ border: 1px solid black;
 }
 .worldSquard img{
     width: 42px !important;
+}
+.worldSquard1{
+    width: 70px;
+    height: 70px;
+    background: #333335;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.worldSquard1 img{
+    width: 60px !important;
 }
 .resultFooter_body ul li{
    list-style: none;
@@ -2513,7 +2536,7 @@ text-align: left;
     align-items: center;
     background-color: #242424;
     color: white;
-    padding-top: 24px;
+    padding-top:16px;
     padding-bottom: 10px;
 }
 .Footer_center_p p{
@@ -2593,8 +2616,8 @@ text-align: left;
 
 }
 .Come_AndVisitUs_body {
-    background-color: #242424;
-    color: white;
+    background: #F5F5F5;
+    color: black;
     padding-top: 74px;
 }
 .Come_AndVisitUs_body h1{
@@ -2614,13 +2637,14 @@ text-transform: uppercase;
     width: 95%;
     max-width: 1440px;
     margin: auto;
-    margin-top: 47px;
+    margin-top:29px;
     align-items: center;
-    padding-bottom: 56px;
+    padding-bottom: 43px;
 }
 .first_guest img{
-    width: 82%;
+    width: 95%;
     /* width: 589px; */
+    height: 449px;
     margin-top: 17px;
     margin-bottom: 16px;
 }
@@ -2701,13 +2725,13 @@ text-align: left;
 
 .Main_for_Question{
     width: 100%;
-    background-color: #3F3D42;
+    background-color: white;
     padding-bottom: 156px;
     padding-top: 50px;
 }
 .Main_for_QuestionBody h1{
     text-transform: uppercase;
-    color: white;
+    color: black;
     font-family: Montserrat;
 font-size: 50px;
 font-weight: 700;
@@ -2731,7 +2755,8 @@ color: #F8B806;
 .accorQuestion_body{
     width: 97%;
     height: 96px;
-    background: #2A2A2A;
+    background: #F5F5F5;
+
     border-radius: 7px;
     display: flex;
     align-items: center;
@@ -2746,13 +2771,13 @@ font-size: 24px;
 font-weight: 600;
 line-height: 36px;
 text-align: left;
-color: white;
+color: black;
 }
 .accorAnswer_body {
     width: 97%;
     padding-left: 26px;
     min-height: 74px;
-    background-color: #2A2A2A;
+    background: #F5F5F5;
     margin-top: -12px;
     border-radius: 7px;
     display: flex;
@@ -2782,7 +2807,7 @@ font-size: 20px;
 font-weight: 400;
 line-height: 30px;
 text-align: left;
-color: white;
+color: black;
 }
 .close_answer{
     width: 100%;
@@ -2951,16 +2976,18 @@ color: white;
 
 
 .app_BgMain{
-    background-color: #2A2A2A;
-    padding-bottom: 90px;position: relative;
-    padding-top: 183px;
+    background-color:#F9F9F9;
+ 
+    padding-bottom: 90px;
+    position: relative;
+    padding-top:57px;
 
 }
 .MainGet_money{
     width: calc(95% - 200px);
     max-width: 1440px;
     margin: auto;
-    display: none;
+   
 }
 .AbstractDesign{
 position: absolute;
@@ -3094,7 +3121,7 @@ font-size: 50px;
 font-weight: 700;
 line-height: 75px;
 text-align: left;
-color: white;
+color: black;
 text-transform: uppercase;
 }
 .MainGet_money h1 span{
@@ -3141,7 +3168,7 @@ font-size: 24px;
 font-weight: 600;
 line-height: 36px;
 text-align: left;
-color: white;
+color: black;
 margin-bottom: 26px;
 
 }
@@ -3158,7 +3185,7 @@ font-size: 20px;
 font-weight: 400;
 line-height: 30px;
 text-align: left;
-color: white;
+color: black;
 }
 .dataDisplayFlex p{
     font-family: Montserrat;
@@ -3166,7 +3193,7 @@ font-size: 20px;
 font-weight: 700;
 line-height: 24.6px;
 text-align: center;
-color: white;
+color: black;
 }
 .secondDescribe h4{
     font-family: Montserrat;
@@ -3174,7 +3201,7 @@ font-size: 24px;
 font-weight: 700;
 line-height: 36px;
 text-align: left;
-color: white;
+color: black;
 margin-top: 32px;
 margin-bottom: 20px;
 }
@@ -3203,7 +3230,7 @@ font-size: 20px;
 font-weight: 400;
 line-height: 24.6px;
 text-align: left;
-color: white;
+color: black;
 }
 
 
@@ -3213,7 +3240,7 @@ color: white;
     padding-left: 10px;
     height: 56px;
     border-radius: 10px;
-    margin-top: 8px;
+    margin-top:21px;
     outline: none;
     gap: 10px;
     display: grid;grid-template-columns: 77px 50px auto;
@@ -3311,15 +3338,15 @@ color: #858585;
 font-size: 18px;
 font-weight: 500;
 line-height: 22.14px;
-margin-top: 25px;
+margin-top: 13px;
 border: none;
  }
  .Object_arrow{
     position: absolute;
     bottom: 0;
-    transform: rotate(99deg);
+    /* transform: rotate(99deg); */
     width: 16%;
-    right: 50px;
+    right: 31px;
  }
  .inputArrowAbsolute{
     position: relative;
@@ -3336,7 +3363,7 @@ font-size: 22px;
 font-weight: 400;
 line-height: 27.06px;
 text-align: left;
-color: white;
+color: black;
  }
  .PersonalData h3 span{
     color: #F8B806;
@@ -3371,7 +3398,7 @@ font-size: 50px;
 font-weight: 700;
 line-height: 75px;
 text-align: left;
-color: white;
+color: black;
 text-transform: uppercase;
 margin: auto;
 
@@ -3761,7 +3788,7 @@ font-size: 50px;
 font-weight: 700;
 line-height: 75px;
 text-align: left;
-color: white;
+color: black;
 text-transform: uppercase;
  }
  .newOffersMarket h1 span{
@@ -3776,7 +3803,7 @@ color: #F8B806;
     width: 95%;
     max-width: 1440px;
     margin: auto;
-    padding-bottom: 168px;
+    padding-bottom: 179px;
     position: relative;
     z-index: 234;
  }
@@ -3791,7 +3818,7 @@ color: #F8B806;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 60px;
-    background: #797979;
+    background: #EFEFEF;
     margin-top: 52px;
  }
  .oneCategoryBtn span{
@@ -3800,7 +3827,7 @@ font-size: 18px;
 font-weight: 500;
 line-height: 21.94px;
 text-align: center;
-color: white;
+color: black;
  }
 
 
@@ -3832,7 +3859,7 @@ color: white;
     top: 48% !important;
 }
 .bodyDescribe_Home{
-    color: white;
+    color: black;
     padding-top: 20px;
 }
 .mySwiper2 {
@@ -3910,7 +3937,7 @@ text-align: left;
  
 }
 .bodyDescribe_Home{
-    background: #3F3D42;
+    background: white;
     padding-bottom: 17px;
 }
 .bodyDescribe_Home p{
@@ -3935,7 +3962,9 @@ text-align: center;
 
 
 /* rielter */
-  
+  .rielter{
+    padding-bottom: 78px;
+  }
 .rielter_header{
     max-width: 1440px;
     margin: auto;
@@ -3975,7 +4004,8 @@ text-align: center;
     
     padding: 30px 0px 0px 0px; 
     border-radius: 10px;
-    background: rgba(128, 128, 128, 0.357);
+    box-shadow: 0px 4px 20px 0px #0000000F;
+    background-color: white;
     margin-bottom: 20px;
 }
 .rielter_card h2{
@@ -3994,10 +4024,11 @@ text-align: center;
 .rielter_p p{
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
-    color: white;
+    color: black;
     margin-top: 16px;
     letter-spacing: 0.  1px;
     line-height: 30px;
+    margin-bottom: 29px;
 }
 .rielter_text{
     padding-top: 7px;
@@ -4014,25 +4045,27 @@ text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     line-height: 30px;
-    color: white;
+    color: black;
     margin-bottom: 24px;
     letter-spacing: 0.01px;
 }
 .rielter_p2 p{
       font-size: 20px;
     font-family: "Montserrat", sans-serif;
-    color: white;
+    color: black;
     margin-top: 19px;
     letter-spacing: 0.001px;
     line-height: 30px;
+    margin-bottom: 29px;
 }
 .rielter_inside
 {
     width: 94%;
     margin: auto;
     /* margin-left: 27px; */
-    padding: 27px;
+    padding: 35px;
     padding-bottom: 7px;
+    padding-top: 28px;
 }
 .rielter_insider{
     width: 94%;
@@ -4045,6 +4078,22 @@ text-align: center;
 }
 #carf{
     display: none;
+}
+.rielter_inside h3{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+text-align: left;
+color: #F8B806;
+}
+.rielter_p2 h3{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+text-align: left;
+color: #F8B806;
 }
 @media(max-width:725px){
     .rielter_title{
@@ -4212,7 +4261,8 @@ z-index: 123;
         height: 60px;
         border: 1px solid #979797;
          margin-top: 25px;
-    background: #00000078;
+         background: #1E1E1E;
+
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -4279,6 +4329,9 @@ z-index: 123;
         margin-top: 28px;
         max-width: 1308px;
     }
+}
+.chosen__card{
+    margin-bottom: 54px;
 }
 @media (max-width:854px) {
     .header__ul {
@@ -4365,9 +4418,7 @@ line-height: 34.13px;
 text-align: center;
 
     }
-    .chosen__card{
-        margin-bottom: 54px;
-    }
+   
     
     .chosen__card__h6{
         font-family: Montserrat;
@@ -4874,6 +4925,11 @@ text-align: center;
         max-width: 300px;
         border: none;
     }
+    .partnyor {
+        background-color: #2A2A2A;
+        margin-top: 0px;
+        padding-top: 1px;
+    }
     .header__body h5 {
     
         display: none;
@@ -4974,7 +5030,7 @@ margin-bottom: 32px;
         font-weight: 400;
         /* line-height: 17px; */
         text-align: left;
-        color: white;
+        color: #1e1e1e;
     }
     
     .zakaz_sectiontitle {
@@ -5047,7 +5103,7 @@ header.header {
     align-items: center;
     background-color: white;
     height: 52px;
-    width: 22%;
+    width: 25%;
     border-radius: 8px;
 }
 .NavigateFlex{
@@ -5057,7 +5113,6 @@ header.header {
     width: 95%;
 max-width: 1440px;
 margin: auto;
-flex-wrap: wrap;
 }
 .IconNavigate span{
     font-family: Montserrat;
@@ -5066,6 +5121,7 @@ font-weight: 700;
 line-height: 30px;
 text-align: left;
 text-decoration: underline;
+color: black;
 }
 .UlFor_pk{
     margin-top: 27px;
