@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         html,
         body {
@@ -379,26 +380,35 @@
                     <!-- <p class="komanda_card_p"><strong>Фотограф</strong> сделает качественные снимки и сделает так, чтобы
                         покупатели хотели вашу квартиру. Не забывайте, до 50% всех покупателей - визуалы, то есть
                         покупают «глазами».</p> -->
+                        <p>Фотограф</p>
                 </div>
                 <div id="EctraCardKomanda" class="komanda_card">
                     <img class="komanda_card_img_second" src="/img/Rectangle 1903.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Копирайтеры </strong>напишут тексты, которые продадут вашу
                         недвижимость быстрее и дороже</p> -->
+                        <p>Копирайтеры</p>
+                        
                 </div>
                 <div id="EctraCardKomanda" class="komanda_card">
                     <img class="komanda_card_img_second" src="/img/Rectangle 1904.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Маркетологи</strong> детально проанализируют рынок и вашу целевую
                         аудиторию, проведут предпродажную подготовку, запустят рекламную кампанию</p> -->
+                        <p>Маркетологи</p>
                 </div>
                 <div class="komanda_card">
                     <img class="komanda_card_img" src="/img/Group 34536.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Риелторы</strong> с базой более 5000 потенциальных покупателей из
                         нашей клиентской базы</p> -->
+                        <div class="Absolute_bottomYellow">Риэлтеры</div>
+                        <p>Риэлтеры</p>
+
                 </div>
                 <div id="komanda_meda" class="komanda_card">
                     <img class="komanda_card_img" src="/img/Rectangle 1906.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Агенты </strong>гарантируют 100% <br> безопасность и чистоту
                         сделки</p> -->
+                        <div class="Absolute_bottomYellow">Агенты</div>
+                        <p>Агенты</p>
                 </div>
             </div>
             <div class="komanda_cards__second">
@@ -406,17 +416,23 @@
                     <img class="komanda_card_img_second" src="/img/Rectangle 1903.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Копирайтеры </strong>напишут тексты, которые продадут вашу
                         недвижимость быстрее и дороже</p> -->
+                        <div class="Absolute_bottomYellow">Копирайтеры</div>
+
                 </div>
                 <div id="KomandaNone" class="komanda_card">
                     <img class="komanda_card_img_second" src="/img/Rectangle 1904.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Маркетологи</strong> детально проанализируют рынок и вашу целевую
                         аудиторию, проведут предпродажную подготовку, запустят рекламную кампанию</p> -->
+                        <div class="Absolute_bottomYellow">Маркетологи
+                        </div>
+
                 </div>
                 <div id="KomandaNone" id="carf" class="komanda_card">
                     <img class="komanda_card_img_second" src="/img/Rectangle 1902.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Фотограф</strong> сделает качественные снимки и сделает так, чтобы
                         покупатели хотели вашу квартиру. Не забывайте, до 50% всех покупателей - визуалы, то есть
                         покупают «глазами».</p> -->
+                        <div class="Absolute_bottomYellow">Фотограф</div>
                 </div>
             </div>
         </div>
@@ -525,8 +541,8 @@
      <section class="yuridik">
         <h1 class="universal__title">
             Юридическая защита
-            <span style="color: black;"> на всех этапах</span>
-            <img src="/img/Vector (4).png" alt="">
+            <span  > <img src="/img/Vector (4).png" alt=""> <span style="position: relative;z-index: 121;color: black;" class="AllSteps">на всех этапах</span></span>
+            
         </h1>
         <p class="free_etap__p">На каких этапах продажи квартиры невозможно обойтись без юриста?</p>
         <div class="yuridik__cards">
@@ -1569,7 +1585,10 @@
        });
     
      </script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
