@@ -110,8 +110,36 @@ body{
     padding: 17px 8px;
     margin-left: 10px;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
+.navbar_button::before{
 
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 45px;
+        transform: skewX(-30deg);
+        animation: bn1;
+        left: -150%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%);
+        animation: bn1 2s infinite linear;
+        animation-delay: 1s;
+        animation-duration: 4.5s;
+    
+}
+@keyframes bn1{
+	0% {
+        left: -150%;
+    }
+	30% {
+        left: 150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
 .navbar_nav__phone {
     font-size: 20px;
 }
@@ -713,7 +741,7 @@ text-align: center;
     background: #F9F9F9;
 padding-top: 30px;
 padding-bottom: 1px;
-
+transition: all 1s ease-in-out;
 }
 .zakaz__body{
  max-width: 1429px;
@@ -1192,12 +1220,48 @@ color: #1E1E1E;
 position: relative;
 }
 .komanda__title span img{
-    width: 103%;
+    width:103%;
     position: absolute;
     left: -8px;
     z-index: 0;
     top: -20px;
+    animation-duration: 5s;
+    animation-name:marker;
+    height: 100px;
+    animation-fill-mode: forwards;
+}
+.agent__img__decor{
+    width: 100vw !important;
+}
+.animattt{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    overflow: hidden;
+display: flex;align-items: start;
+justify-content: start;
+   
+    bottom: 0px;
+    
+}
+.animattt_2{
+     animation-fill-mode: forwards;
+    height: 100%;
+    animation-duration: 15s;
+    animation-name:marker;
+    overflow: hidden;
+}
+.oneYuridik_card__1{
+    position: absolute;
+top: 0px;
+transition: 1s;
+}
+@keyframes marker {
+    0%{width: 0%;}
 
+
+    100%{width: 103%;}
 }
 .komanda__p{
     max-width: 1427px;
@@ -1716,8 +1780,16 @@ width: 100%;
     margin: auto;
     align-items: stretch;
     gap: 15px;
+    position: relative;
     border-radius: 10px;
     margin-top: 53px;
+ }
+ .oneYuridik_card__12{
+    position: absolute;
+    top: 0px;
+    display: none;
+   
+    left: 0px;
  }
  .oneYuridik_card{
     display: grid;
@@ -1892,7 +1964,7 @@ font-size: 20px;
 font-weight: 600;
 line-height: 30px;
 text-align: left;
-color: white; 
+color: #1e1e1e; 
 }
 .posmotry__arrow__line{
     height: 5px;
@@ -1973,6 +2045,9 @@ width: 100%;
 }
 .kvartira_shag{
     max-width: 200px;
+}
+.kvartira_shag img{
+opacity: 0;
 }
 .kvartira_shag_img{
     width: 93%;
@@ -2168,6 +2243,9 @@ text-align: left;
 color: black;
 
 }
+.navbar a{
+    text-decoration: none;
+}
 .headerText h3{
     font-family: Montserrat;
 font-size: 22.07px;
@@ -2350,6 +2428,10 @@ letter-spacing: -0.006em;
 text-align: left;
 margin-top: 27px;
 }
+.FullWidth_btn{
+    overflow: hidden;
+    position: relative;
+}
 .FullWidth_btn button{
 width: 97%;
 height: 43px;
@@ -2357,10 +2439,57 @@ background: none;
 border-radius: 10px;
 border: 1px solid #F8B806; 
 transition: 0.3s;
+ 
 }
 .FullWidth_btn button:hover{
 border: 1px solid black; 
 
+}
+button{
+    position: relative;
+    overflow: hidden;
+}
+    button::before{
+
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 45px;
+        transform: skewX(-30deg);
+        animation: bn1;
+        left: -150%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%);
+        animation: bn1 2s infinite linear;
+        animation-delay: 1s;
+        animation-duration: 4.5s;
+    
+}
+.header__buttons__first::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-30deg);
+    animation: bn1;
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%);
+    animation: bn1 2s infinite linear;
+    animation-delay: 1s;
+    animation-duration: 4.5s;
+
+}
+@keyframes bn1{
+	0% {
+        left: -150%;
+    }
+	30% {
+        left: 150%;
+    }
+    100% {
+        left: 150%;
+    }
 }
 .FullWidth_btn { 
       width: 92%;
@@ -4161,6 +4290,17 @@ text-align: center;
 #carf{
     display: none;
 }
+.our__team__text__item__line img{
+  animation-name: animation; 
+  animation-duration:7s;
+  animation-iteration-count: infinite; 
+}
+@keyframes animation {
+0%{transform: rotateX(0deg);}
+25%{transform: rotateX(180deg);}
+75%{transform: rotateX(180deg);}
+100%{transform: rotateX(360deg);}
+}
 .rielter_inside h3{
     font-family: Montserrat;
 font-size: 24px;
@@ -4469,6 +4609,17 @@ outline-color: #F5F5F5;
     }
 }
 
+.header_check{
+    transition: 1s;
+    position: relative;
+    z-index: 234;
+    cursor: pointer;
+    
+}
+.header_check:hover{
+   position: relative;
+   top: -6px;         
+}
 @media (max-width:610px) {
     .header__body{
         padding-top: 100px;
@@ -4707,6 +4858,7 @@ text-align: left;
             padding-left: 0px;
         
         }
+     
         .freeEtap_shugNumber{
         
             margin-top: 9px;
@@ -4817,7 +4969,7 @@ font-size: 16px;
 font-weight: 600;
 line-height: 24px;
 text-align: left;
-
+color:#1e1e1e;
         }
         .posmotry__arrow__number {
             display: flex;
@@ -4851,7 +5003,7 @@ margin-bottom: 9px;
             }
             .app_BgMain {
                 padding-top: 76px;
-                width: 98%;
+                width: 100%;
                 margin: auto;}
                 .newOffersMarket h1{
                     width: 88%;
@@ -5602,6 +5754,22 @@ margin-top: 10px;
     }
     .komanda_card_img{
         margin-left: 0px;
+    }
+    .NavigateFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+        flex-wrap: wrap;
+        max-width: 1440px;
+        margin: auto;
+    }
+    .IconNavigate {
+        width: 95%;
+        background: none;
+        margin-top: 10px;
+        margin: auto;
+        max-width: 312px;
     }
 }
 

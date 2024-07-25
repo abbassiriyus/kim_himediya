@@ -12,66 +12,66 @@
     <style>
         html,
         body {
-          position: relative;
-          height: 100%;
+            position: relative;
+            height: 100%;
         }
-    
+
         body {
-          background: #eee;
+            background: #eee;
 
-          margin: 0;
-          padding: 0;
+            margin: 0;
+            padding: 0;
         }
-    
-       .ApplicationSwiper .swiper {
-          width: 100%;
-          height: 100%;
-          overflow: visible;
+
+        .ApplicationSwiper .swiper {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
         }
-    
+
         .ApplicationSwiper .swiper-slide {
-          text-align: center;
-          font-size: 18px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-    
-        .ApplicationSwiper .swiper-slide   {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+
+        .ApplicationSwiper .swiper-slide {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-  
 
-    .mySwiper2 .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      /* background: #fff; */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* width: 426px !important; */
-    /* margin-right: 17px !important; */
-      border-radius: 7px !important;
-  
-    }
 
-    .mySwiper2   .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-      </style>
-      
+        .mySwiper2 .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* background: #fff; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* width: 426px !important; */
+            /* margin-right: 17px !important; */
+            border-radius: 7px !important;
+
+        }
+
+        .mySwiper2 .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
 </head>
 
 <body>
 
-     
-     <div class="navbar">
+
+    <div class="navbar">
 
         <div class="navbar__body">
             <div class="navbar__logo">
@@ -82,19 +82,29 @@
                 <p class="navbar__logo_p text__p1">Продажа и покупка недвижимости в Минске</p>
             </div>
             <ul class="navbar_nav">
-                <li class="navbar_nav__item text__p1">Продать квартиру</li>
-                <li class="navbar_nav__item text__p1">Купить квартиру</li>
-                <li class="navbar_nav__item text__p1">Отзывы</li>
-                <li class="navbar_nav__item text__p1">Контакты</li>
-                <li class="navbar_nav__item text__p1 navbar_nav__phone">+375 (29) 188-55-99</li>
+                <a href="#zakaz">
+                    <li class="navbar_nav__item text__p1">Продать квартиру</li>
+                </a>
+                <a href="#zakaz__buy">
+                    <li class="navbar_nav__item text__p1">Купить квартиру</li>
+                </a>
+                <a href="#otziv">
+                    <li class="navbar_nav__item text__p1">Отзывы</li>
+                </a>
+                <a href="#NavigateFlex">
+                    <li class="navbar_nav__item text__p1">Контакты</li>
+                </a>
+                <a href="">
+                    <li class="navbar_nav__item text__p1 navbar_nav__phone">+375 (29) 188-55-99</li>
+                </a>
                 <li onclick="document.querySelector('.navbar__toolbar').style='display:block'"
                     class="navbar_nav__item text__p1 navbar_nav__img"><img src="/img/24х24_interface.svg" alt=""></li>
 
             </ul>
             <div class="navbar__contact">
-                <img src="/img/Instagram.svg" alt="">
+                <a href="https://www.instagram.com/result.estate/"> <img src="/img/Instagram.svg" alt=""></a>
                 <div class="navbar__line__vertical"></div>
-                <img src="/img/Telegram.svg" alt="">
+                <a href="https://t.me/resultestatebot"> <img src="/img/Telegram.svg" alt=""></a>
 
                 <button onclick="
                 document.querySelector('.CallMe_back_modal').style='display:flex'
@@ -102,8 +112,8 @@
             </div>
             <img class="navbar__yandex__image" style="margin-left: -7px;" src="/img/Frame 39.svg" alt="">
         </div>
-    </div>  
-      <div class="navbar__toolbar">
+    </div>
+    <div class="navbar__toolbar">
         <div class="navbar__logo">
             <div class="navbar__logo__item"> <img class="navbar__logo_img" src="/img/Group 10265.svg" alt="">
                 <div class="navbar__line__vertical"></div>
@@ -128,15 +138,49 @@
             <button class="navbar_button"> Перезвоните мне</button>
             <img class="navbar__yandex__image" style="margin-left: -7px;" src="/img/Frame 39.svg" alt="">
         </ul>
-    </div>  
-  <header class="header">
+    </div>
+    <header class="header">
         <div class="header__body">
-          
-            <h1 class="header__body__h1">Продадим вашу недвижимость <span>за 28 дней...</span></h1>
+
+            <h1 class="header__body__h1">Продадим вашу недвижимость <span class="header__body__h1__span">за 28
+                    дней...</span></h1>
             <p class="header__body__p">Повысим стоимость <br class="FirstOneBr"> квартиры стоимость до 15%</p>
             <h5>Укажите номер телефона и узнайте через пару минут
 
             </h5>
+            <script>
+
+                setInterval(() => {
+                    setTimeout(() => {
+                        document.querySelector('.header__body__h1__span').innerHTML = "за 28 дней."
+                    }, 1000);
+                    setTimeout(() => {
+                        document.querySelector('.header__body__h1__span').innerHTML = "за 28 дней.."
+                    }, 2000);
+                    setTimeout(() => {
+                        document.querySelector('.header__body__h1__span').innerHTML = "за 28 дней..."
+                    }, 3000);
+                    setTimeout(() => {
+                        document.querySelector('.header__body__h1__span').innerHTML = "безопасно."
+                    }, 4000);
+                    setTimeout(() => {
+                        document.querySelector('.header__body__h1__span').innerHTML = "безопасно.."
+                    }, 5000);
+                    setTimeout(() => {
+                        document.querySelector('.header__body__h1__span').innerHTML = "безопасно..."
+                    }, 6000);
+                    setTimeout(() => {
+                        document.querySelector('.header__body__h1__span').innerHTML = "по выгодной цене."
+                    }, 7000);
+                    setTimeout(() => {
+                        document.querySelector('.header__body__h1__span').innerHTML = "по выгодной цене.."
+                    }, 8000);
+                    setTimeout(() => {
+                        document.querySelector('.header__body__h1__span').innerHTML = "по выгодной цене..."
+                    }, 9000);
+
+                }, 10000);
+            </script>
             <div class="header__ul">
                 <img src="/img/OBJECTS (2123213).png" alt="">
                 <div class="header__li">
@@ -154,6 +198,11 @@
                         продажу</p>
                 </div>
             </div>
+
+
+
+
+
             <div class="header__buttons">
                 <button class="header__buttons__first">
                     Номер телефона
@@ -163,7 +212,7 @@
                 </button>
             </div>
         </div>
-    </header>  
+    </header>
     <section class="chosen">
         <h1 class="chosen__h1">С НАМИ ВЫ ПОЛУЧАЕТЕ:</h1>
         <div class="chosen_cards">
@@ -195,46 +244,50 @@
                     <img src="/img/Layer_1 (1).svg" alt="">
                 </div>
                 <h6 class="chosen__card__h6">За 28 дней</h6>
-                    <p class="chosen__card__p">В среднем квартира продается за 28 дней</p>
+                <p class="chosen__card__p">В среднем квартира продается за 28 дней</p>
             </div>
             <div class="chosen__card ">
                 <div class="chosen__card__img">
                     <img src="/img/111icons8-метро-100 2 1.svg" alt="">
                 </div>
                 <h6 class="chosen__card__h6">Офис возле метро Грушевка</h6>
-                    <p class="chosen__card__p">Современный офис рядом с метро для удобства и комфорта клиентов</p>
+                <p class="chosen__card__p">Современный офис рядом с метро для удобства и комфорта клиентов</p>
             </div>
             <div class="chosen__card ">
                 <div class="chosen__card__img">
                     <img src="/img/icons8-продажи-90 1 1.svg" alt="">
                 </div>
                 <h6 class="chosen__card__h6">Индивидуальный план продажи</h6>
-                    <p class="chosen__card__p">Персонализированный план продаж для эффективного продвижения вашей недвижимости</p>
+                <p class="chosen__card__p">Персонализированный план продаж для эффективного продвижения вашей
+                    недвижимости</p>
             </div>
             <div class="chosen__card ">
                 <div class="chosen__card__img">
                     <img src="/img/icons8-команда-100 1 1.svg" alt="">
                 </div>
                 <h6 class="chosen__card__h6">Экспертная команда</h6>
-                    <p class="chosen__card__p">Команда профессионалов с богатым опытом в недвижимости, готовая решить любые ваши задачи</p>
+                <p class="chosen__card__p">Команда профессионалов с богатым опытом в недвижимости, готовая решить любые
+                    ваши задачи</p>
             </div>
             <div class="chosen__card ">
                 <div class="chosen__card__img">
                     <img src="/img/11icons8-зеленый-щит-безопасности-100 1 1.svg" alt="">
                 </div>
                 <h6 class="chosen__card__h6">100% надёжность и юридическая безопасность</h6>
-                    <p class="chosen__card__p">Обеспечиваем полную надёжность и юридическую безопасность ваших сделок с недвижимостью</p>
+                <p class="chosen__card__p">Обеспечиваем полную надёжность и юридическую безопасность ваших сделок с
+                    недвижимостью</p>
             </div>
         </div>
-    </section> 
-     <section class="zakaz">
+    </section>
+    <section id="zakaz" class="zakaz">
         <div class="zakaz__body">
-            <div class="zakaz_title">Ответьте на 4 простых вопроса и наш менеджер<span> рассчитает рыночную стоимость вашей
+            <div class="zakaz_title">Ответьте на 4 простых вопроса и наш менеджер<span> рассчитает рыночную стоимость
+                    вашей
                     недвижимости </span>за 15 мин</div>
             <div class="zakaz_homeType">
                 <div class="zakaz_sectiontitle">
                     <div class="zakaz__shag">Шаг <span>1</span>/4 </div>
-                    <h4 class="zakaz__h4">Что хотите купить?</h4>
+                    <h4 class="zakaz__h4" style="color: #1e1e1e;">Что хотите купить?</h4>
                 </div>
                 <div class="zakaz_homeType__buttons">
                     <div class="zakaz_homeType__button">Квартира</div>
@@ -298,9 +351,9 @@
                     Продать недвижимость
                 </button>
             </div>
-            <div class="zakaz_homeType zakaz_homeType__dn">
+            <div id="zakaz__buy" class="zakaz_homeType zakaz_homeType__dn">
                 <div class="zakaz_sectiontitle">
-                    <div class="zakaz__buy">Что хотите купить? </div>
+                    <div class="zakaz__buy" style="color: #1e1e1e;">Что хотите купить? </div>
                 </div>
                 <div class="zakaz_homeType__buttons">
                     <div class="zakaz_homeType__button">Квартира</div>
@@ -323,54 +376,57 @@
                     Купить недвижимость
                 </button>
             </div>
-           
+
         </div>
 
     </section>
-      <section class="partnyor">
-            <div class="zakaz_title zakaz_title__margin">Ваше объявление <span>увидят более 3000 целевых пользователей в
-                    день</span></div>
-            <div class="our__team">
-                <div class="our__team__text">
-                    <div class="our__team__text__item">
-                        <div class="our__team__text__item__line"><img src="./img/Group.png" alt=""></div>
-                        <p class="our__team__text__item__p">Размещаем платные объявления на онлайн-площадках</p>
-                    </div>
-                    <div class="our__team__text__item">
-                        <div class="our__team__text__item__line"><img class="img_insted_of_line" src="./img/Group.png" alt=""></div>
-                        <p class="our__team__text__item__p">Оптимизируем объявления для максимального охвата
-                            потенциальных покупателей</p>
-                    </div>
-                    <div class="our__team__text__item">
-                        <div class="our__team__text__item__line"><img src="./img/Group.png" alt=""></div>
-                        <p class="our__team__text__item__p">Ваше объявление видят тысячи посетителей площадок</p>
-                    </div>
+    <section class="partnyor">
+        <div class="zakaz_title zakaz_title__margin">Ваше объявление <span>увидят более 3000 целевых пользователей в
+                день</span></div>
+        <div class="our__team">
+            <div class="our__team__text">
+                <div class="our__team__text__item">
+                    <div class="our__team__text__item__line"><img src="./img/Group.png" alt=""></div>
+                    <p class="our__team__text__item__p">Размещаем платные объявления на онлайн-площадках</p>
                 </div>
-                <div class="out__team__logos">
-                    <div class="out__team__logos__item"><img src="/img/Frame.svg" alt=""></div>
-                    <div class="out__team__logos__item"><img src="/img/Group (1).svg" alt=""></div>
-                    <div class="out__team__logos__item"><img src="/img/Group (2).svg" alt=""></div>
-                    <div class="out__team__logos__item"><img src="/img/Group (3).svg" alt=""></div>
-                    <div class="out__team__logos__item"><img src="/img/Frame (1).svg" alt=""></div>
-                    <div class="out__team__logos__item"><img src="/img/svg9.svg" alt=""></div>
-                    <div class="out__team__logos__item"><img src="/img/image 108.svg" alt=""></div>
-                    <div class="out__team__logos__item"><img src="/img/Group 34534.svg" alt=""></div>
-                    <div class="out__team__logos__item"><img src="/img/image 111.svg" alt=""></div>
-                    <div class="out__team__logos__item"><img src="/img/image 112.svg" alt=""></div>
-                    <div class="out__team__logos__item out__team__logos__itemDom"><img src="/img/image 110.svg" alt="">
-                    </div>
-                    <div class="out__team__logos__item out__team__logos__itemYoutobe"><img src="/img/image 112 (1).svg"
+                <div class="our__team__text__item">
+                    <div class="our__team__text__item__line"><img class="img_insted_of_line" src="./img/Group.png"
                             alt=""></div>
-
-
-
-
+                    <p class="our__team__text__item__p">Оптимизируем объявления для максимального охвата
+                        потенциальных покупателей</p>
+                </div>
+                <div class="our__team__text__item">
+                    <div class="our__team__text__item__line"><img src="./img/Group.png" alt=""></div>
+                    <p class="our__team__text__item__p">Ваше объявление видят тысячи посетителей площадок</p>
                 </div>
             </div>
-        </section>
-      <section class="komanda">
+            <div class="out__team__logos">
+                <div class="out__team__logos__item"><img src="/img/Frame.svg" alt=""></div>
+                <div class="out__team__logos__item"><img src="/img/Group (1).svg" alt=""></div>
+                <div class="out__team__logos__item"><img src="/img/Group (2).svg" alt=""></div>
+                <div class="out__team__logos__item"><img src="/img/Group (3).svg" alt=""></div>
+                <div class="out__team__logos__item"><img src="/img/Frame (1).svg" alt=""></div>
+                <div class="out__team__logos__item"><img src="/img/svg9.svg" alt=""></div>
+                <div class="out__team__logos__item"><img src="/img/image 108.svg" alt=""></div>
+                <div class="out__team__logos__item"><img src="/img/Group 34534.svg" alt=""></div>
+                <div class="out__team__logos__item"><img src="/img/image 111.svg" alt=""></div>
+                <div class="out__team__logos__item"><img src="/img/image 112.svg" alt=""></div>
+                <div class="out__team__logos__item out__team__logos__itemDom"><img src="/img/image 110.svg" alt="">
+                </div>
+                <div class="out__team__logos__item out__team__logos__itemYoutobe"><img src="/img/image 112 (1).svg"
+                        alt=""></div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="komanda">
         <div class="komanda__absimg"></div>
-        <h1 class="komanda__title">ПОМИМО РЕКЛАМЫ РАБОТАЕТ <span><img src="/img/Vector (12).svg" alt="">  <span style="position: relative;z-index: 21;">КОМАНДА ПРОФЕССИОНАЛОВ:</span> </span> </h1>
+        <h1 class="komanda__title">ПОМИМО РЕКЛАМЫ РАБОТАЕТ <span><img src="/img/Vector (12).svg" data-aos="fade-right"
+                    data-aos-offset="300" data-aos-easing="ease-in-sine" alt=""> <span
+                    style="position: relative;z-index: 21;">КОМАНДА ПРОФЕССИОНАЛОВ:</span> </span> </h1>
         <p class="komanda__p">Делаем все, чтобы продать недвижимость за 28 дней</p>
 
         <div class="komanda_cards">
@@ -380,35 +436,35 @@
                     <!-- <p class="komanda_card_p"><strong>Фотограф</strong> сделает качественные снимки и сделает так, чтобы
                         покупатели хотели вашу квартиру. Не забывайте, до 50% всех покупателей - визуалы, то есть
                         покупают «глазами».</p> -->
-                        <p>Фотограф</p>
+                    <p>Фотограф</p>
                 </div>
                 <div id="EctraCardKomanda" class="komanda_card">
                     <img class="komanda_card_img_second" src="/img/Rectangle 1903.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Копирайтеры </strong>напишут тексты, которые продадут вашу
                         недвижимость быстрее и дороже</p> -->
-                        <p>Копирайтеры</p>
-                        
+                    <p>Копирайтеры</p>
+
                 </div>
                 <div id="EctraCardKomanda" class="komanda_card">
                     <img class="komanda_card_img_second" src="/img/Rectangle 1904.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Маркетологи</strong> детально проанализируют рынок и вашу целевую
                         аудиторию, проведут предпродажную подготовку, запустят рекламную кампанию</p> -->
-                        <p>Маркетологи</p>
+                    <p>Маркетологи</p>
                 </div>
                 <div class="komanda_card">
                     <img class="komanda_card_img" src="/img/Group 34536.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Риелторы</strong> с базой более 5000 потенциальных покупателей из
                         нашей клиентской базы</p> -->
-                        <div class="Absolute_bottomYellow">Риэлтеры</div>
-                        <p>Риэлтеры</p>
+                    <div class="Absolute_bottomYellow">Риэлтеры</div>
+                    <p>Риэлтеры</p>
 
                 </div>
                 <div id="komanda_meda" class="komanda_card">
                     <img class="komanda_card_img" src="/img/Rectangle 1906.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Агенты </strong>гарантируют 100% <br> безопасность и чистоту
                         сделки</p> -->
-                        <div class="Absolute_bottomYellow">Агенты</div>
-                        <p>Агенты</p>
+                    <div class="Absolute_bottomYellow">Агенты</div>
+                    <p>Агенты</p>
                 </div>
             </div>
             <div class="komanda_cards__second">
@@ -416,15 +472,15 @@
                     <img class="komanda_card_img_second" src="/img/Rectangle 1903.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Копирайтеры </strong>напишут тексты, которые продадут вашу
                         недвижимость быстрее и дороже</p> -->
-                        <div class="Absolute_bottomYellow">Копирайтеры</div>
+                    <div class="Absolute_bottomYellow">Копирайтеры</div>
 
                 </div>
                 <div id="KomandaNone" class="komanda_card">
                     <img class="komanda_card_img_second" src="/img/Rectangle 1904.png" alt="">
                     <!-- <p class="komanda_card_p"><strong>Маркетологи</strong> детально проанализируют рынок и вашу целевую
                         аудиторию, проведут предпродажную подготовку, запустят рекламную кампанию</p> -->
-                        <div class="Absolute_bottomYellow">Маркетологи
-                        </div>
+                    <div class="Absolute_bottomYellow">Маркетологи
+                    </div>
 
                 </div>
                 <div id="KomandaNone" id="carf" class="komanda_card">
@@ -432,13 +488,13 @@
                     <!-- <p class="komanda_card_p"><strong>Фотограф</strong> сделает качественные снимки и сделает так, чтобы
                         покупатели хотели вашу квартиру. Не забывайте, до 50% всех покупателей - визуалы, то есть
                         покупают «глазами».</p> -->
-                        <div class="Absolute_bottomYellow">Фотограф</div>
+                    <div class="Absolute_bottomYellow">Фотограф</div>
                 </div>
             </div>
         </div>
 
-    </section>  
-       <section class="free_etap">
+    </section>
+    <section class="free_etap">
 
         <h1 class="universal__title">
             Бесплатная предпродажная подготовка!
@@ -480,7 +536,8 @@
                     <div class="freeEtap_shugNumber">04</div>
                     <div class="freeEtap__text">
                         <h4 class="freeEtap__text__h4">Турбируем рекламные объявления </h4>
-                        <p class="freeEtap__text__p">Выводим объявления в топ. Это увеличивает количество просмотров, и ускоряет продажу</p>
+                        <p class="freeEtap__text__p">Выводим объявления в топ. Это увеличивает количество просмотров, и
+                            ускоряет продажу</p>
                     </div>
                 </div>
             </div>
@@ -495,98 +552,152 @@
         </div>
 
 
-    </section>  
-      <section class="agent">
+    </section>
+    <section class="agent">
         <div class="agent__body"> <img src="/img/Abstract Design (3).svg" alt="" class="agent__img__decor__second">
-        <img src="/img/Abstract Design (2).svg" alt="" class="agent__img__decor__three">
-        <img src="/img/Pattern.svg" alt="" class="agent__img__decor__four">
-        <img src="/img/Vector 252.svg   " alt="" class="agent__img__decor">
-        <div class="agent__title__h1">
-            <span>2000+ агентов</span> предложат
-            вашу недвижимость своим клиентам
+            <img src="/img/Abstract Design (2).svg" alt="" class="agent__img__decor__three">
+            <img src="/img/Pattern.svg" alt="" class="agent__img__decor__four">
+            <div class="animattt animattt_2">
+
+                <img src="/img/Vector 252.svg   " alt="" class="agent__img__decor">
+            </div>
+
+            <script>
+                const image = document.querySelector('.animattt');
+
+                window.addEventListener('scroll', () => {
+                    const windowHeight = window.innerHeight;
+                    const imageTop = image.getBoundingClientRect().top;
+                    const imageBottom = image.getBoundingClientRect().bottom;
+                    
+                    if (imageTop >= -500 && imageBottom <= (windowHeight + 200)) {
+                        image.classList.add('animattt_2');
+                    } else {
+                        image.classList.remove('animattt_2');
+                    }
+                });
+            </script>
+            <div class="agent__title__h1">
+                <span>2000+ агентов</span> предложат
+                вашу недвижимость своим клиентам
+            </div>
+            <div class="agent__cards">
+                <div class="agent__card">
+                    <img class="agent__img" src="/img/Frame (2).svg" alt="">
+                    <p class="agent__card__p">В течение 24 часов с момента
+                        размещения объекта недвижимости на
+                        рекламных площадках мы разошлем.
+                        Ваше объявление агентам-партнерам</p>
+                    <div class="agent__card__circle"></div>
+                </div>
+                <div class="agent__card agent__card__second">
+                    <img class="agent__img" src="/img/Frame (3).svg" alt="">
+                    <p class="agent__card__p">Мы сотрудничаем более чем с 2000 агентами по продаже недвижимости из
+                        Минска</p>
+                    <div class="agent__card__circle"></div>
+                </div>
+                <div class="agent__card agent__card__three">
+                    <img class="agent__img" src="/img/Frame (4).svg" alt="">
+                    <p class="agent__card__p">У каждого из агентов
+                        собственная база из
+                        потенциальных покупателей</p>
+                    <div class="agent__card__circle"></div>
+                </div>
+
+            </div>
+            <div class="agent__border__text">
+                Благодаря такому подходу, о том, что <u>вы решили продать квартиру</u>, узнают тысячи покупателей!
+            </div>
         </div>
-        <div class="agent__cards">
-            <div class="agent__card">
-                <img class="agent__img" src="/img/Frame (2).svg" alt="">
-                <p class="agent__card__p">В течение 24 часов с момента
-                    размещения объекта недвижимости на
-                    рекламных площадках мы разошлем.
-                    Ваше объявление агентам-партнерам</p>
-                <div class="agent__card__circle"></div>
-            </div>
-            <div class="agent__card agent__card__second">
-                <img class="agent__img" src="/img/Frame (3).svg" alt="">
-                <p class="agent__card__p">Мы сотрудничаем более чем с 2000 агентами по продаже недвижимости из Минска</p>
-                <div class="agent__card__circle"></div>
-            </div>
-            <div class="agent__card agent__card__three">
-                <img class="agent__img" src="/img/Frame (4).svg" alt="">
-                <p class="agent__card__p">У каждого из агентов
-                    собственная база из
-                    потенциальных покупателей</p>
-                <div class="agent__card__circle"></div>
-            </div>
-
-        </div>
-        <div class="agent__border__text">
-            Благодаря такому подходу, о том, что <u>вы решили продать квартиру</u>, узнают тысячи покупателей!
-        </div></div>
-       
 
 
-    </section> 
-    
-    
-    
-     <section class="yuridik">
+
+    </section>
+
+
+
+    <section class="yuridik">
         <h1 class="universal__title">
             Юридическая защита
-            <span  > <img src="/img/Vector (4).png" alt=""> <span style="position: relative;z-index: 121;color: black;" class="AllSteps">на всех этапах</span></span>
-            
+            <span> <img src="/img/Vector (4).png" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" alt=""> <span style="position: relative;z-index: 121;color: black;"
+                    class="AllSteps">на всех этапах</span></span>
+
         </h1>
+        <script>
+            function entermous() {
+                var ass = document.querySelectorAll('.oneYuridik_card__12')
+
+                for (let i = 0; i < ass.length; i++) {
+                    setTimeout(() => {
+                        ass[i].style = "position:relative;display:grid; transition: 4s !important;"
+                    }, i * 200);
+                }
+            }
+            function leavemouse() {
+                var ass = document.querySelectorAll('.oneYuridik_card__12')
+                for (let i = 0; i < ass.length; i++) {
+                    setTimeout(() => {
+                        ass[i].style = "position:absolute;display:none"
+                    }, i * 200);
+
+                }
+            }
+        </script>
         <p class="free_etap__p">На каких этапах продажи квартиры невозможно обойтись без юриста?</p>
-        <div class="yuridik__cards">
-        <div class="oneYuridik_card">
-            <h3>ЭТАП1</h3>
-            <h2>Консультирование</h2>
-            <p>Разрешение особенностей проведения сделки с ОН <br>Определение перечня документов, необходимых для совершения сделки, в т.ч. <br> определение перечня лиц, чье участие необходимо в сделке с ОН <br>Планирование порядка расчета по сделке <br>Регламентирование процедуры снятия с регистрационного учета лиц,<br> зарегистрированных в ОН</p>
+        <div onmouseleave="leavemouse()" class="yuridik__cards">
+            <div onmouseenter="entermous()" style="cursor: pointer;position: relative;z-index: 123;"
+                class="oneYuridik_card">
+                <h3>ЭТАП1</h3>
+                <h2>Консультирование</h2>
+                <p>Разрешение особенностей проведения сделки с ОН <br>Определение перечня документов, необходимых для
+                    совершения сделки, в т.ч. <br> определение перечня лиц, чье участие необходимо в сделке с ОН
+                    <br>Планирование порядка расчета по сделке <br>Регламентирование процедуры снятия с регистрационного
+                    учета лиц,<br> зарегистрированных в ОН</p>
+            </div>
+            <div class="oneYuridik_card oneYuridik_card__12 secondYuridik_step">
+                <h3>ЭТАП2</h3>
+                <h2>Подготовка документов</h2>
+                <p>Оказание помощи в подготовке документов <br> Консультирование и сопровождение клиента при заказе и
+                    получении документов</p>
+            </div>
+            <div class="oneYuridik_card oneYuridik_card__12 ">
+                <h3>ЭТАП3</h3>
+                <h2>Участие в переговорах между сторонами <br> сделки</h2>
+                <p>Согласование условий предстоящей сделки в интересах клиента. Консультирование клиента о последствиях
+                    каждого условия предстоящей сделки</p>
+            </div>
+            <div class="oneYuridik_card oneYuridik_card__12 thirdYuridik_step">
+                <h3>ЭТАП4</h3>
+                <h2>Внесение аванса</h2>
+                <p>Подготовка и подписание документа, защищающего интересы клиента и гарантирующего ответственность
+                    стороны, виновной за неисполнение сделки</p>
+            </div>
+            <div class="oneYuridik_card oneYuridik_card__12 thirdYuridik_step">
+                <h3>ЭТАП5</h3>
+                <h2>Проведение сделки</h2>
+                <p>Подготовка проекта договора купли-продажи <br> Организация и проведение удостоверения сделки</p>
+            </div>
+            <div class="oneYuridik_card oneYuridik_card__12 fourthYuridik_step">
+                <h3>ЭТАП6</h3>
+                <h2>Организация <br> проведения расчетов</h2>
+                <p>Организация и проведение расчетов в рамках договоренности сторон сделки,<br> обеспечивающих
+                    соблюдение интересов клиента. <br>Предоставление гарантий полного расчета в случае рассрочки платежа
+                    за ОН</p>
+            </div>
+            <div style="padding-bottom: 23px;" class="oneYuridik_card oneYuridik_card__12 fourthYuridik_step">
+                <h3>ЭТАП7</h3>
+                <h2>Закрытие сделки</h2>
+                <p>Подготовка и подписание акта передачи, подтверждающего отсутствие претензий в <br> отношении
+                    фактического состояния ОН, задолженности по коммунальным и иным <br> платежам за объект. <br>
+                    Регистрация права собственности в пользу покупателя</p>
+            </div>
         </div>
-        <div class="oneYuridik_card secondYuridik_step">
-            <h3>ЭТАП2</h3>
-            <h2>Подготовка документов</h2>
-            <p>Оказание помощи в подготовке документов <br> Консультирование и сопровождение клиента при заказе и получении документов</p>
-        </div>
-        <div class="oneYuridik_card ">
-            <h3>ЭТАП3</h3>
-            <h2>Участие в переговорах между сторонами <br> сделки</h2>
-            <p>Согласование условий предстоящей сделки в интересах клиента. Консультирование клиента о последствиях каждого условия предстоящей сделки</p>
-        </div>
-        <div class="oneYuridik_card thirdYuridik_step">
-            <h3>ЭТАП4</h3>
-            <h2>Внесение аванса</h2>
-            <p>Подготовка и подписание документа, защищающего интересы клиента и гарантирующего ответственность стороны, виновной за неисполнение сделки</p>
-        </div>
-        <div class="oneYuridik_card thirdYuridik_step">
-            <h3>ЭТАП5</h3>
-<h2>Проведение сделки</h2>
-<p>Подготовка проекта договора купли-продажи <br> Организация и проведение удостоверения сделки</p>
-        </div>
-        <div class="oneYuridik_card fourthYuridik_step">
-            <h3>ЭТАП6</h3>
-<h2>Организация <br> проведения расчетов</h2>
-<p>Организация и проведение расчетов в рамках договоренности сторон сделки,<br> обеспечивающих соблюдение интересов клиента. <br>Предоставление гарантий полного расчета в случае рассрочки платежа за ОН</p>
-        </div>
-        <div style="padding-bottom: 23px;" class="oneYuridik_card fourthYuridik_step">
-            <h3>ЭТАП7</h3>
-<h2>Закрытие сделки</h2>
-<p>Подготовка и подписание акта передачи, подтверждающего отсутствие претензий в <br> отношении фактического состояния ОН, задолженности по коммунальным и иным <br> платежам за объект. <br> Регистрация права собственности в пользу покупателя</p>
-        </div>
-    </div>
-    </section>    
+    </section>
 
 
 
-     <section class="posmotry">
+    <section class="posmotry">
         <img class="posmotry__decore_img" src="/img/Frame 2085655475.svg" alt="">
         <h1 class="universal__title">
             посмотрите примеры
@@ -644,951 +755,1122 @@
 
             </div>
         </div>
-    </section>  
-  
+    </section>
 
-  <div class="CallMe_back_modal">
 
-<div class="CallMe_back_modal_body">
-    <div class="header_bodyBig">
-        <div class="callMe_header">
-            <img src="/img/Icon.png" alt="">
-            <div class="headerText">
-                <h3>Перезвонить мне</h3>
-                <span>В ближайшее время с вами свяжется менеджер</span>
-            </div>
-    </div>
-        <i onclick="
+    <div class="CallMe_back_modal">
+
+        <div class="CallMe_back_modal_body">
+            <div class="header_bodyBig">
+                <div class="callMe_header">
+                    <img src="/img/Icon.png" alt="">
+                    <div class="headerText">
+                        <h3>Перезвонить мне</h3>
+                        <span>В ближайшее время с вами свяжется менеджер</span>
+                    </div>
+                </div>
+                <i onclick="
         document.querySelector('.CallMe_back_modal').style='display:none'
         " class="bx bx-x"></i>
-    </div>
-    <div class="lineBottom"></div>
-    <div class="callModal_bottom">
-        <img class="ImgDesign" src="/img/Abstract Design (2).png" alt="">
-   <div class="bigWith_back">
-    <div class="ClickButtonsBig">
-        <button onclick="ClickBtn(0)"><img src="/img/phone-line.png" alt=""> Заказать звонок</button>
-        <button onclick="ClickBtn(1)"><img src="/img/WhatsApp.png" alt=""> Whatsapp</button>
-        <button onclick="ClickBtn(2)"><img src="/img/Telegram.png" alt=""> Telegram</button>
-        <button onclick="ClickBtn(3)"><img src="/img/Viber.png" alt=""> Viber</button>
-    </div>
-   </div>
-   <div class="inputWith_login">
-    <label for="">Ваше Имя <span>*</span></label>
-    <div class="inputGrey extraGreyInp">
-        <i class='bx bx-user'></i>
-        <input type="text" placeholder="Ваше имя">
-    </div>
-    
-   </div>
-   <div class="inputWith_login1">
-    <label for="">Номер телефона<span>*</span></label>
- 
-        <div class="inputArrowAbsolute">
-            <div class="Country_input  inputGrey" type="text">
-                <div onmouseleave="document.querySelector('.Country_input__modal').style='display:none'" class="Country_input__modal">
-                    <div  onclick="document.querySelector('.Country_input__modal').style='display:none'" class="Country_input__modal__active">
-        
-                        <div class="Country_input__modal__select" ><img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""> 
-                            <div class="Country_input__phone">+375</div></div>
-                            <i class='bx bx-chevron-up' ></i>
-                    </div>
-                    <div class="Country_input__modal__option" onclick="selectFlag('/img/Frame 2085655518.svg','+375')" ><img style="width: 27px;" src="/img/Frame 2085655518.svg" alt="">  <div class="Country_input__phone">+375</div></div>
-                    <div class="Country_input__modal__option" 
-                    onclick="selectFlag('/img/24х24_interface.png','+75')"
-                    ><img style="width: 27px;" src="/img/24х24_interface.png" alt=""> <div class="Country_input__phone">+75</div></div>
-        
-                </div>
-                <div class="Country_input_action" onclick="document.querySelector('.Country_input__modal').style='display:block'">
-                    <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i class='bx bx-chevron-down'></i>
-                </div>
-                <div class="Country_input__phone Country_input__phone_12">+375</div>
-                <input id="phone-input"  onkeyup="data_plus()" placeholder="(_) ___-__-__" type="text">
             </div>
-            
-          
+            <div class="lineBottom"></div>
+            <div class="callModal_bottom">
+                <img class="ImgDesign" src="/img/Abstract Design (2).png" alt="">
+                <div class="bigWith_back">
+                    <div class="ClickButtonsBig">
+                        <button onclick="ClickBtn(0)"><img src="/img/phone-line.png" alt=""> Заказать звонок</button>
+                        <button onclick="ClickBtn(1)"><img src="/img/WhatsApp.png" alt=""> Whatsapp</button>
+                        <button onclick="ClickBtn(2)"><img src="/img/Telegram.png" alt=""> Telegram</button>
+                        <button onclick="ClickBtn(3)"><img src="/img/Viber.png" alt=""> Viber</button>
+                    </div>
+                </div>
+                <div class="inputWith_login">
+                    <label for="">Ваше Имя <span>*</span></label>
+                    <div class="inputGrey extraGreyInp">
+                        <i class='bx bx-user'></i>
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+
+                </div>
+                <div class="inputWith_login1">
+                    <label for="">Номер телефона<span>*</span></label>
+
+                    <div class="inputArrowAbsolute">
+                        <div class="Country_input  inputGrey" type="text">
+                            <div onmouseleave="document.querySelector('.Country_input__modal').style='display:none'"
+                                class="Country_input__modal">
+                                <div onclick="document.querySelector('.Country_input__modal').style='display:none'"
+                                    class="Country_input__modal__active">
+
+                                    <div class="Country_input__modal__select"><img style="width: 27px;"
+                                            src="/img/Frame 2085655518.svg" alt="">
+                                        <div class="Country_input__phone">+375</div>
+                                    </div>
+                                    <i class='bx bx-chevron-up'></i>
+                                </div>
+                                <div class="Country_input__modal__option"
+                                    onclick="selectFlag('/img/Frame 2085655518.svg','+375')"><img style="width: 27px;"
+                                        src="/img/Frame 2085655518.svg" alt="">
+                                    <div class="Country_input__phone">+375</div>
+                                </div>
+                                <div class="Country_input__modal__option"
+                                    onclick="selectFlag('/img/24х24_interface.png','+75')"><img style="width: 27px;"
+                                        src="/img/24х24_interface.png" alt="">
+                                    <div class="Country_input__phone">+75</div>
+                                </div>
+
+                            </div>
+                            <div class="Country_input_action"
+                                onclick="document.querySelector('.Country_input__modal').style='display:block'">
+                                <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i
+                                    class='bx bx-chevron-down'></i>
+                            </div>
+                            <div class="Country_input__phone Country_input__phone_12">+375</div>
+                            <input id="phone-input" onkeyup="data_plus()" placeholder="(_) ___-__-__" type="text">
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <h4>* — поле, обязательное для заполнения</h4>
+
+                <div class="lineBottom"></div>
+                <div class="FullWidth_btn">
+                    <button>Отправить</button>
+                </div>
+
+            </div>
         </div>
- 
+
     </div>
-    <h4>* — поле, обязательное для заполнения</h4>
 
-    <div class="lineBottom"></div>
-<div class="FullWidth_btn">
-        <button >Отправить</button>
-</div>
+    <script>
+        function ClickBtn(params) {
+            let buttonClick = document.querySelectorAll('.ClickButtonsBig button')
+            for (let i = 0; i < buttonClick.length; i++) {
+                if (i == params) {
+                    buttonClick[i].style = 'background-color:#303030'
+                } else {
+                    buttonClick[i].style = 'background: #E2E4E9;border:1px solid #E2E4E9;color:black '
 
-</div>
-</div>
-
-</div>   
-
- <script>
-    function ClickBtn(params) {
-        let buttonClick=document.querySelectorAll('.ClickButtonsBig button')
-        for (let i = 0; i < buttonClick.length; i++) {
-            if(i==params){
-                buttonClick[i].style='background: #E2E4E9;border:1px solid #E2E4E9;color:black '
-            }else{
-                buttonClick[i].style='background-color:#303030'
-
+                }
             }
         }
-    }
-</script> 
-  <div class="app_BgMain">
+    </script>
+    <div class="app_BgMain">
 
-    <div class="newOffersMarket">
-       <h1><span>Новые предложения</span> на рынке:</h1>
-       <div class="newOffersMarket_body">
-   <div class="categoryBtns">
-       <div onclick="backgroundChange(0)" class="oneCategoryBtn">
-           <span>Квартиры</span>
-       </div>
-       <div onclick="backgroundChange(1)" class="oneCategoryBtn"> 
-           <span>Новостройки</span>
-       </div>
-       <div onclick="backgroundChange(2)" class="oneCategoryBtn">
-           <span>Коммерческая</span>
-       </div>
-       <div onclick="backgroundChange(3)" class="oneCategoryBtn">
-           <span>Загородная</span>
-       </div>
-   </div>
-   <div class="select_forMedia">
-    <select name="" id="">
-        <option value="">Квартиры</option>
-        <option value="">Новостройки</option>
-        <option value="">Коммерческая</option>
-        <option value="">Загородная</option>
-    </select>
-   </div>
-   <div class="swiper mySwiper2">
-    <div class="swipper__button_df"><div class="swiper-button-prev swiper-button__media "> </div>
-        <div class="swiper-button-next swiper-button__media"> </div>
-       
-    </div>
-       <div class="swiper-wrapper">
-         <div class="swiper-slide">
-           <div class="SwiperAboutHome">
-               <img class="RestangleSwipImg" src="/img/Rectangle 1891.png" alt="">
-               <div class="bodyDescribe_Home">
-                   <h4>Купить 2-комнатную квартиру, г. Минск, ул. Чичурина, 24</h4>
-                   <div class="romb_bigFlex">
-                       <div class="oneRomb">
-                           <img src="/img/Icon 24x24.png" alt="">
-                           <span>78.1 м <sup>2</sup></span>
-                       </div>
-                       <div class="oneRomb">
-                           <img src="/img/Icon 24x24.png" alt="">
-                           <span>9/10 этаж</span>
-                       </div>
-                   </div>
-                   <div class="otherRomb">
-                       <img src="/img/Group (1).png" alt="">
-                       <span>Минск, Фрунзенский, ул. Чичурина, 24</span>
-                   </div>
-                   <span>300  789 BYN</span>
-                   <p>95 000 $</p>
-                   <button>Получить консультацию</button>
-               </div>
-           </div>
-         </div>
-         <div class="swiper-slide">
-            <div class="SwiperAboutHome">
-                <img class="RestangleSwipImg" src="/img/Rectangle 1891.png" alt="">
-                <div class="bodyDescribe_Home">
-                    <h4>Купить 1-комнатную квартиру, г. Минск, просп. Победителей, 133</h4>
-                    <div class="romb_bigFlex">
-                        <div class="oneRomb">
-                            <img src="/img/Icon 24x24.png" alt="">
-                            <span>42.3 м <sup>2</sup></span>
+        <div class="newOffersMarket">
+            <h1><span>Новые предложения</span> на рынке:</h1>
+            <div class="newOffersMarket_body">
+                <div class="categoryBtns">
+                    <div onclick="backgroundChange(0)" class="oneCategoryBtn">
+                        <span>Квартиры</span>
+                    </div>
+                    <div onclick="backgroundChange(1)" class="oneCategoryBtn">
+                        <span>Новостройки</span>
+                    </div>
+                    <div onclick="backgroundChange(2)" class="oneCategoryBtn">
+                        <span>Коммерческая</span>
+                    </div>
+                    <div onclick="backgroundChange(3)" class="oneCategoryBtn">
+                        <span>Загородная</span>
+                    </div>
+                </div>
+                <div class="select_forMedia">
+                    <select name="" id="">
+                        <option value="">Квартиры</option>
+                        <option value="">Новостройки</option>
+                        <option value="">Коммерческая</option>
+                        <option value="">Загородная</option>
+                    </select>
+                </div>
+                <div class="swiper mySwiper2">
+                    <div class="swipper__button_df">
+                        <div class="swiper-button-prev swiper-button__media "> </div>
+                        <div class="swiper-button-next swiper-button__media"> </div>
+
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="SwiperAboutHome">
+                                <img class="RestangleSwipImg" src="/img/Rectangle 1891.png" alt="">
+                                <div class="bodyDescribe_Home">
+                                    <h4>Купить 2-комнатную квартиру, г. Минск, ул. Чичурина, 24</h4>
+                                    <div class="romb_bigFlex">
+                                        <div class="oneRomb">
+                                            <img src="/img/Icon 24x24.png" alt="">
+                                            <span>78.1 м <sup>2</sup></span>
+                                        </div>
+                                        <div class="oneRomb">
+                                            <img src="/img/Icon 24x24.png" alt="">
+                                            <span>9/10 этаж</span>
+                                        </div>
+                                    </div>
+                                    <div class="otherRomb">
+                                        <img src="/img/Group (1).png" alt="">
+                                        <span>Минск, Фрунзенский, ул. Чичурина, 24</span>
+                                    </div>
+                                    <span>300 789 BYN</span>
+                                    <p>95 000 $</p>
+                                    <button>Получить консультацию</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="oneRomb">
-                            <img src="/img/Icon 24x24.png" alt="">
-                            <span>7/16 этаж</span>
+                        <div class="swiper-slide">
+                            <div class="SwiperAboutHome">
+                                <img class="RestangleSwipImg" src="/img/Rectangle 1891.png" alt="">
+                                <div class="bodyDescribe_Home">
+                                    <h4>Купить 1-комнатную квартиру, г. Минск, просп. Победителей, 133</h4>
+                                    <div class="romb_bigFlex">
+                                        <div class="oneRomb">
+                                            <img src="/img/Icon 24x24.png" alt="">
+                                            <span>42.3 м <sup>2</sup></span>
+                                        </div>
+                                        <div class="oneRomb">
+                                            <img src="/img/Icon 24x24.png" alt="">
+                                            <span>7/16 этаж</span>
+                                        </div>
+                                    </div>
+                                    <div class="otherRomb">
+                                        <img src="/img/Group (1).png" alt="">
+                                        <span>Минск, Центральный, просп. Победителей, 133</span>
+                                    </div>
+                                    <span>332 451 BYN</span>
+                                    <p>105 000 $</p>
+                                    <button>Получить консультацию</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="SwiperAboutHome">
+                                <img class="RestangleSwipImg" src="/img/Rectangle 1891.png" alt="">
+                                <div class="bodyDescribe_Home">
+                                    <h4>Купить 2-комнатную квартиру, ул. Жуковского, 29Б</h4>
+                                    <div class="romb_bigFlex">
+                                        <div class="oneRomb">
+                                            <img src="/img/Icon 24x24.png" alt="">
+                                            <span>79 м <sup>2</sup></span>
+                                        </div>
+                                        <div class="oneRomb">
+                                            <img src="/img/Icon 24x24.png" alt="">
+                                            <span>1/9 этаж</span>
+                                        </div>
+                                    </div>
+                                    <div class="otherRomb">
+                                        <img src="/img/Group (1).png" alt="">
+                                        <span>Минск, Октябрьский, ул. Жуковского, 29Б</span>
+                                    </div>
+                                    <span>474 930 BYN</span>
+                                    <p>150 000 $</p>
+                                    <button>Получить консультацию</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="SwiperAboutHome">
+                                <img class="RestangleSwipImg" src="/img/Rectangle 1891.png" alt="">
+                                <div class="bodyDescribe_Home">
+                                    <h4>Купить 2-комнатную квартиру, г. Минск, ул. Чичурина, 24</h4>
+                                    <div class="romb_bigFlex">
+                                        <div class="oneRomb">
+                                            <img src="/img/Icon 24x24.png" alt="">
+                                            <span>78.1 м <sup>2</sup></span>
+                                        </div>
+                                        <div class="oneRomb">
+                                            <img src="/img/Icon 24x24.png" alt="">
+                                            <span>9/10 этаж</span>
+                                        </div>
+                                    </div>
+                                    <div class="otherRomb">
+                                        <img src="/img/Group (1).png" alt="">
+                                        <span>Минск, Фрунзенский, ул. Чичурина, 24</span>
+                                    </div>
+                                    <span>300 789 BYN</span>
+                                    <p>95 000 $</p>
+                                    <button>Получить консультацию</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="otherRomb">
-                        <img src="/img/Group (1).png" alt="">
-                        <span>Минск, Центральный, просп. Победителей, 133</span>
-                    </div>
-                    <span>332 451 BYN</span>
-                    <p>105 000 $</p>
-                    <button>Получить консультацию</button>
+
+                    <div class="swiper-button-next swiper-button__pk"> </div>
+                    <div class="swiper-button-prev swiper-button__pk "> </div>
                 </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="SwiperAboutHome">
-                <img class="RestangleSwipImg" src="/img/Rectangle 1891.png" alt="">
-                <div class="bodyDescribe_Home">
-                    <h4>Купить 2-комнатную квартиру, ул. Жуковского, 29Б</h4>
-                    <div class="romb_bigFlex">
-                        <div class="oneRomb">
-                            <img src="/img/Icon 24x24.png" alt="">
-                            <span>79 м <sup>2</sup></span>
-                        </div>
-                        <div class="oneRomb">
-                            <img src="/img/Icon 24x24.png" alt="">
-                            <span>1/9 этаж</span>
+        </div>
+        <section class="rielter">
+            <div class="rielter_header">
+                <div class="rielter_title">
+                    <h1> <span> Зачем риэлтер,</span> если многие продают и покупают самостоятельно?</h1>
+                </div>
+                <div class="rielter_cards">
+                    <div class="rielter_card ExtraRielter">
+                        <div class="rielter_inside">
+
+                            <h3>Нюансы покупки квартиры <br> НА ВТОРИЧНОМ РЫНКЕ:</h3>
+                            <div class="rielter_p">
+                                <p class="rielter_text"> <strong>В оценке вторичной недвижимости </strong> мы начинаем с
+                                    <br> анализа максимальной возможной цены продажи и <br> минимальной цены покупки.
+                                </p>
+                                <p class="rielter_text2"><strong>Наш обширный опыт</strong> работы во всех районах
+                                    Минска позволяет нам точно знать актуальные цены на проданные квартиры.</p>
+                                <p class="rielter_text3"> <strong>Каждая сделка имеет свои нюансы,</strong> такие как
+                                    требования органов опеки, условия банков и схемы расчетов встречных сделок. Знание
+                                    способов защиты Ваших интересов может избежать финансовых потерь</p>
+                                <p class="rielter_text3 extraText"><strong>Профессиональные навыки и опыт продаж
+                                    </strong> позволяют <br> нам находить и удерживать как покупателей, так и <br>
+                                    продавцов. <br> Помните, что у вас нет второго шанса произвести первое впечатление.
+                                </p>
+                            </div>
+                            <div class="rielter_finis">
+                                <p>Мы гарантируем безопасность сделки и как следствие спокойствие, что позволяет
+                                    минимизировать потерю времени, сил, денег и нервов.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="otherRomb">
-                        <img src="/img/Group (1).png" alt="">
-                        <span>Минск, Октябрьский, ул. Жуковского, 29Б</span>
+
+                    <div class="rielter_card ">
+                        <div id="rielter_kak" class="rielter_insider">
+                            <div class="rielter_p2">
+                                <h3>Нюансы покупки квартиры <br> В НОВОСТРОЙКАХ:</h3>
+                                <p class="rielter_text4"> <strong>Лучшие предложения</strong> в новостройках исчезают
+                                    буквально в первые часы после начала продаж. А если не следить за рынком
+                                    недвижимости, можно даже пропустить запуск продаж новых объектов.</p>
+                                <p> <strong>Мы уделяем больше внимания </strong> Вашему запросу на поиск квартиры.</p>
+                                <p class="MediaStrong_p"><strong>При обращении к застройщику,</strong> выбор покупателя
+                                    ограничивается только проектами этого застройщика. Мы же предлагаем широкий выбор
+                                    недвижимости от всех застройщиков в Минске, работая как независимый отдел продаж
+                                    новостроек.</p>
+                                <p><strong>Не все новостройки одинаково успешны.</strong> Наша команда знает, на какие
+                                    квартиры стоит обратить внимание, чтобы получить уверенный рост цен в течение
+                                    нескольких лет.</p>
+                            </div>
+                            <div class="rielter_finis">
+                                <p>Многие риэлтеры не раскрывают полную информацию о недвижимости из-за долгосрочных
+                                    связей и партнерств с застройщиками. Мы же имеем доступ к подробной информации о
+                                    каждом объекте и готовы ею поделиться с Вами.</p>
+                            </div>
+                        </div>
                     </div>
-                    <span>474 930 BYN</span>
-                    <p>150 000 $</p>
-                    <button>Получить консультацию</button>
                 </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="SwiperAboutHome">
-                <img class="RestangleSwipImg" src="/img/Rectangle 1891.png" alt="">
-                <div class="bodyDescribe_Home">
-                    <h4>Купить 2-комнатную квартиру, г. Минск, ул. Чичурина, 24</h4>
-                    <div class="romb_bigFlex">
-                        <div class="oneRomb">
-                            <img src="/img/Icon 24x24.png" alt="">
-                            <span>78.1 м <sup>2</sup></span>
-                        </div>
-                        <div class="oneRomb">
-                            <img src="/img/Icon 24x24.png" alt="">
-                            <span>9/10 этаж</span>
-                        </div>
-                    </div>
-                    <div class="otherRomb">
-                        <img src="/img/Group (1).png" alt="">
-                        <span>Минск, Фрунзенский, ул. Чичурина, 24</span>
-                    </div>
-                    <span>300  789 BYN</span>
-                    <p>95 000 $</p>
-                    <button>Получить консультацию</button>
-                </div>
-            </div>
-          </div>
-       </div>
-    
-       <div class="swiper-button-next swiper-button__pk"> </div>
-       <div class="swiper-button-prev swiper-button__pk "> </div>
-     </div> 
-       </div>
-   </div>  
-  <section class="rielter">
-       <div class="rielter_header">
-           <div class="rielter_title">
-               <h1> <span> Зачем риэлтер,</span>  если многие продают и покупают самостоятельно?</h1>
-           </div>
-           <div class="rielter_cards">
-               <div class="rielter_card ExtraRielter">
-                   <div class="rielter_inside">
-   
-                    <h3>Нюансы покупки квартиры <br> НА ВТОРИЧНОМ РЫНКЕ:</h3>
-                       <div class="rielter_p">
-                           <p class="rielter_text"> <strong>В оценке вторичной недвижимости </strong> мы начинаем с <br> анализа максимальной возможной цены продажи и <br> минимальной цены покупки.</p>
-                           <p class="rielter_text2"><strong>Наш обширный опыт</strong> работы во всех районах Минска позволяет нам точно знать актуальные цены на проданные квартиры.</p>
-                           <p class="rielter_text3"> <strong>Каждая сделка имеет свои нюансы,</strong> такие как требования органов опеки, условия банков и схемы расчетов встречных сделок. Знание способов защиты Ваших интересов может избежать финансовых потерь</p>
-                           <p class="rielter_text3 extraText"><strong>Профессиональные навыки и опыт продаж </strong> позволяют <br> нам находить и удерживать как покупателей, так и <br> продавцов. <br>  Помните, что у вас нет второго шанса произвести первое впечатление.</p>
-                       </div>
-                       <div class="rielter_finis">
-                           <p>Мы гарантируем безопасность сделки и как следствие спокойствие, что позволяет минимизировать потерю времени, сил, денег и нервов.</p>
-                       </div>
-                   </div>
-               </div>
-    
-               <div class="rielter_card ">
-                   <div id="rielter_kak" class="rielter_insider">
-                       <div class="rielter_p2">
-                        <h3>Нюансы покупки квартиры <br> В НОВОСТРОЙКАХ:</h3>
-                           <p class="rielter_text4"> <strong>Лучшие предложения</strong>  в новостройках исчезают буквально   в первые часы после начала продаж. А если не следить за рынком недвижимости, можно даже пропустить запуск продаж новых объектов.</p>
-                           <p> <strong>Мы уделяем больше внимания </strong>  Вашему запросу на поиск квартиры.</p>
-                           <p  class="MediaStrong_p"><strong>При обращении к застройщику,</strong>  выбор покупателя ограничивается только проектами этого застройщика. Мы   же предлагаем широкий выбор недвижимости от всех застройщиков в Минске, работая как независимый отдел продаж новостроек.</p>
-                           <p><strong>Не все новостройки одинаково успешны.</strong> Наша команда знает, на какие квартиры стоит обратить внимание, чтобы получить уверенный рост цен в течение нескольких лет.</p>
-                       </div>
-                       <div class="rielter_finis">
-                           <p>Многие риэлтеры не раскрывают полную информацию о недвижимости из-за долгосрочных связей и партнерств с застройщиками. Мы же имеем доступ к подробной информации о каждом объекте и готовы ею поделиться с Вами.</p>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-   
-   </section>
-   
-  <section class="kvartira">
-        <h1 class="universal__title  universal__title_second">
-            <span> Продайте квартиру в 2 раза
-                быстрее </span><br>
+
+        </section>
+
+        <section class="kvartira">
+            <h1 class="universal__title  universal__title_second">
+                <span> Продайте квартиру в 2 раза
+                    быстрее </span><br>
                 за счет успешной
                 схемы продаж
-        </h1>
+            </h1>
 
-        <div class="kvartira_chags">
-            <div class="kvartira_shag">
-                <p class="kvartira_shag__p">Бесплатно оцениваем объект по выгодной стоимости с учетом всех преимуществ
-                </p>
-                <div class="kvartira_shag__circle kvartira_shag__circle_1">01</div>
-                <img src="/img/OBJECTS (2123213).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
-            </div>
-            <div class="kvartira_shag">
-                <img src="/img/OBJECTS.png" alt="" class="kvartira_shag_img kvartira_shag_img_2">
-                <div class="kvartira_shag__circle kvartira_shag__circle_2">02</div>
-                <p class="kvartira_shag__p kvartira_shag__p__1">Заключаем договор на срочную
-                    продажу недвижимости</p>
-            </div>
-            <div class="kvartira_shag">
-                <p class="kvartira_shag__p">Проводим профессиональную
-                    фотосъемку для повышения
-                     стоимости недвижимости</p>
-                <div class="kvartira_shag__circle kvartira_shag__circle_1">03</div>
-                <img src="/img/OBJECTS (2123213).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
-            </div>
+            <script>
+                const image1 = document.querySelector('.kvartira');
 
-            <div class="kvartira_shag"> <img src="/img/OBJECTS.png" alt="" class="kvartira_shag_img kvartira_shag_img_2">
-                <div class="kvartira_shag__circle kvartira_shag__circle_2">04</div>
-                <p class="kvartira_shag__p kvartira_shag__p__3">Рассылаем объявление 2000+
-                    агентам и размещаем на более 10
-                    площадках</p>
-            </div>
-            <div class="kvartira_shag">
-                <p class="kvartira_shag__p">Организуем и проводим
-                    просмотры квартиры,
-                    ведем переговоры</p>
-                <div class="kvartira_shag__circle kvartira_shag__circle_1">05</div>
-                <img src="/img/OBJECTS (2123213).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
-            </div>
-            <div class="kvartira_shag"> <img style="opacity: 0;" src="/img/OBJECTS.png" alt="" class="kvartira_shag_img kvartira_shag_img_2">
-                <div class="kvartira_shag__circle kvartira_shag__circle_2">06</div>
-                <p class="kvartira_shag__p kvartira_shag__p__4">Гарантируем полное юридическое
-                    сопровождение для безопасной
-                    продажи</p>
-            </div>
+                window.addEventListener('scroll', () => {
+                    const windowHeight2 = window.innerHeight;
+                    const imageTop2 = image1.getBoundingClientRect().top;
+                    const imageBottom2 = image1.getBoundingClientRect().bottom;
+                    if (imageTop2 >= -500 && imageBottom2 <= (windowHeight2 + 200)) {
+                        var ass = document.querySelectorAll('.kvartira_shag img')
+                        for (let i = 0; i < ass.length - 1; i++) {
+                            setTimeout(() => {
+                                ass[i].style = "opacity:1;"
+                            }, i * 1000);
+                        }
+                    } else {
+                        var ass = document.querySelectorAll('.kvartira_shag img')
+                        for (let i = 0; i < ass.length - 1; i++) {
+                                ass[i].style = "opacity:0;"
+                        }
+                    }
+                });
+            </script>
+            <div class="kvartira_chags">
+                <div class="kvartira_shag">
+                    <p class="kvartira_shag__p">Бесплатно оцениваем объект по выгодной стоимости с учетом всех
+                        преимуществ
+                    </p>
+                    <div class="kvartira_shag__circle kvartira_shag__circle_1">01</div>
+                    <img src="/img/OBJECTS (2123213).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
+                </div>
+                <div class="kvartira_shag">
+                    <img src="/img/OBJECTS.png" alt="" class="kvartira_shag_img kvartira_shag_img_2">
+                    <div class="kvartira_shag__circle kvartira_shag__circle_2">02</div>
+                    <p class="kvartira_shag__p kvartira_shag__p__1">Заключаем договор на срочную
+                        продажу недвижимости</p>
+                </div>
+                <div class="kvartira_shag">
+                    <p class="kvartira_shag__p">Проводим профессиональную
+                        фотосъемку для повышения
+                        стоимости недвижимости</p>
+                    <div class="kvartira_shag__circle kvartira_shag__circle_1">03</div>
+                    <img src="/img/OBJECTS (2123213).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
+                </div>
 
-        </div>
-    </section>   
-    <img class="AbstractDesign" src="/img/Abstract Design.png" alt=""> 
-   <img class="AbstractDesign_Second" src="/img/Abstract Design (1).png" alt="">
- <main class="MainGet_money">
-   <h1>Они уже продали недвижимость <br><span><br> и получили<br> деньги  с нашей помощью</span></h1>
-   <div class="bigGrid_templateDiv_body">
-       <div class="firstVideo">
-           <img class="VideICon" onclick="
+                <div class="kvartira_shag"> <img src="/img/OBJECTS.png" alt=""
+                        class="kvartira_shag_img kvartira_shag_img_2">
+                    <div class="kvartira_shag__circle kvartira_shag__circle_2">04</div>
+                    <p class="kvartira_shag__p kvartira_shag__p__3">Рассылаем объявление 2000+
+                        агентам и размещаем на более 10
+                        площадках</p>
+                </div>
+                <div class="kvartira_shag">
+                    <p class="kvartira_shag__p">Организуем и проводим
+                        просмотры квартиры,
+                        ведем переговоры</p>
+                    <div class="kvartira_shag__circle kvartira_shag__circle_1">05</div>
+                    <img src="/img/OBJECTS (2123213).png" alt="" class="kvartira_shag_img kvartira_shag_img_1">
+                </div>
+                <div class="kvartira_shag"> <img style="opacity: 0;" src="/img/OBJECTS.png" alt=""
+                        class="kvartira_shag_img kvartira_shag_img_2">
+                    <div class="kvartira_shag__circle kvartira_shag__circle_2">06</div>
+                    <p class="kvartira_shag__p kvartira_shag__p__4">Гарантируем полное юридическое
+                        сопровождение для безопасной
+                        продажи</p>
+                </div>
+
+            </div>
+        </section>
+        <img class="AbstractDesign" src="/img/Abstract Design.png" alt="">
+        <img class="AbstractDesign_Second" src="/img/Abstract Design (1).png" alt="">
+        <main class="MainGet_money">
+            <h1>Они уже продали недвижимость <br><span><br> и получили<br> деньги с нашей помощью</span></h1>
+            <div class="bigGrid_templateDiv_body">
+                <div class="firstVideo">
+                    <img class="VideICon" onclick="
                document.querySelector('.firstVideo video').style='display:block'
                document.querySelector('.firstVideo').style='background:none'
                document.querySelector('.firstVideo .CircularImg').style='top:215px'
                document.querySelector('.firstVideo .VideICon').style='display:none'
                " src="/img/Frame 34503.png" alt="">
-           
-           <video controls>
-               <source src="/video/test.mp4" type="video/mp4">
-            
-             </video>
-           <img class="CircularImg" src="/img/Frame 2085655476.png" alt="">
-       </div>
-       <div class="secondDescribe">
-           <h2>Продажа 3-комнатной квартиры, г. Минск, просп. Независимости, 88</h2>
-           <div class="dataDisplayFlex">
-               <span>Площадь</span>
-               <p>87.1 м2</p>
-           </div>
-           <div class="dataDisplayFlex">
-               <span>Стоимость по предварительной оценке</span>
-               <p class="Extra_pFor_media">174 900 $</p>
-           </div>
-           <div class="dataDisplayFlex">
-               <span>Квартира продана за</span>
-               <p>163 000 $</p>
-           </div>
-           <div class="dataDisplayFlex">
-               <span>Срок продажи</span>
-               <p>26 дней</p>
-           </div>
-           <h4><span>Тоже хотите продать квартиру выгодно и безопасно?</span> Закажите консультацию агента по продажам и узнайте:</h4>
-   
-           <div class="circleQuestion">
-               <i class='bx bxs-help-circle'></i>
-               <span>сколько стоит ваша недвижимость</span>
-           </div>
-           <div class="circleQuestion">
-               <i class='bx bxs-help-circle'></i>
-               <span>как повысить ее ценность в глазах покупателей</span>
-           </div>
-           <div class="circleQuestion">
-               <i class='bx bxs-help-circle'></i>
-               <span>как ускорить продажу</span>
-           </div>
-   <div class="inputArrowAbsolute">
-       <div class="Country_input" type="text">
-           <div onmouseleave="document.querySelector('.Country_input__modal').style='display:none'" class="Country_input__modal">
-               <div  onclick="document.querySelector('.Country_input__modal').style='display:none'" class="Country_input__modal__active">
-   
-                   <div class="Country_input__modal__select" ><img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""> 
-                       <div class="Country_input__phone">+375</div></div>
-                       <i class='bx bx-chevron-up' ></i>
-               </div>
-               <div class="Country_input__modal__option" onclick="selectFlag('/img/Frame 2085655518.svg','+375')" ><img style="width: 27px;" src="/img/Frame 2085655518.svg" alt="">  <div class="Country_input__phone">+375</div></div>
-               <div class="Country_input__modal__option" 
-               onclick="selectFlag('/img/24х24_interface.png','+75')"
-               ><img style="width: 27px;" src="/img/24х24_interface.png" alt=""> <div class="Country_input__phone">+75</div></div>
-   
-           </div>
-           <div class="Country_input_action" onclick="document.querySelector('.Country_input__modal').style='display:block'">
-               <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i class='bx bx-chevron-down'></i>
-           </div>
-           <div class="Country_input__phone Country_input__phone_12">+375</div>
-           <input id="phone-input"  onkeyup="data_plus()" placeholder="(_) ___-__-__" type="text">
-       </div>
-       <button class="Evaluate_btn">Оценить недвижимость</button>
-       <img class="Object_arrow" src="/img/OBJECTSArrow.png" alt="">
-   </div>
-   
-   <script>
-       function selectFlag(flag,numberp) {
-           document.querySelector(".inputArrowAbsolute .Country_input_action").innerHTML=`<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
-           document.querySelector(".inputArrowAbsolute .Country_input__modal__select").innerHTML=`<img style="width: 27px;" src="${flag}" alt=""> 
+
+                    <video controls>
+                        <source src="/video/test.mp4" type="video/mp4">
+
+                    </video>
+                    <img class="CircularImg" src="/img/Frame 2085655476.png" alt="">
+                </div>
+                <div class="secondDescribe">
+                    <h2>Продажа 3-комнатной квартиры, г. Минск, просп. Независимости, 88</h2>
+                    <div class="dataDisplayFlex">
+                        <span>Площадь</span>
+                        <p>87.1 м2</p>
+                    </div>
+                    <div class="dataDisplayFlex">
+                        <span>Стоимость по предварительной оценке</span>
+                        <p class="Extra_pFor_media">174 900 $</p>
+                    </div>
+                    <div class="dataDisplayFlex">
+                        <span>Квартира продана за</span>
+                        <p>163 000 $</p>
+                    </div>
+                    <div class="dataDisplayFlex">
+                        <span>Срок продажи</span>
+                        <p>26 дней</p>
+                    </div>
+                    <h4><span>Тоже хотите продать квартиру выгодно и безопасно?</span> Закажите консультацию агента по
+                        продажам и узнайте:</h4>
+
+                    <div class="circleQuestion">
+                        <i class='bx bxs-help-circle'></i>
+                        <span>сколько стоит ваша недвижимость</span>
+                    </div>
+                    <div class="circleQuestion">
+                        <i class='bx bxs-help-circle'></i>
+                        <span>как повысить ее ценность в глазах покупателей</span>
+                    </div>
+                    <div class="circleQuestion">
+                        <i class='bx bxs-help-circle'></i>
+                        <span>как ускорить продажу</span>
+                    </div>
+                    <div class="inputArrowAbsolute">
+                        <div class="Country_input" type="text">
+                            <div onmouseleave="document.querySelector('.Country_input__modal').style='display:none'"
+                                class="Country_input__modal">
+                                <div onclick="document.querySelector('.Country_input__modal').style='display:none'"
+                                    class="Country_input__modal__active">
+
+                                    <div class="Country_input__modal__select"><img style="width: 27px;"
+                                            src="/img/Frame 2085655518.svg" alt="">
+                                        <div class="Country_input__phone">+375</div>
+                                    </div>
+                                    <i class='bx bx-chevron-up'></i>
+                                </div>
+                                <div class="Country_input__modal__option"
+                                    onclick="selectFlag('/img/Frame 2085655518.svg','+375')"><img style="width: 27px;"
+                                        src="/img/Frame 2085655518.svg" alt="">
+                                    <div class="Country_input__phone">+375</div>
+                                </div>
+                                <div class="Country_input__modal__option"
+                                    onclick="selectFlag('/img/24х24_interface.png','+75')"><img style="width: 27px;"
+                                        src="/img/24х24_interface.png" alt="">
+                                    <div class="Country_input__phone">+75</div>
+                                </div>
+
+                            </div>
+                            <div class="Country_input_action"
+                                onclick="document.querySelector('.Country_input__modal').style='display:block'">
+                                <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i
+                                    class='bx bx-chevron-down'></i>
+                            </div>
+                            <div class="Country_input__phone Country_input__phone_12">+375</div>
+                            <input id="phone-input" onkeyup="data_plus()" placeholder="(_) ___-__-__" type="text">
+                        </div>
+                        <button class="Evaluate_btn">Оценить недвижимость</button>
+                        <img class="Object_arrow" src="/img/OBJECTSArrow.png" alt="">
+                    </div>
+
+                    <script>
+                        function selectFlag(flag, numberp) {
+                            document.querySelector(".inputArrowAbsolute .Country_input_action").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
+                            document.querySelector(".inputArrowAbsolute .Country_input__modal__select").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""> 
                        <div class="Country_input__phone">${numberp}</div></div>
                        `
-           document.querySelector(".inputArrowAbsolute .Country_input__phone_12").innerHTML=numberp
-       document.querySelector('.inputArrowAbsolute .Country_input__modal').style='display:none'
-       }
-      
-   function data_plus() {
-       var value1=document.querySelector('.inputArrowAbsolute #phone-input').value
-       if (value1.length === 0) {
-       value1 = '(' + value1;
-     } 
-     document.querySelector('.inputArrowAbsolute #phone-input').value=value1
-     }
-   const phoneInput = document.querySelector('.inputArrowAbsolute #phone-input');
-   let isFirstDigitAdded = false;
-   
-   phoneInput.addEventListener('keydown', function(e) {
-     var value=document.querySelector('.inputArrowAbsolute #phone-input').value
-   if(e.key!="Backspace"){
-     if (value.length === 0) {
-       value = '('
-     } else if (value.length === 3) {
-       value = value.slice(0, 3) + ') ' + value.slice(3);
-     } else if (value.length === 8) {
-       value = value.slice(0, 8) + '-' + value.slice(8);
-     } else if (value.length === 11) {
-       value = value.slice(0, 11) + '-' + value.slice(11);
-     } else if (value.length === 14) {
-       value = value.slice(0, 13)
-     }
-     phoneInput.addEventListener('keypress', function(e) {
-     const allowedChars = /[\+\(\)\d]/;
-     if (!allowedChars.test(e.key)) {
-       e.preventDefault();
-     }
-   });
-     
-     this.value = value;
-   
-   }
-   
-   });
-   
-   
-   </script>
-   <div class="PersonalData">
-       <input type="checkbox" name="" id="">
-       <h3>Я согласен(а) с условиями обработки <span>персональных данных.</span></h3>
-   </div>
-       </div>
-   </div>
-   </main> 
-     <div class="otziv">
-       <h1>отзывы </h1>
-   </div> 
-     <main class="ApplicationSwiper"> 
-  
-           <div class="swiper mySwiper"> 
+                            document.querySelector(".inputArrowAbsolute .Country_input__phone_12").innerHTML = numberp
+                            document.querySelector('.inputArrowAbsolute .Country_input__modal').style = 'display:none'
+                        }
 
-               <div class="swiper-wrapper">
-       
-                 <div class="swiper-slide">
-                   <div   class="swiperYandex">
-                       <div class="swiperHeader">
-                           <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
-                           <div class="StarAnd_name">
-                               <div class="FiveStars">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                               </div>
-                               <span>Сергей Сурин</span>
-                           </div>
-                       </div>
-                       <div class="BelowHeader">
-                        <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой, которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи, давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда на позитиве, всегда готовы все пояснить, разъяснить, основательно и профессионально проконсультировать... Они нашли идеальную квартиру, которая соответствовала всем моим пожеланиям и бюджету. Они также подготовили все необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span></p>
-                  </div>
-                       <div onclick="SpanBlockOther(0)"  class="endOpen_other">
-                           <span>Подробнее</span>
-                       </div>
-                   </div>
-                 </div>
-                 <div class="swiper-slide">
-                               <div  class="swiperYandex">
-                       <div class="swiperHeader">
-                           <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
-                           <div class="StarAnd_name">
-                               <div class="FiveStars">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                               </div>
-                               <span>Сергей Сурин</span>
-                           </div>
-                       </div>
-                       <div class="BelowHeader">
-                             <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой, которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи, давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда на позитиве, всегда готовы все пояснить, разъяснить, основательно и профессионально проконсультировать... Они нашли идеальную квартиру, которая соответствовала всем моим пожеланиям и бюджету. Они также подготовили все необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span></p>
-                       </div>
-                       <div onclick="SpanBlockOther(1)" class="endOpen_other">
-                           <span>Подробнее</span>
-                       </div>
-                   </div>
-                 </div>
-                 <div class="swiper-slide">
-                               <div  class="swiperYandex">
-                       <div class="swiperHeader">
-                           <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
-                           <div class="StarAnd_name">
-                               <div class="FiveStars">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                               </div>
-                               <span>Сергей Сурин</span>
-                           </div>
-                       </div>
-                       <div class="BelowHeader">
-                             <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой, которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи, давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда на позитиве, всегда готовы все пояснить, разъяснить, основательно и профессионально проконсультировать... Они нашли идеальную квартиру, которая соответствовала всем моим пожеланиям и бюджету. Они также подготовили все необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span></p>
-                       </div>
-                       <div onclick="SpanBlockOther(2)"  class="endOpen_other">
-                           <span>Подробнее</span>
-                       </div>
-                   </div>
-                 </div>
-                 <div class="swiper-slide">
-                               <div  class="swiperYandex">
-                       <div class="swiperHeader">
-                           <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
-                           <div class="StarAnd_name">
-                               <div class="FiveStars">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                               </div>
-                               <span>Сергей Сурин</span>
-                           </div>
-                       </div>
-                       <div class="BelowHeader">
-                             <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой, которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи, давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда на позитиве, всегда готовы все пояснить, разъяснить, основательно и профессионально проконсультировать... Они нашли идеальную квартиру, которая соответствовала всем моим пожеланиям и бюджету. Они также подготовили все необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span></p>
-                       </div>
-                       <div onclick="SpanBlockOther(3)" class="endOpen_other">
-                           <span>Подробнее</span>
-                       </div>
-                   </div>
-                 </div>
-                 <div class="swiper-slide">
-                               <div  class="swiperYandex">
-                       <div class="swiperHeader">
-                           <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
-                           <div class="StarAnd_name">
-                               <div class="FiveStars">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                               </div>
-                               <span>Сергей Сурин</span>
-                           </div>
-                       </div>
-                       <div class="BelowHeader">
-                             <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой, которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи, давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда на позитиве, всегда готовы все пояснить, разъяснить, основательно и профессионально проконсультировать... Они нашли идеальную квартиру, которая соответствовала всем моим пожеланиям и бюджету. Они также подготовили все необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span></p>
-                       </div>
-                       <div onclick="SpanBlockOther(4)" class="endOpen_other">
-                           <span>Подробнее</span>
-                       </div>
-                   </div>
-                 </div>
-                 <div class="swiper-slide">
-                               <div  class="swiperYandex">
-                       <div class="swiperHeader">
-                           <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
-                           <div class="StarAnd_name">
-                               <div class="FiveStars">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                               </div>
-                               <span>Сергей Сурин</span>
-                           </div>
-                       </div>
-                       <div class="BelowHeader">
-                             <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой, которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи, давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда на позитиве, всегда готовы все пояснить, разъяснить, основательно и профессионально проконсультировать... Они нашли идеальную квартиру, которая соответствовала всем моим пожеланиям и бюджету. Они также подготовили все необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span></p>
-                       </div>
-                       <div onclick="SpanBlockOther(5)" class="endOpen_other">
-                           <span>Подробнее</span>
-                       </div>
-                   </div>
-                 </div>
-                 <div class="swiper-slide">
-                               <div  class="swiperYandex">
-                       <div class="swiperHeader">
-                           <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
-                           <div class="StarAnd_name">
-                               <div class="FiveStars">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                               </div>
-                               <span>Сергей Сурин</span>
-                           </div>
-                       </div>
-                       <div class="BelowHeader">
-                             <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой, которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи, давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда на позитиве, всегда готовы все пояснить, разъяснить, основательно и профессионально проконсультировать... Они нашли идеальную квартиру, которая соответствовала всем моим пожеланиям и бюджету. Они также подготовили все необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span></p>
-                       </div>
-                       <div onclick="SpanBlockOther(6)" class="endOpen_other">
-                           <span>Подробнее</span>
-                       </div>
-                   </div>
-                 </div>
-                 <div class="swiper-slide">
-                               <div  class="swiperYandex">
-                       <div class="swiperHeader">
-                           <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
-                           <div class="StarAnd_name">
-                               <div class="FiveStars">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                                   <img src="/img/Star 6.svg" alt="">
-                               </div>
-                               <span>Сергей Сурин</span>
-                           </div>
-                       </div>
-                       <div class="BelowHeader">
-                             <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой, которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи, давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда на позитиве, всегда готовы все пояснить, разъяснить, основательно и профессионально проконсультировать... Они нашли идеальную квартиру, которая соответствовала всем моим пожеланиям и бюджету. Они также подготовили все необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span></p>
-                       </div>
-                       <div onclick="SpanBlockOther(7)" class="endOpen_other">
-                           <span>Подробнее</span>
-                       </div>
-                   </div>
-                 </div>
-               </div>
-               <div class="swiper-button-next swiper-button__pk"></div>
-               <div class="swiper-button-prev swiper-button__pk"></div>
+                        function data_plus() {
+                            var value1 = document.querySelector('.inputArrowAbsolute #phone-input').value
+                            if (value1.length === 0) {
+                                value1 = '(' + value1;
+                            }
+                            document.querySelector('.inputArrowAbsolute #phone-input').value = value1
+                        }
+                        const phoneInput = document.querySelector('.inputArrowAbsolute #phone-input');
+                        let isFirstDigitAdded = false;
 
-               <div class="swipper__button_df extraSwip_btns"><div class="swiper-button-prev swiper-button__media"></div>
-               <div class="swiper-button-next swiper-button__media"></div>
-               
-           </div>
-             </div>
-    
-       </main>   
-       
+                        phoneInput.addEventListener('keydown', function (e) {
+                            var value = document.querySelector('.inputArrowAbsolute #phone-input').value
+                            if (e.key != "Backspace") {
+                                if (value.length === 0) {
+                                    value = '('
+                                } else if (value.length === 3) {
+                                    value = value.slice(0, 3) + ') ' + value.slice(3);
+                                } else if (value.length === 8) {
+                                    value = value.slice(0, 8) + '-' + value.slice(8);
+                                } else if (value.length === 11) {
+                                    value = value.slice(0, 11) + '-' + value.slice(11);
+                                } else if (value.length === 14) {
+                                    value = value.slice(0, 13)
+                                }
+                                phoneInput.addEventListener('keypress', function (e) {
+                                    const allowedChars = /[\+\(\)\d]/;
+                                    if (!allowedChars.test(e.key)) {
+                                        e.preventDefault();
+                                    }
+                                });
 
-</div>    
+                                this.value = value;
 
-    
- <main class="Main_for_Question">
-   
-       <div class="Main_for_QuestionBody">
-       
-           <h1><span>Ответы на самые частые вопросы</span><br> от наших клиентов </h1>
-           <div class="accorAnswerQuestion">
-               <div class="accorQuestion_body">
-                   <span>Сколько стоит моя квартира?</span>
-                   <div onclick="AccorOpen(0)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt=""></div>
-                                    <div onclick="AccorOpen(100)"  class="close_answer"><img src="/img/24х24_interface (1).png" alt=""></div>
-               </div>
-                <div  class="accorAnswer_body">
-                   <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2 недель.</span>
-               </div> 
-           </div>
-   
-           <div class="accorAnswerQuestion">
-               <div class="accorQuestion_body">
-                   <span>Когда ее купят?</span>
-                   <div  onclick="AccorOpen(1)" id="OpenPlus" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt=""></div>
-                   <div onclick="AccorOpen(100)"  class="close_answer"><img src="/img/24х24_interface (1).png" alt=""></div>
-               </div>
-               <div    class="accorAnswer_body">
-                   <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2 недель.</span>
-               </div>
-           </div>
-   
-           <div class="accorAnswerQuestion">
-               <div class="accorQuestion_body">
-                   <span>Почему ходят смотреть одни риелтеры?</span>
-                   <div onclick="AccorOpen(2)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt=""></div>
-                                    <div onclick="AccorOpen(100)"  class="close_answer"><img src="/img/24х24_interface (1).png" alt=""></div>
-               </div>
-                <div class="accorAnswer_body">
-                   <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2 недель.</span>
-               </div> 
-           </div>
-   
-           <div class="accorAnswerQuestion">
-               <div class="accorQuestion_body">
-                   <span>Почему риелтеры ставят цены как хотят?</span>
-                   <div onclick="AccorOpen(3)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt=""></div>
-                                    <div  onclick="AccorOpen(100)"  class="close_answer"><img src="/img/24х24_interface (1).png" alt=""></div>
-               </div>
-                <div class="accorAnswer_body">
-                   <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2 недель.</span>
-               </div> 
-           </div>
-   
-           <div class="accorAnswerQuestion">
-               <div class="accorQuestion_body extra_for_Media">
-                   <span>Зачем вам делать фото? Чем ваша реклама лучше моей?</span>
-                   <div onclick="AccorOpen(4)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt=""></div>
-                                    <div onclick="AccorOpen(100)"   class="close_answer"><img src="/img/24х24_interface (1).png" alt=""></div>
-               </div>
-                <div class="accorAnswer_body">
-                   <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2 недель.</span>
-               </div> 
-           </div>
-           <div class="accorAnswerQuestion extraBlock">
-               <div class="accorQuestion_body">
-                   <span>Зачем заключать с вами договор?</span>
-                   <div onclick="AccorOpen(5)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt=""></div>
-                                    <div onclick="AccorOpen(100)"   class="close_answer"><img src="/img/24х24_interface (1).png" alt=""></div>
-               </div>
-                <div class="accorAnswer_body">
-                   <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2 недель.</span>
-               </div> 
-           </div>
-           <div  class="accorAnswerQuestion extraNone">
-               <div class="accorQuestion_body extra_for_Media">
-                   <span>        Сколько будут стоить услуги если я сам найду покупателя?
-                   </span>
-                   <div onclick="AccorOpen(0)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt=""></div>
-                                    <div onclick="AccorOpen(100)" class="close_answer"><img src="/img/24х24_interface (1).png" alt=""></div>
-               </div>
-                <div class="accorAnswer_body">
-                   <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до  недель.</span>
-               </div> 
-           </div>
-       </div>
- </main>  
- 
- 
-  <div class="Come_AndVisitUs_body">
-       <div class="NavigateFlex">
-        <h1>Приходите к нам в гости!</h1>
-        <div class="IconNavigate">
-            <div class="IconDivNav">
-                <img src="/img/Vector (3).png" alt="">
+                            }
+
+                        });
+
+
+                    </script>
+                    <div class="PersonalData">
+                        <input type="checkbox" name="" id="">
+                        <h3>Я согласен(а) с условиями обработки <span>персональных данных.</span></h3>
+                    </div>
+                </div>
             </div>
-            <span>Построить маршрут</span>
+        </main>
+        <div id="otziv" class="otziv">
+            <h1>отзывы </h1>
         </div>
-       </div>
-       <div class="Come_AndVisitUs_grid">
-           <div class="first_guest">
-        
-               <img src="/img/Rectangle 1896.png" alt=""><br>
-             
-           </div>
-           <div class="second_guest_location">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97440.91748880045!2d71.40235371195476!3d40.25289411221593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bbbd450347918d%3A0x2d87df6f39bb8643!2z0KfQuNC80LjQvtC9LCDQpNC10YDQs9Cw0L3RgdC60LDRjyDQntCx0LvQsNGB0YLRjCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1721088513033!5m2!1sru!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>
-       </div>
-   </div>  
-   
+        <main class="ApplicationSwiper">
 
-   
-  <footer class="Result_siteFooter">
+            <div class="swiper mySwiper">
 
-   <div class="resultFooter_body">
-       <ul style="margin-top: 12px; "> 
-           <img class="LayerLogoRes" src="/img/Layer_1 (7).png" alt=""><br>
-           <h3>г. Минск, просп. Дзержинского 9, пом.1031 <br>
-            +375 (29) 188-55-99
-           
-              </h3> 
-              <h5 class="Phonenum_for_media"> +375 (29) 188-55-98</h5>
-           <span> client@result.estate</span>
-           <p>Напишите нам и мы вам поможем</p>
-           <div class="compromiseBtn">
-               <img src="/img/Frame (1).png" alt="">
-               <h4>Отдел дружбы с клиентами</h4>
-           </div>
-       </ul>
-       <ul class="UlFor_pk">
-           <li>Главная</li>
-           <li>Продать квартиру</li>
-           <li>Купить квартиру</li>
-           <li>Наша команда</li>
-           <li>Отзывы</li>
-       </ul>
-       <ul class="UlFor_mobile">
-           <li>Главная</li>
-           <li>Условия покупки</li>
-           <li>О застройщике</li>
-           <li>О комплексе</li>
-           <li>Контакты</li>
-           <li>Условия обработки персональных данных</li>
-           <li>Настройка cookie</li>
-       </ul>
-       <ul class="IconsImg">
-      <div class="firstDivIcon">
-        <div class="worldSquard1">
-            <img  src="/img/image 127.png" alt="">
-           </div>
-           <div class="worldSquard">
-         <img src="/img/image 128.png" alt="">
-        </div> 
-      </div>
-   <div class="secondDivIcon">
-    <img src="/img/Telegram icon.png" alt="">
-    <img src="/img/Instagram icon.png" alt="">
-  
-    <div class="worldSquard">
-        <img src="/img/image 125.png" alt="">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="swiperYandex">
+                            <div class="swiperHeader">
+                                <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
+                                <div class="StarAnd_name">
+                                    <div class="FiveStars">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                    </div>
+                                    <span>Сергей Сурин</span>
+                                </div>
+                            </div>
+                            <div class="BelowHeader">
+                                <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой,
+                                    которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи,
+                                    давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда
+                                        на позитиве, всегда готовы все пояснить, разъяснить, основательно и
+                                        профессионально проконсультировать... Они нашли идеальную квартиру, которая
+                                        соответствовала всем моим пожеланиям и бюджету. Они также подготовили все
+                                        необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее
+                                        предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою
+                                        мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span>
+                                </p>
+                            </div>
+                            <div onclick="SpanBlockOther(0)" class="endOpen_other">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperYandex">
+                            <div class="swiperHeader">
+                                <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
+                                <div class="StarAnd_name">
+                                    <div class="FiveStars">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                    </div>
+                                    <span>Сергей Сурин</span>
+                                </div>
+                            </div>
+                            <div class="BelowHeader">
+                                <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой,
+                                    которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи,
+                                    давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда
+                                        на позитиве, всегда готовы все пояснить, разъяснить, основательно и
+                                        профессионально проконсультировать... Они нашли идеальную квартиру, которая
+                                        соответствовала всем моим пожеланиям и бюджету. Они также подготовили все
+                                        необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее
+                                        предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою
+                                        мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span>
+                                </p>
+                            </div>
+                            <div onclick="SpanBlockOther(1)" class="endOpen_other">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperYandex">
+                            <div class="swiperHeader">
+                                <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
+                                <div class="StarAnd_name">
+                                    <div class="FiveStars">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                    </div>
+                                    <span>Сергей Сурин</span>
+                                </div>
+                            </div>
+                            <div class="BelowHeader">
+                                <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой,
+                                    которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи,
+                                    давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда
+                                        на позитиве, всегда готовы все пояснить, разъяснить, основательно и
+                                        профессионально проконсультировать... Они нашли идеальную квартиру, которая
+                                        соответствовала всем моим пожеланиям и бюджету. Они также подготовили все
+                                        необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее
+                                        предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою
+                                        мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span>
+                                </p>
+                            </div>
+                            <div onclick="SpanBlockOther(2)" class="endOpen_other">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperYandex">
+                            <div class="swiperHeader">
+                                <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
+                                <div class="StarAnd_name">
+                                    <div class="FiveStars">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                    </div>
+                                    <span>Сергей Сурин</span>
+                                </div>
+                            </div>
+                            <div class="BelowHeader">
+                                <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой,
+                                    которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи,
+                                    давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда
+                                        на позитиве, всегда готовы все пояснить, разъяснить, основательно и
+                                        профессионально проконсультировать... Они нашли идеальную квартиру, которая
+                                        соответствовала всем моим пожеланиям и бюджету. Они также подготовили все
+                                        необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее
+                                        предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою
+                                        мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span>
+                                </p>
+                            </div>
+                            <div onclick="SpanBlockOther(3)" class="endOpen_other">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperYandex">
+                            <div class="swiperHeader">
+                                <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
+                                <div class="StarAnd_name">
+                                    <div class="FiveStars">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                    </div>
+                                    <span>Сергей Сурин</span>
+                                </div>
+                            </div>
+                            <div class="BelowHeader">
+                                <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой,
+                                    которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи,
+                                    давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда
+                                        на позитиве, всегда готовы все пояснить, разъяснить, основательно и
+                                        профессионально проконсультировать... Они нашли идеальную квартиру, которая
+                                        соответствовала всем моим пожеланиям и бюджету. Они также подготовили все
+                                        необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее
+                                        предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою
+                                        мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span>
+                                </p>
+                            </div>
+                            <div onclick="SpanBlockOther(4)" class="endOpen_other">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperYandex">
+                            <div class="swiperHeader">
+                                <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
+                                <div class="StarAnd_name">
+                                    <div class="FiveStars">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                    </div>
+                                    <span>Сергей Сурин</span>
+                                </div>
+                            </div>
+                            <div class="BelowHeader">
+                                <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой,
+                                    которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи,
+                                    давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда
+                                        на позитиве, всегда готовы все пояснить, разъяснить, основательно и
+                                        профессионально проконсультировать... Они нашли идеальную квартиру, которая
+                                        соответствовала всем моим пожеланиям и бюджету. Они также подготовили все
+                                        необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее
+                                        предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою
+                                        мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span>
+                                </p>
+                            </div>
+                            <div onclick="SpanBlockOther(5)" class="endOpen_other">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperYandex">
+                            <div class="swiperHeader">
+                                <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
+                                <div class="StarAnd_name">
+                                    <div class="FiveStars">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                    </div>
+                                    <span>Сергей Сурин</span>
+                                </div>
+                            </div>
+                            <div class="BelowHeader">
+                                <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой,
+                                    которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи,
+                                    давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда
+                                        на позитиве, всегда готовы все пояснить, разъяснить, основательно и
+                                        профессионально проконсультировать... Они нашли идеальную квартиру, которая
+                                        соответствовала всем моим пожеланиям и бюджету. Они также подготовили все
+                                        необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее
+                                        предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою
+                                        мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span>
+                                </p>
+                            </div>
+                            <div onclick="SpanBlockOther(6)" class="endOpen_other">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperYandex">
+                            <div class="swiperHeader">
+                                <img class="YandexImg" src="/img/Ellipse 5.svg" alt="">
+                                <div class="StarAnd_name">
+                                    <div class="FiveStars">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                        <img src="/img/Star 6.svg" alt="">
+                                    </div>
+                                    <span>Сергей Сурин</span>
+                                </div>
+                            </div>
+                            <div class="BelowHeader">
+                                <p>Я очень доволен работой риэлторов и благодарен Оксане Бабич и Татьяне Логиновой,
+                                    которые помогли мне с приобретением квартиры. Профессиональны, всегда на связи,
+                                    давали компетентные и дельные советы, всегда уважительно общались, все... <span>гда
+                                        на позитиве, всегда готовы все пояснить, разъяснить, основательно и
+                                        профессионально проконсультировать... Они нашли идеальную квартиру, которая
+                                        соответствовала всем моим пожеланиям и бюджету. Они также подготовили все
+                                        необходимые документы и предоставили мне юридическую поддержку. Я получил лучшее
+                                        предложение, чем ожидал. Рекомендую этих риэлторов всем, кто хочет купить свою
+                                        мечты квартиру без лишних хлопот и потери времени. Спасибо вам большое!</span>
+                                </p>
+                            </div>
+                            <div onclick="SpanBlockOther(7)" class="endOpen_other">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button__pk"></div>
+                <div class="swiper-button-prev swiper-button__pk"></div>
+
+                <div class="swipper__button_df extraSwip_btns">
+                    <div class="swiper-button-prev swiper-button__media"></div>
+                    <div class="swiper-button-next swiper-button__media"></div>
+
+                </div>
+            </div>
+
+        </main>
+
+
     </div>
-   </div>
-       
-        </div>
-        
-       </ul>
-   </div>
-       </footer>    
- 
-     <div class="Footer_center_p">
-       <p>ООО "Результативная недвижимость" УНП 193703497. Лицензия на оказание риэлтерской деятельности выдана Минюстом от 26.09.2023г. №02240/470 Номер лицензии в ЕРЛ: 48230000078999.</p>
-       <h3>Представленные на сайте иллюстрации и планировочные решения носят информационный характер и отображают ключевые принципы и концепцию объекта. Застройщик оставляет за собой право изменять отдельные элементы концепции, сохраняя заявленную функциональную составляющую. Предложение на сайте не является публичной офертой. Актуальную информацию о наличии и стоимости квартир уточняйте по телефону или в офисе продаж. УНП 691797838.</h3>
-   </div>    
-   <script>
-       function AccorOpen(params) {
-           let count=document.querySelectorAll('.accorAnswer_body')
-           for (let i = 0; i < count.length; i++) {
-           if (i==params) {
-               count[i].style='display:flex'
-               document.querySelectorAll('.plusOpen_answer')[i].style='display:none'
-               document.querySelectorAll('.close_answer')[i].style='display:flex'
-   
-           }else{
-               count[i].style='display:none'
-               document.querySelectorAll('.plusOpen_answer')[i].style='display:flex'
-               document.querySelectorAll('.close_answer')[i].style='display:none'
-           }
-               
-           }
-       }
-       function SpanBlockOther(params) {
-           let block=document.querySelectorAll('.BelowHeader span')
-           for (let i = 0; i < block.length; i++) {
-               if(i==params){
-                   block[i].style='display:flex'
-               }else{
-                   block[i].style='display:none'
-   
-               }
-           }
-       }
-       function backgroundChange(params) {
-           let back1=document.querySelectorAll('.oneCategoryBtn')
-           for (let i = 0; i < back1.length; i++) {
-               if(i==params){
-                   back1[i].style='background-color:#F8B806'
-               }else{
-                   back1[i].style=' background: #EFEFEF;'
-   
-               }
-           }
-       }
-   </script>
-     <!-- Swiper JS -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
 
-     </script>
-   
-     <script>
-       var swiper = new Swiper(".mySwiper2", {
-         slidesPerView: 3,
-         spaceBetween: 30,
-         freeMode: true,
-         pagination: {
-           el: ".swiper-pagination",
-           clickable: true,
-         },
-         cssMode: true,
-         navigation: {
-           nextEl: ".swiper-button-next",
-           prevEl: ".swiper-button-prev",
-         },
-         breakpoints: {
-           140: {
-             slidesPerView: 1,
-           },
-           768: {
-             slidesPerView: 2,
-           },
-          
-           1024: {
-             slidesPerView: 3,
-           },
-         }
-       });
-     </script>
-     <!-- Initialize Swiper -->
-     <script>
-       var swiper = new Swiper(".mySwiper", {
-         slidesPerView: 4,
-         spaceBetween: 15,
-         pagination: {
-           el: ".swiper-pagination",
-           clickable: true,
-         },     cssMode: true,
-         navigation: {
-           nextEl: ".swiper-button-next",
-           prevEl: ".swiper-button-prev",
-         },
-         pagination: {
-           el: ".swiper-pagination",
-         },
-         mousewheel: true,
-         keyboard: true,
-         breakpoints: {
-           140: {
-             slidesPerView: 1,
-           },
-           768: {
-             slidesPerView: 2,
-           },
-           1471: {
-             slidesPerView: 4,
-           },
-           1024: {
-             slidesPerView: 3,
-           },
-         }
-       });
-    
-     </script>
+
+    <main class="Main_for_Question">
+
+        <div class="Main_for_QuestionBody">
+
+            <h1><span>Ответы на самые частые вопросы</span><br> от наших клиентов </h1>
+            <div class="accorAnswerQuestion">
+                <div class="accorQuestion_body">
+                    <span>Сколько стоит моя квартира?</span>
+                    <div onclick="AccorOpen(0)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt="">
+                    </div>
+                    <div onclick="AccorOpen(100)" class="close_answer"><img src="/img/24х24_interface (1).png" alt="">
+                    </div>
+                </div>
+                <div class="accorAnswer_body">
+                    <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2
+                        недель.</span>
+                </div>
+            </div>
+
+            <div class="accorAnswerQuestion">
+                <div class="accorQuestion_body">
+                    <span>Когда ее купят?</span>
+                    <div onclick="AccorOpen(1)" id="OpenPlus" class="plusOpen_answer"><img
+                            src="/img/24х24_interface.png" alt=""></div>
+                    <div onclick="AccorOpen(100)" class="close_answer"><img src="/img/24х24_interface (1).png" alt="">
+                    </div>
+                </div>
+                <div class="accorAnswer_body">
+                    <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2
+                        недель.</span>
+                </div>
+            </div>
+
+            <div class="accorAnswerQuestion">
+                <div class="accorQuestion_body">
+                    <span>Почему ходят смотреть одни риелтеры?</span>
+                    <div onclick="AccorOpen(2)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt="">
+                    </div>
+                    <div onclick="AccorOpen(100)" class="close_answer"><img src="/img/24х24_interface (1).png" alt="">
+                    </div>
+                </div>
+                <div class="accorAnswer_body">
+                    <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2
+                        недель.</span>
+                </div>
+            </div>
+
+            <div class="accorAnswerQuestion">
+                <div class="accorQuestion_body">
+                    <span>Почему риелтеры ставят цены как хотят?</span>
+                    <div onclick="AccorOpen(3)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt="">
+                    </div>
+                    <div onclick="AccorOpen(100)" class="close_answer"><img src="/img/24х24_interface (1).png" alt="">
+                    </div>
+                </div>
+                <div class="accorAnswer_body">
+                    <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2
+                        недель.</span>
+                </div>
+            </div>
+
+            <div class="accorAnswerQuestion">
+                <div class="accorQuestion_body extra_for_Media">
+                    <span>Зачем вам делать фото? Чем ваша реклама лучше моей?</span>
+                    <div onclick="AccorOpen(4)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt="">
+                    </div>
+                    <div onclick="AccorOpen(100)" class="close_answer"><img src="/img/24х24_interface (1).png" alt="">
+                    </div>
+                </div>
+                <div class="accorAnswer_body">
+                    <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2
+                        недель.</span>
+                </div>
+            </div>
+            <div class="accorAnswerQuestion extraBlock">
+                <div class="accorQuestion_body">
+                    <span>Зачем заключать с вами договор?</span>
+                    <div onclick="AccorOpen(5)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt="">
+                    </div>
+                    <div onclick="AccorOpen(100)" class="close_answer"><img src="/img/24х24_interface (1).png" alt="">
+                    </div>
+                </div>
+                <div class="accorAnswer_body">
+                    <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до 2
+                        недель.</span>
+                </div>
+            </div>
+            <div class="accorAnswerQuestion extraNone">
+                <div class="accorQuestion_body extra_for_Media">
+                    <span> Сколько будут стоить услуги если я сам найду покупателя?
+                    </span>
+                    <div onclick="AccorOpen(0)" class="plusOpen_answer"><img src="/img/24х24_interface.png" alt="">
+                    </div>
+                    <div onclick="AccorOpen(100)" class="close_answer"><img src="/img/24х24_interface (1).png" alt="">
+                    </div>
+                </div>
+                <div class="accorAnswer_body">
+                    <span>Обычно специалисты продают продают объект за месяц. Но есть опыт и в срочных продажах до
+                        недель.</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="Come_AndVisitUs_body">
+        <div id="NavigateFlex" class="NavigateFlex">
+            <h1>Приходите к нам в гости!</h1>
+            <div class="IconNavigate">
+                <div class="IconDivNav">
+                    <img src="/img/Vector (3).png" alt="">
+                </div>
+                <span>Построить маршрут</span>
+            </div>
+        </div>
+        <div class="Come_AndVisitUs_grid">
+            <div class="first_guest">
+
+                <img src="/img/Rectangle 1896.png" alt=""><br>
+
+            </div>
+            <div class="second_guest_location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97440.91748880045!2d71.40235371195476!3d40.25289411221593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bbbd450347918d%3A0x2d87df6f39bb8643!2z0KfQuNC80LjQvtC9LCDQpNC10YDQs9Cw0L3RgdC60LDRjyDQntCx0LvQsNGB0YLRjCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1721088513033!5m2!1sru!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="Result_siteFooter">
+
+        <div class="resultFooter_body">
+            <ul style="margin-top: 12px; ">
+                <img class="LayerLogoRes" src="/img/Layer_1 (7).png" alt=""><br>
+                <h3>г. Минск, просп. Дзержинского 9, пом.1031 <br>
+                    +375 (29) 188-55-99
+
+                </h3>
+                <h5 class="Phonenum_for_media"> +375 (29) 188-55-98</h5>
+                <span> client@result.estate</span>
+                <p>Напишите нам и мы вам поможем</p>
+                <div class="compromiseBtn">
+                    <img src="/img/Frame (1).png" alt="">
+                    <h4>Отдел дружбы с клиентами</h4>
+                </div>
+            </ul>
+            <ul class="UlFor_pk">
+                <li>Главная</li>
+                <li>Продать квартиру</li>
+                <li>Купить квартиру</li>
+                <li>Наша команда</li>
+                <li>Отзывы</li>
+            </ul>
+            <ul class="UlFor_mobile">
+                <li>Главная</li>
+                <li>Условия покупки</li>
+                <li>О застройщике</li>
+                <li>О комплексе</li>
+                <li>Контакты</li>
+                <li>Условия обработки персональных данных</li>
+                <li>Настройка cookie</li>
+            </ul>
+            <ul class="IconsImg">
+                <div class="firstDivIcon">
+                    <div class="worldSquard1">
+                        <img src="/img/image 127.png" alt="">
+                    </div>
+                    <div class="worldSquard">
+                        <img src="/img/image 128.png" alt="">
+                    </div>
+                </div>
+                <div class="secondDivIcon">
+                    <img src="/img/Telegram icon.png" alt="">
+                    <img src="/img/Instagram icon.png" alt="">
+
+                    <div class="worldSquard">
+                        <img src="/img/image 125.png" alt="">
+                    </div>
+                </div>
+
+        </div>
+
+        </ul>
+        </div>
+    </footer>
+
+    <div class="Footer_center_p">
+        <p>ООО "Результативная недвижимость" УНП 193703497. Лицензия на оказание риэлтерской деятельности выдана
+            Минюстом от 26.09.2023г. №02240/470 Номер лицензии в ЕРЛ: 48230000078999.</p>
+        <h3>Представленные на сайте иллюстрации и планировочные решения носят информационный характер и отображают
+            ключевые принципы и концепцию объекта. Застройщик оставляет за собой право изменять отдельные элементы
+            концепции, сохраняя заявленную функциональную составляющую. Предложение на сайте не является публичной
+            офертой. Актуальную информацию о наличии и стоимости квартир уточняйте по телефону или в офисе продаж. УНП
+            691797838.</h3>
+    </div>
+    <script>
+        function AccorOpen(params) {
+            let count = document.querySelectorAll('.accorAnswer_body')
+            for (let i = 0; i < count.length; i++) {
+                if (i == params) {
+                    count[i].style = 'display:flex'
+                    document.querySelectorAll('.plusOpen_answer')[i].style = 'display:none'
+                    document.querySelectorAll('.close_answer')[i].style = 'display:flex'
+
+                } else {
+                    count[i].style = 'display:none'
+                    document.querySelectorAll('.plusOpen_answer')[i].style = 'display:flex'
+                    document.querySelectorAll('.close_answer')[i].style = 'display:none'
+                }
+
+            }
+        }
+        function SpanBlockOther(params) {
+            let block = document.querySelectorAll('.BelowHeader span')
+            for (let i = 0; i < block.length; i++) {
+                if (i == params) {
+                    block[i].style = 'display:flex'
+                } else {
+                    block[i].style = 'display:none'
+
+                }
+            }
+        }
+        function backgroundChange(params) {
+            let back1 = document.querySelectorAll('.oneCategoryBtn')
+            for (let i = 0; i < back1.length; i++) {
+                if (i == params) {
+                    back1[i].style = 'background-color:#F8B806'
+                } else {
+                    back1[i].style = ' background: #EFEFEF;'
+
+                }
+            }
+        }
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                140: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }, cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+            breakpoints: {
+                140: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1471: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 
 </html>
