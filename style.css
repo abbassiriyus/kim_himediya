@@ -2146,8 +2146,9 @@ text-align: left;
 }
 .CallMe_back_modal_body{
     width: 100%;
-    background: #3F3D42;
+    background: white;
     box-shadow: 0px 22.07px 55.18px -11.04px #585C5F29;
+
     max-width: 740px;
     /* height: 595px; */
     overflow: auto;
@@ -2164,7 +2165,7 @@ text-align: left;
     width: 93%;
     margin: auto;
     margin-top: 20px;
-color: white;
+color: black;
 
 }
 .headerText h3{
@@ -2192,8 +2193,8 @@ text-align: left;
 .lineBottom{
     width: 100%;
     height: 1px;
-    background-color: #716f74;
-    margin-top: 22px;
+    border-top: 1.38px solid var(--stroke-soft-200, #E2E4E9)
+    
 }
 .ImgDesign{
     position: absolute;
@@ -2231,7 +2232,8 @@ color: white;
 .bigWith_back{
     width: 92%;
     margin: auto;
-    background: var(--bg-surface-700, #20232D);
+    background: #E2E4E9;
+
     margin-top: 26px;
     min-height: 49px;
     display: flex;
@@ -2244,8 +2246,8 @@ color: white;
     align-items: center;
     width: 98% !important;
     margin: auto;
-    border: 1px solid var(--stroke-soft-200, #E2E4E9);
-    background: #333335;
+    border: 1px solid var(--stroke-soft-200, #F5F5F5);
+    background: #F5F5F5;
     height: 50px;
     border-radius: 6px;
     padding-left: 17px;
@@ -2274,7 +2276,7 @@ text-align: left;
 
 }
 .extraGreyInp:hover{
-    background-color:#413f3f;
+    background-color:#cacaca;
 }
 .inputWith_login label{
     font-family: Inter;
@@ -2311,6 +2313,13 @@ line-height: 21.78px;
 letter-spacing: -0.006em;
 text-align: left;
  color: white;
+}
+.inputWith_login1 .Country_input{
+    background: #E2E4E9;
+
+}
+.inputWith_login1 .Country_input .bx-chevron-down{
+    color: black;
 }
 .inputWith_login1{
     width: 92%;
