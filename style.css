@@ -17,7 +17,7 @@
 }
 
 body{
-    width: 100vw;
+    /* width: 100vw; */
     overflow-x: hidden;
 
 }
@@ -46,8 +46,7 @@ body{
     align-items: center;
     padding-top: 3px;
     height: 125px;
-    grid-template-columns: 327px auto 283px 100px;
-
+    grid-template-columns: 327px auto 269px 91px;
 }
 
 .navbar__logo {
@@ -314,7 +313,7 @@ body{
 
 /* header */
 header.header {
-    /* height: 1016px; */
+    height: 1016px;
     background: url("/img/Rectangle\ 1864.svg");
     background-size: cover;
     background-position: center;
@@ -344,8 +343,8 @@ header.header {
     max-width: 760px;
     margin-bottom: 17px;
     text-transform: uppercase;
-    padding-left: 2px;
-    top: 20px;
+    padding-left: 7px;
+    top: 21px;
     position: relative;
 }
 .header__body__h1 span {
@@ -381,8 +380,8 @@ header.header {
     /* max-width: 500px; */
     border-left: 4px solid #F8A606;
     padding-left: 14px;
-    padding-top: 18px;
-    margin-left: -17px;
+    padding-top: 21px;
+    margin-left: -12px;
  
 }
 
@@ -393,22 +392,24 @@ header.header {
     line-height: 30px;
     text-align: left;
     color: white;
-    padding-left: 8px;
+    padding-left: 12px;
     margin-bottom: 38px;
     display: grid;
-    grid-template-columns: 1.2fr 1.7fr 1fr;
+    grid-template-columns: 1.2fr 1.64fr 1.02fr;
     align-items: center;
-    width: 61%;
+    width: 95%;
+    max-width: 885px;
     position: relative;
     top: 12px;
 }
 .header__body h5{
     font-family: Montserrat;
-font-size: 24px;
-font-weight: 500;
-line-height: 29.52px;
-text-align: left;
-color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.52px;
+    text-align: left;
+    color: white;
+    margin-left: 8px;
 }
 .header__buttons {
     display: grid;
@@ -416,14 +417,15 @@ color: white;
     max-width: 833px;
     gap: 25px;
     position: relative;
-    top: 24px;
+    top: 25px;
+    left: 7px;
 }
 .header__body img{
     position: absolute;
     transform: rotate(92deg);
-    left: -89px;
-    width: 15%;
-    top: -5px;
+    left: -83px;
+    width: 133px;
+    top: -1px;
 }
 .header__buttons__first {
     background: #00000078;
@@ -573,9 +575,11 @@ height: 58px;
 
 /* chosen */
 .chosen{
-    background: #3F3D42;
-min-height:481px ;
-margin-top: 10px;
+    background: #FFFFFF;
+    min-height: 481px;
+    margin-top: 0px;
+    padding-top: 59px;
+    padding-bottom: 114px;
 }
 .chosen__p{
     font-family: Montserrat;
@@ -595,22 +599,25 @@ margin-top: 10px;
     line-height: 60.95px;
     letter-spacing: -2px;
     text-align: center;
-color: white;    
+color: #1E1E1E;    
 margin-bottom: 50px;
 margin-left: 10px;
 }
 .chosen_cards{
-    max-width: 1350px;
+    max-width: 1346px;
     margin: auto;
-    gap: 60px;
+    gap: 43px;
     width: 95%;
+    margin-top: 66px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .chosen__card__img{
-    background: #F8A60633;
-    width: 100px;
-    height: 100px;
+    background: 
+    #1E1E1E;
+    width: 90px;
+    height: 90px;
+    border: 5px solid #F8A606;
     border-radius: 50%; 
     display: flex;
     justify-content: center;
@@ -618,12 +625,12 @@ margin-left: 10px;
     position: relative;
 }
 .chosen__card__img img{
-width: 60px;
+height: 60px;
 }
 .chosen__card__img__second{
     position: absolute;
-top: 20px;
-left: 20px;
+    top: 15px;
+    left: 15px;
     width: 60px;
     height: 60px;
 }
@@ -633,7 +640,7 @@ left: 20px;
     font-weight: 600;
     line-height: 35px;
     text-align: left;
-    color: white;
+    color: #1E1E1E;
     margin-top: 24px;
     margin-bottom: 9px;}
 .chosen__card__p{
@@ -642,7 +649,7 @@ left: 20px;
     font-weight: 500;
     line-height: 19.5px;
     text-align: left;
-    color: #C5C5C5;
+    color: #1E1E1E;
 
 }
 @media(max-width:932px){
@@ -719,7 +726,7 @@ font-size: 50px;
 font-weight: 700;
 line-height: 60.95px;
 text-align: left;
-color: white;
+color: #1e1e1e;
 width: 105%;
 padding-top:59px;
 text-transform: uppercase;
@@ -734,7 +741,7 @@ text-transform: uppercase;
     gap: 28px;
 }
 .zakaz_homeType{
-    background: #3F3D42;
+    background: white;
 padding: 34px;
 border-radius: 10px;
 margin-top: 33px;
@@ -747,7 +754,7 @@ overflow: hidden;
     font-weight: 700;
     line-height: 35px;
     text-align: left;
-  color: white;
+  color: #1E1E1E;
 }
 .zakaz__shag span{
      font-family: Montserrat;
@@ -764,10 +771,10 @@ font-size: 24px;
 font-weight: 400;
 line-height: 35px;
 text-align: left;
-color: white;
+color: #1E1E1E;
 }
 .zakaz_homeType__button{
-    background: #333335;
+    background: #F5F5F5;
 width: 100%;
 height: 76px;
 font-family: Montserrat;
@@ -775,7 +782,7 @@ font-size: 18px;
 font-weight: 500;
 line-height: 21.94px;
 text-align: center;
-color: #CCCCCC;
+color: #1e1e1e;
 border-radius: 10px;
 display: flex;
 justify-content: center;
@@ -799,7 +806,7 @@ cursor: pointer;
     width: 300px;
 background: url('/img/Abstract Design.svg');
 /* background-size: cover; */
-box-shadow:inset 137px -61px 61px #3F3D42;
+box-shadow:inset 137px -61px 61px white;
 opacity: 0.3;
 }
 .zakaz__select{
@@ -807,7 +814,7 @@ opacity: 0.3;
     display: flex;
     justify-content: space-between;
     padding: 16px 24px 16px 24px;
-    background: #333335;
+    background: #F5F5F5;
     border-radius: 10px;
     z-index: 12;
     position: relative;
@@ -845,7 +852,7 @@ border-radius: 22px;
     margin-bottom: 92px;
 }
 .zakaz__buttons__first{
-    background: #00000078;
+    background: #1e1e1e;
     color: #F8B806;
     font-family: Montserrat;
 font-size: 18px;
@@ -1472,10 +1479,7 @@ text-align: left;
 
 
 
-body{
-    background: #242424;
-    overflow-x: hidden;
-}
+
 
 /* agent  */
 .agent{
@@ -1662,6 +1666,7 @@ width: 100%;
 .yuridik{
     background: white;
     padding-top: 48px;
+    display: none;
     padding-bottom: 203px;
 }
 .yuridik .universal__title{
@@ -4360,6 +4365,10 @@ line-height: 34.13px;
 text-align: center;
 
     }
+    .chosen__card{
+        margin-bottom: 54px;
+    }
+    
     .chosen__card__h6{
         font-family: Montserrat;
 font-size: 20px;
