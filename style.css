@@ -1380,6 +1380,13 @@ text-align: left;
     left: -2px;
     z-index: 1;
 }
+.DecorAnorher{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 50%;
+}
 .universal__title{
     font-family: Montserrat;
 font-size: 50px;
@@ -1764,7 +1771,22 @@ width: 100%;
     background: white;
     padding-top: 48px;
     padding-bottom: 203px;
+    position: relative;
     /* display: none; */
+}
+.DecorAbs{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+}
+.Decor_for_bottom{
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: 0;
+    left: 0;
+    width: 30%;
+
 }
 .yuridik .universal__title{
     letter-spacing: -0.8px;
@@ -2033,6 +2055,7 @@ width: 100%;
 .kvartira{
     background-color: #242424;
     padding-top: 75px;  
+    position: relative;
 }
 .kvartira_chags{
     display: grid;
@@ -3466,7 +3489,7 @@ color: black;
     left: 0px;
     width: 100%;
     border-radius: 10px;
-  background: #333335;
+  background:#F5F5F5;
   overflow: hidden;
   display: none;
  }
@@ -5798,4 +5821,15 @@ display: flex;
         max-width: 330px;
         margin: auto;
     }
+}
+.oneYuridik_card{
+    position: relative;
+    overflow: hidden;
+}
+.oneYuridik_card img{
+    position: absolute;
+    width: 340px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.50;
 }
