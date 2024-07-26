@@ -204,10 +204,14 @@
 
 
             <div class="header__buttons">
-                <button class="header__buttons__first">
+                <button onclick="
+                    document.querySelector('.CallMe_back_modal').style='display:flex'
+                    " class="header__buttons__first">
                     Номер телефона
                 </button>
-                <button class="header__buttons__second">
+                <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " class="header__buttons__second">
                     Продать квартиру
                 </button>
             </div>
@@ -300,6 +304,7 @@
 
 
                 </div>
+
                 <div src="/img/Abstract Design.svg" alt="" class="zakaz_homeType__imgAbs"></div>
             </div>
             <div class="zakaz_homeType">
@@ -308,7 +313,18 @@
                     <h4 class="zakaz__h4">Укажите площадь недвижимости</h4>
                 </div>
                 <div class="zakaz__select">
-                    <h5 class="zakaz__select__h5">Площадь</h5>
+                    <input type="text" placeholder="Площадь" id="myInput" onkeypress="return isNumber(event)"
+                        onpaste="return false">
+                    <script>
+                        function isNumber(evt) {
+                            evt = (evt) ? evt : window.event;
+                            var charCode = (evt.which) ? evt.which : evt.keyCode;
+                            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                                return false;
+                            }
+                            return true;
+                        }
+                    </script>
                     <h5 class="zakaz__select__h5">m <sup>2</sup></h5>
                 </div>
                 <div src="/img/Abstract Design.svg" alt="" class="zakaz_homeType__imgAbs"></div>
@@ -319,9 +335,8 @@
                     <h4 class="zakaz__h4">Укажите площадь недвижимости</h4>
                 </div>
                 <div class="zakaz__select">
-                    <h5 class="zakaz__select__h5">Укажите адрес объекта <div class="zakaz__select__h5__media">
-                            недвижимости</div>
-                    </h5>
+                    <input type="text" placeholder="Укажите адрес объекта недвижимости">
+
                     <h5 class="zakaz__select__h5"></h5>
                 </div>
                 <div src="/img/Abstract Design.svg" alt="" class="zakaz_homeType__imgAbs"></div>
@@ -344,10 +359,14 @@
                 </div>
             </div>
             <div class="zakaz__buttons">
-                <button class="zakaz__buttons__first">
+                <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " class="zakaz__buttons__first">
                     Укажите номер телефона
                 </button>
-                <button class="zakaz__buttons__second">
+                <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " class="zakaz__buttons__second">
                     Продать недвижимость
                 </button>
             </div>
@@ -369,10 +388,14 @@
                 <div src="/img/Abstract Design.svg" alt="" class="zakaz_homeType__imgAbs"></div>
             </div>
             <div class="zakaz__buttons zakaz__buttons__dr">
-                <button class="zakaz__buttons__first">
+                <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " class="zakaz__buttons__first">
                     Укажите номер телефона
                 </button>
-                <button class="zakaz__buttons__second">
+                <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " class="zakaz__buttons__second">
                     Купить недвижимость
                 </button>
             </div>
@@ -380,6 +403,19 @@
         </div>
 
     </section>
+    <script>
+        const buttons = document.querySelectorAll('.zakaz_homeType__button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => {
+                    btn.classList.remove('zakaz_homeType__button-button');
+                });
+
+                event.target.classList.add('zakaz_homeType__button-button');
+            });
+        });
+    </script>
     <section class="partnyor">
         <div class="zakaz_title zakaz_title__margin">Ваше объявление <span>увидят более 3000 целевых пользователей в
                 день</span></div>
@@ -432,62 +468,51 @@
         <div class="komanda_cards">
             <div class="komanda_cards__first">
                 <div id="carf" class="komanda_card">
-                    <img class="komanda_card_img_second" src="/img/Rectangle 1902.png" alt="">
-                    <!-- <p class="komanda_card_p"><strong>Фотограф</strong> сделает качественные снимки и сделает так, чтобы
-                        покупатели хотели вашу квартиру. Не забывайте, до 50% всех покупателей - визуалы, то есть
-                        покупают «глазами».</p> -->
+                    <div class="komanda_card_img_second" style="background: url('/img/Rectangle 1902.png');" > </div>
+
                     <p>Фотограф</p>
                 </div>
                 <div id="EctraCardKomanda" class="komanda_card">
-                    <img class="komanda_card_img_second" src="/img/Rectangle 1903.png" alt="">
-                    <!-- <p class="komanda_card_p"><strong>Копирайтеры </strong>напишут тексты, которые продадут вашу
-                        недвижимость быстрее и дороже</p> -->
+                    <div class="komanda_card_img_second" style="background:url('/img/Rectangle 1903.png');"  ></div>
+
                     <p>Копирайтеры</p>
 
                 </div>
                 <div id="EctraCardKomanda" class="komanda_card">
-                    <img class="komanda_card_img_second" src="/img/Rectangle 1904.png" alt="">
-                    <!-- <p class="komanda_card_p"><strong>Маркетологи</strong> детально проанализируют рынок и вашу целевую
-                        аудиторию, проведут предпродажную подготовку, запустят рекламную кампанию</p> -->
+                    <div class="komanda_card_img_second" style="background:url('/img/Rectangle 1904.png');" ></div>
+
                     <p>Маркетологи</p>
                 </div>
                 <div class="komanda_card">
-                    <img class="komanda_card_img" src="/img/Group 34536.png" alt="">
-                    <!-- <p class="komanda_card_p"><strong>Риелторы</strong> с базой более 5000 потенциальных покупателей из
-                        нашей клиентской базы</p> -->
+                    <div class="komanda_card_img"  style="background:url('/img/Frame\ 2085655594.svg');" ></div>
                     <div class="Absolute_bottomYellow">Риэлтеры</div>
                     <p>Риэлтеры</p>
 
                 </div>
                 <div id="komanda_meda" class="komanda_card">
-                    <img class="komanda_card_img" src="/img/Rectangle 1906.png" alt="">
-                    <!-- <p class="komanda_card_p"><strong>Агенты </strong>гарантируют 100% <br> безопасность и чистоту
-                        сделки</p> -->
+                    <div style="background:url('/img/Rectangle 1906.png');" class="komanda_card_img" ></div>
+
                     <div class="Absolute_bottomYellow">Агенты</div>
                     <p>Агенты</p>
                 </div>
             </div>
             <div class="komanda_cards__second">
                 <div id="KomandaNone" class="komanda_card">
-                    <img class="komanda_card_img_second" src="/img/Rectangle 1903.png" alt="">
-                    <!-- <p class="komanda_card_p"><strong>Копирайтеры </strong>напишут тексты, которые продадут вашу
-                        недвижимость быстрее и дороже</p> -->
+                    <div style="background:url('/img/Rectangle 1903.png');"  class="komanda_card_img_second"></div>
+
                     <div class="Absolute_bottomYellow">Копирайтеры</div>
 
                 </div>
                 <div id="KomandaNone" class="komanda_card">
-                    <img class="komanda_card_img_second" src="/img/Rectangle 1904.png" alt="">
-                    <!-- <p class="komanda_card_p"><strong>Маркетологи</strong> детально проанализируют рынок и вашу целевую
-                        аудиторию, проведут предпродажную подготовку, запустят рекламную кампанию</p> -->
+                    <div style="background:url('/img/Rectangle 1904.png');"  class="komanda_card_img_second" >
+</div>
                     <div class="Absolute_bottomYellow">Маркетологи
                     </div>
 
                 </div>
                 <div id="KomandaNone" id="carf" class="komanda_card">
-                    <img class="komanda_card_img_second" src="/img/Rectangle 1902.png" alt="">
-                    <!-- <p class="komanda_card_p"><strong>Фотограф</strong> сделает качественные снимки и сделает так, чтобы
-                        покупатели хотели вашу квартиру. Не забывайте, до 50% всех покупателей - визуалы, то есть
-                        покупают «глазами».</p> -->
+                    <div  style="background:url('/img/Rectangle 1902.png');"  class="komanda_card_img_second" ></div>
+
                     <div class="Absolute_bottomYellow">Фотограф</div>
                 </div>
             </div>
@@ -495,7 +520,7 @@
 
     </section>
     <section class="free_etap">
-<img class="DecorAnorher" src="/img/Abstract Design (1).png" alt="">
+        <img class="DecorAnorher" src="/img/Abstract Design (1).png" alt="">
         <h1 class="universal__title">
             Бесплатная предпродажная подготовка!
             <span>Стоимость недвижимости увеличится на 15%</span>
@@ -543,7 +568,9 @@
             </div>
             <div class="free__etap__buttons">
                 <div class="free__etap__button__img"></div>
-                <button class="free__etap__button">
+                <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " class="free__etap__button">
                     Продать квартиру дороже
                     <img class="free__etap__buttons__arrow" src="./img/OBJECTS (1).png" alt="">
                 </button>
@@ -648,7 +675,7 @@
         </script>
         <p class="free_etap__p">На каких этапах продажи квартиры невозможно обойтись без юриста?</p>
         <div onmouseleave="leavemouse()" class="yuridik__cards">
-            <div   onmouseenter="entermous()" style="cursor: pointer;position: relative;z-index: 123;"
+            <div onmouseenter="entermous()" style="cursor: pointer;position: relative;z-index: 123;"
                 class="oneYuridik_card">
                 <h3>ЭТАП1</h3>
                 <h2>Консультирование</h2>
@@ -659,7 +686,7 @@
                 </p>
                 <img src="/img/Abstract Design.png" alt="">
             </div>
-            <div  class="oneYuridik_card oneYuridik_card__12 secondYuridik_step">
+            <div class="oneYuridik_card oneYuridik_card__12 secondYuridik_step">
                 <h3>ЭТАП2</h3>
                 <h2>Подготовка документов</h2>
                 <p>Оказание помощи в подготовке документов <br> Консультирование и сопровождение клиента при заказе и
@@ -667,7 +694,7 @@
                 <img src="/img/Abstract Design.png" alt="">
 
             </div>
-            <div  class="oneYuridik_card oneYuridik_card__12 ">
+            <div class="oneYuridik_card oneYuridik_card__12 ">
                 <h3>ЭТАП3</h3>
                 <h2>Участие в переговорах между сторонами <br> сделки</h2>
                 <p>Согласование условий предстоящей сделки в интересах клиента. Консультирование клиента о последствиях
@@ -675,7 +702,7 @@
                 <img src="/img/Abstract Design.png" alt="">
 
             </div>
-            <div  class="oneYuridik_card oneYuridik_card__12 thirdYuridik_step">
+            <div class="oneYuridik_card oneYuridik_card__12 thirdYuridik_step">
                 <h3>ЭТАП4</h3>
                 <h2>Внесение аванса</h2>
                 <p>Подготовка и подписание документа, защищающего интересы клиента и гарантирующего ответственность
@@ -683,14 +710,14 @@
                 <img src="/img/Abstract Design.png" alt="">
 
             </div>
-            <div  class="oneYuridik_card oneYuridik_card__12 thirdYuridik_step">
+            <div class="oneYuridik_card oneYuridik_card__12 thirdYuridik_step">
                 <h3>ЭТАП5</h3>
                 <h2>Проведение сделки</h2>
                 <p>Подготовка проекта договора купли-продажи <br> Организация и проведение удостоверения сделки</p>
                 <img src="/img/Abstract Design.png" alt="">
-           
+
             </div>
-            <div  class="oneYuridik_card oneYuridik_card__12 fourthYuridik_step">
+            <div class="oneYuridik_card oneYuridik_card__12 fourthYuridik_step">
                 <h3>ЭТАП6</h3>
                 <h2>Организация <br> проведения расчетов</h2>
                 <p>Организация и проведение расчетов в рамках договоренности сторон сделки,<br> обеспечивающих
@@ -699,15 +726,15 @@
                 <img src="/img/Abstract Design.png" alt="">
 
             </div>
-            <div  style="padding-bottom: 23px;" class="oneYuridik_card oneYuridik_card__12 fourthYuridik_step">
+            <div style="padding-bottom: 23px;" class="oneYuridik_card oneYuridik_card__12 fourthYuridik_step">
                 <h3>ЭТАП7</h3>
                 <h2>Закрытие сделки</h2>
                 <p>Подготовка и подписание акта передачи, подтверждающего отсутствие претензий в <br> отношении
                     фактического состояния ОН, задолженности по коммунальным и иным <br> платежам за объект. <br>
                     Регистрация права собственности в пользу покупателя</p>
-                    <img src="/img/Abstract Design.png" alt="">
-           
-                </div>
+                <img src="/img/Abstract Design.png" alt="">
+
+            </div>
         </div>
     </section>
 
@@ -874,50 +901,50 @@
             }
         }
         function selectFlag(flag, numberp) {
-                            document.querySelector(".inputArrowAbsolute1 .Country_input_action").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
-                            document.querySelector(".inputArrowAbsolute1 .Country_input__modal__select").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""> 
+            document.querySelector(".inputArrowAbsolute1 .Country_input_action").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
+            document.querySelector(".inputArrowAbsolute1 .Country_input__modal__select").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""> 
                        <div class="Country_input__phone">${numberp}</div></div>
                        `
-                            document.querySelector(".inputArrowAbsolute1 .Country_input__phone_12").innerHTML = numberp
-                            document.querySelector('.inputArrowAbsolute1 .Country_input__modal').style = 'display:none'
-                        }
+            document.querySelector(".inputArrowAbsolute1 .Country_input__phone_12").innerHTML = numberp
+            document.querySelector('.inputArrowAbsolute1 .Country_input__modal').style = 'display:none'
+        }
 
-                        function data_plus() {
-                            var value1 = document.querySelector('.inputArrowAbsolute1 #phone-input').value
-                            if (value1.length === 0) {
-                                value1 = '(' + value1;
-                            }
-                            document.querySelector('.inputArrowAbsolute1 #phone-input').value = value1
-                        }
-                        const phoneInput1 = document.querySelector('.inputArrowAbsolute1 #phone-input');
-                      
+        function data_plus() {
+            var value1 = document.querySelector('.inputArrowAbsolute1 #phone-input').value
+            if (value1.length === 0) {
+                value1 = '(' + value1;
+            }
+            document.querySelector('.inputArrowAbsolute1 #phone-input').value = value1
+        }
+        const phoneInput1 = document.querySelector('.inputArrowAbsolute1 #phone-input');
 
-                        phoneInput1.addEventListener('keydown', function (e) {
-                            var value = document.querySelector('.inputArrowAbsolute1 #phone-input').value
-                            if (e.key != "Backspace") {
-                                if (value.length === 0) {
-                                    value = '('
-                                } else if (value.length === 3) {
-                                    value = value.slice(0, 3) + ') ' + value.slice(3);
-                                } else if (value.length === 8) {
-                                    value = value.slice(0, 8) + '-' + value.slice(8);
-                                } else if (value.length === 11) {
-                                    value = value.slice(0, 11) + '-' + value.slice(11);
-                                } else if (value.length === 14) {
-                                    value = value.slice(0, 13)
-                                }
-                                phoneInput1.addEventListener('keypress', function (e) {
-                                    const allowedChars = /[\+\(\)\d]/;
-                                    if (!allowedChars.test(e.key)) {
-                                        e.preventDefault();
-                                    }
-                                });
 
-                                this.value = value;
+        phoneInput1.addEventListener('keydown', function (e) {
+            var value = document.querySelector('.inputArrowAbsolute1 #phone-input').value
+            if (e.key != "Backspace") {
+                if (value.length === 0) {
+                    value = '('
+                } else if (value.length === 3) {
+                    value = value.slice(0, 3) + ') ' + value.slice(3);
+                } else if (value.length === 8) {
+                    value = value.slice(0, 8) + '-' + value.slice(8);
+                } else if (value.length === 11) {
+                    value = value.slice(0, 11) + '-' + value.slice(11);
+                } else if (value.length === 14) {
+                    value = value.slice(0, 13)
+                }
+                phoneInput1.addEventListener('keypress', function (e) {
+                    const allowedChars = /[\+\(\)\d]/;
+                    if (!allowedChars.test(e.key)) {
+                        e.preventDefault();
+                    }
+                });
 
-                            }
+                this.value = value;
 
-                        });
+            }
+
+        });
 
 
     </script>
@@ -976,7 +1003,9 @@
                                     </div>
                                     <span>300 789 BYN</span>
                                     <p>95 000 $</p>
-                                    <button>Получить консультацию</button>
+                                    <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " >Получить консультацию</button>
                                 </div>
                             </div>
                         </div>
@@ -1001,7 +1030,9 @@
                                     </div>
                                     <span>332 451 BYN</span>
                                     <p>105 000 $</p>
-                                    <button>Получить консультацию</button>
+                                    <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " >Получить консультацию</button>
                                 </div>
                             </div>
                         </div>
@@ -1026,7 +1057,9 @@
                                     </div>
                                     <span>474 930 BYN</span>
                                     <p>150 000 $</p>
-                                    <button>Получить консультацию</button>
+                                    <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " >Получить консультацию</button>
                                 </div>
                             </div>
                         </div>
@@ -1051,7 +1084,9 @@
                                     </div>
                                     <span>300 789 BYN</span>
                                     <p>95 000 $</p>
-                                    <button>Получить консультацию</button>
+                                    <button onclick="
+                document.querySelector('.CallMe_back_modal').style='display:flex'
+                " >Получить консультацию</button>
                                 </div>
                             </div>
                         </div>
@@ -1121,7 +1156,7 @@
 
         </section>
 
-        <section  class="kvartira">
+        <section class="kvartira">
             <img class="DecorAbs" src="/img/Abstract Design (1).png" alt="">
             <h1 class="universal__title  universal__title_second">
                 <span> Продайте квартиру в 2 раза
@@ -1137,17 +1172,13 @@
                     const windowHeight2 = window.innerHeight;
                     const imageTop2 = image1.getBoundingClientRect().top;
                     const imageBottom2 = image1.getBoundingClientRect().bottom;
-                    if (imageTop2 >= -500 && imageBottom2 <= (windowHeight2 + 200)) {
+                    console.log(imageTop2);
+                    if (imageTop2 >= -200 && imageBottom2 <= (windowHeight2 + 900)) {
                         var ass = document.querySelectorAll('.kvartira_shag img')
                         for (let i = 0; i < ass.length - 1; i++) {
                             setTimeout(() => {
                                 ass[i].style = "opacity:1;"
-                            }, i * 1000);
-                        }
-                    } else {
-                        var ass = document.querySelectorAll('.kvartira_shag img')
-                        for (let i = 0; i < ass.length - 1; i++) {
-                            ass[i].style = "opacity:0;"
+                            }, i * 500);
                         }
                     }
                 });
@@ -1283,7 +1314,9 @@
                             <div class="Country_input__phone Country_input__phone_12">+375</div>
                             <input id="phone-input" onkeyup="data_plus()" placeholder="(_) ___-__-__" type="text">
                         </div>
-                        <button class="Evaluate_btn">Оценить недвижимость</button>
+                        <button onclick="
+                        document.querySelector('.CallMe_back_modal').style='display:flex'
+                        " class="Evaluate_btn">Оценить недвижимость</button>
                         <img class="Object_arrow" src="/img/OBJECTSArrow.png" alt="">
                     </div>
 
@@ -1746,18 +1779,18 @@
                 <img src="/img/Rectangle 1896.png" alt=""><br>
 
             </div>
-            <div  class="second_guest_location">
-           
+            <div class="second_guest_location">
+
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508.7978229696585!2d27.52412124231651!3d53.889738144220665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd002b2ce9db3%3A0x474e8389a112c66d!2z0L_RgNC-0YHQv9C10LrRgiDQlNC30LXRgNC20LjQvdGB0LrQvtCz0L4gOSwg0JzQuNC90YHQuiwg0JzQuNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0YwgMjIwMDg5LCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sus!4v1721970118652!5m2!1sru!2sus"
-                     style="border:0;" allowfullscreen="" loading="lazy"
+                    style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
 
- 
- 
+
+
 
     <footer class="Result_siteFooter">
 

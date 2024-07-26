@@ -71,6 +71,7 @@ body{
     list-style: none;
     justify-content: space-between;
     max-width: 660px;
+    margin: auto;
 }
 
 .navbar__logo__item {
@@ -156,7 +157,7 @@ body{
     background-color: #242424;
     transition: 1s;
     padding-bottom: 20px;
-    z-index: 1;
+    z-index: 688;
 }
 
 .navbar__close {
@@ -212,34 +213,62 @@ body{
     align-items: center;
 }
 
-@media(max-width:1382px) {
+@media(max-width:1382px) and (min-width:991px) {
     .navbar__body {
         display: grid;
         align-items: center;
-        grid-template-columns: 327px auto 283px;
+        grid-template-columns: 327px auto 279px 100px;
     }
-
-    .navbar__yandex__image {
-        display: none;
+    .text__p1 {
+        font-family: Cuprum;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19.68px;
+        text-align: left;
+        color: white;
     }
+    .text__p1 {
+        font-family: Cuprum;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19.68px;
+        text-align: left;
+        color: white;}
+        .navbar_button {
+            background: #F8B806;
+            font-family: Inter;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 19.68px;
+            text-align: left;
+            color: #242424;
+            border: none;
+            padding: 17px 8px;
+            margin-left: 10px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
 }
 
-@media(max-width:1276px) {
+@media(max-width:1276px ) and (min-width:991px) {
     .navbar__body {
         display: grid;
-        grid-template-columns: 327px auto;
+        align-items: center;
+        grid-template-columns: 271px auto 279px 83px;
     }
-
-    .navbar__contact {
-        display: none;
-    }
+   
 }
 
 @media(max-width:991px) {
     .navbar {
         border-bottom: 0px;
+    }  .navbar__yandex__image {
+        display: none;
     }
-
+ .navbar__contact {
+        display: none;
+    }
     .navbar__logo {
         display: block;
     }
@@ -248,6 +277,7 @@ body{
         display: grid;
         grid-template-columns: 97px auto;
         gap: 30px;
+        justify-content: space-between;
     }
 
     .navbar__line__vertical {
@@ -265,17 +295,12 @@ body{
     .navbar__logo_p {
         font-size: 10px;
         line-height: 13px;
-    }
-}
+    }   
+     /* .navbar__toolbar {
+        display: none  ;
 
-@media(min-width:800px) {
-    .navbar__toolbar {
-        display: none !important;
+    } */
 
-    }
-}
-
-@media(max-width:800px) {
     .navbar__body {
 
         height: 103px;
@@ -817,6 +842,9 @@ justify-content: center;
 align-items: center;
 cursor: pointer;
 }
+.zakaz_homeType__button-button{
+    background-color: #F8B806;
+}
 .zakaz_homeType__buttons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -849,6 +877,21 @@ opacity: 0.3;
     margin-top: 29px;
     height: 40px;
 cursor: pointer;
+}
+.zakaz__select input{
+    width: 90%;
+    background: none;
+    border: none;
+    outline: none;
+    /* color: #CCCCCC; */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 40px;
 }
 .zakaz__select__h5{
     color: #CCCCCC;
@@ -1170,16 +1213,23 @@ font-size: 20px;
 .komanda_card_img{
     width: 100%;
     margin-bottom: -13px;
-    height: 323px;
-    margin-left: 10px;
+    height: 388px;
+    margin-left: 0px;
     border-radius: 7px;
 
 }
+
 .komanda_card_img_second{
     width: 100%;
-    height: 256px;
     margin-bottom: -14px;
-    margin-left: 4px;
+    margin-left: 0px;
+    border-radius: 7px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.komanda_card_img{
+    background-size: cover !important;
+    background-position: center !important;
 }
 .komanda_card{
     position: relative;
@@ -1293,8 +1343,23 @@ color: white;
     background-size: cover;
     background-position: center;
 }
+@media (max-width:1368px) and (min-width:991px){
+    .kvartira_shag img {
+        width: 138px;
+        margin-top: 30px;
+        margin-bottom: 17px;
+    }
+}
 @media(max-width:1300px){
     .komanda_cards__second {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1440px;
+        width: 95%;
+        margin: auto;
+        gap: 10px;
+    }
+    .komanda_cards__first {
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 1440px;
@@ -2128,12 +2193,15 @@ color: white;
     letter-spacing: -3px;
 }
 @media (max-width:1350px) and (min-width: 991px){
+    .kvartira_chags{
+        overflow: auto;
+    } 
     .kvartira_shag__p{
         font-family: Montserrat;
         font-size: 12px;
         font-weight: 400;
         line-height: 24px;
-        width: 100%;
+        width: 200px;
         text-align: left;
         color: white;
     }
@@ -4532,7 +4600,24 @@ z-index: 123;
         margin-bottom: 26px;
     }
     .komanda_card_img_second{
-        height: 230px;
+        height: 288px;
+
+    }
+
+    @media (max-width:1190px) {
+        .komanda_card_img{
+            height: 350px;
+        }
+    }
+    @media (max-width:940px) {
+        .komanda_card_img{
+            height: 300px;
+        }
+    }
+    @media (max-width:631px) {
+        .komanda_card_img_second{
+            height: 350px;
+        }
     }
     @media (max-width:800px) {
     .MainGet_money{
@@ -4852,14 +4937,16 @@ text-align: left;
     height: 300px;
    }
         .komanda_card_img{
-            height: 153px;
+            height: 200px;
+            border-radius: 7px;
         }
         #carf{
             display: block;
         }
         .komanda_card_img_second{
-            height: 155px;
+            height: 200px;
             margin-bottom: 0;
+            border-radius: 7px;
         }
         #EctraCardKomanda{
             display: block;
@@ -5159,6 +5246,18 @@ text-align: center;
         height: 99px;
         max-width: 319px;
     }
+    .komanda_card_img{
+        height: 153px;
+        border-radius: 7px;
+    }
+    #carf{
+        display: block;
+    }
+    .komanda_card_img_second{
+        height: 153px;
+        margin-bottom: 0;
+        border-radius: 7px;
+    }
   .navbar_nav {
     display: flex;
     justify-content: end;
@@ -5319,7 +5418,8 @@ margin-bottom: 32px;
         z-index: 12;
         margin-top: 25px;
     }
-
+    
+   
 .header__body__p {
     left: 0px;
     margin-top: 36px;
