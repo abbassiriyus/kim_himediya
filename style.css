@@ -2644,6 +2644,10 @@ button{
 .worldSquard1 img{
     width: 60px !important;
 }
+.resultFooter_body ul a{
+    color: white;
+    text-decoration: none;
+}
 .resultFooter_body ul li{
    list-style: none;
     font-family: Montserrat;
