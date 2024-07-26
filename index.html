@@ -811,7 +811,7 @@
                 <div class="inputWith_login1">
                     <label for="">Номер телефона<span>*</span></label>
 
-                    <div class="inputArrowAbsolute">
+                    <div class="inputArrowAbsolute1">
                         <div class="Country_input  inputGrey" type="text">
                             <div onmouseleave="document.querySelector('.Country_input__modal').style='display:none'"
                                 class="Country_input__modal">
@@ -873,6 +873,53 @@
                 }
             }
         }
+        function selectFlag(flag, numberp) {
+                            document.querySelector(".inputArrowAbsolute1 .Country_input_action").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
+                            document.querySelector(".inputArrowAbsolute1 .Country_input__modal__select").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""> 
+                       <div class="Country_input__phone">${numberp}</div></div>
+                       `
+                            document.querySelector(".inputArrowAbsolute1 .Country_input__phone_12").innerHTML = numberp
+                            document.querySelector('.inputArrowAbsolute1 .Country_input__modal').style = 'display:none'
+                        }
+
+                        function data_plus() {
+                            var value1 = document.querySelector('.inputArrowAbsolute1 #phone-input').value
+                            if (value1.length === 0) {
+                                value1 = '(' + value1;
+                            }
+                            document.querySelector('.inputArrowAbsolute1 #phone-input').value = value1
+                        }
+                        const phoneInput1 = document.querySelector('.inputArrowAbsolute1 #phone-input');
+                      
+
+                        phoneInput1.addEventListener('keydown', function (e) {
+                            var value = document.querySelector('.inputArrowAbsolute1 #phone-input').value
+                            if (e.key != "Backspace") {
+                                if (value.length === 0) {
+                                    value = '('
+                                } else if (value.length === 3) {
+                                    value = value.slice(0, 3) + ') ' + value.slice(3);
+                                } else if (value.length === 8) {
+                                    value = value.slice(0, 8) + '-' + value.slice(8);
+                                } else if (value.length === 11) {
+                                    value = value.slice(0, 11) + '-' + value.slice(11);
+                                } else if (value.length === 14) {
+                                    value = value.slice(0, 13)
+                                }
+                                phoneInput1.addEventListener('keypress', function (e) {
+                                    const allowedChars = /[\+\(\)\d]/;
+                                    if (!allowedChars.test(e.key)) {
+                                        e.preventDefault();
+                                    }
+                                });
+
+                                this.value = value;
+
+                            }
+
+                        });
+
+
     </script>
     <div class="app_BgMain">
 
