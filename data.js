@@ -5,6 +5,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:1
 },{
     name:'Купить 1-комнатную квартиру, г. Минск, просп. Победителей, 133',
@@ -13,6 +14,7 @@ var datacard=[{
     address:'Минск, Центральный, просп. Победителей, 133',
     priceBYN:'332 451',
     priceDolor:'105 000',
+    image:'/img/Rectangle 1891.png',
     type:1
 },
 {
@@ -22,6 +24,7 @@ var datacard=[{
     address:'Минск, Октябрьский, ул. Жуковского, 29Б',
     priceBYN:'474 930',
     priceDolor:'150 000',
+    image:'/img/Rectangle 1891.png',
     type:1
 },{
     name:'Купить 1-комнатную квартиру, г. Минск, просп. Победителей, 133',
@@ -30,6 +33,7 @@ var datacard=[{
     address:'Минск, Центральный, просп. Победителей, 133',
     priceBYN:'332 451',
     priceDolor:'105 000',
+    image:'/img/Rectangle 1891.png',
     type:1
 },
 {
@@ -39,6 +43,7 @@ var datacard=[{
     address:'Минск, Октябрьский, ул. Жуковского, 29Б',
     priceBYN:'474 930',
     priceDolor:'150 000',
+    image:'/img/Rectangle 1891.png',
     type:1
 },
 {
@@ -48,6 +53,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:2
 },
 {
@@ -57,6 +63,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:2
 },
 {
@@ -66,6 +73,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:2
 },
 {
@@ -75,6 +83,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:2
 },{
     name:'Купить 2-комнатную квартиру, г. Минск, ул. Чичурина, 24',
@@ -83,6 +92,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:3
 },
 {
@@ -92,6 +102,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:3
 },
 {
@@ -101,6 +112,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:3
 },
 {
@@ -110,6 +122,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:3
 },{
     name:'Купить 2-комнатную квартиру, г. Минск, ул. Чичурина, 24',
@@ -118,6 +131,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:4
 },
 {
@@ -127,6 +141,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:4
 },
 {
@@ -136,6 +151,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:4
 },
 {
@@ -145,6 +161,7 @@ var datacard=[{
     address:'Минск, Фрунзенский, ул. Чичурина, 24',
     priceBYN:'300 789',
     priceDolor:'95 000',
+    image:'/img/Rectangle 1891.png',
     type:4
 }
 

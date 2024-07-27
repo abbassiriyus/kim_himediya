@@ -201,7 +201,12 @@ body{
 .navbar__toolbar .navbar__line__vertical {
     display: block;
 }
+.swiper-button-next10:active{
+opacity: 0.5;
+}
+.swiper-button-priv10:active{
 
+}
 .navbar__toolbar .navbar__yandex__image {
     display: block;
     width: 100%;
