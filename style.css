@@ -204,6 +204,8 @@ body{
 
 .navbar__toolbar .navbar__yandex__image {
     display: block;
+    width: 100%;
+    max-width: 100px;
 }
 
 .navbar__toolbar .navbar_button {
@@ -263,7 +265,8 @@ body{
 @media(max-width:991px) {
     .navbar {
         border-bottom: 0px;
-    }  .navbar__yandex__image {
+    }  
+    .navbar__yandex__image {
         display: none;
     }
  .navbar__contact {
