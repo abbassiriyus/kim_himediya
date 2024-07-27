@@ -5935,3 +5935,31 @@ display: flex;
     bottom: 0;
     opacity: 0.50;
 }
+
+
+.header__buttons .Country_input{
+    background: none;
+
+    width: 77%;
+    padding-left: 10px;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 0px;
+    outline: none;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 77px 50px auto;
+    align-items: center;
+    position: relative;
+}
+
+.header__buttons .Country_input__modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-radius: 10px;
+    background: #1e1e1e;
+    overflow: hidden;
+    display: none;
+}
