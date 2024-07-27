@@ -182,7 +182,7 @@
                 }, 10000);
             </script>
             <div class="header__ul">
-                <img src="/img/OBJECTS (2123213).png" alt="">
+                <img class="header__body_img" src="/img/OBJECTS (2123213).png" alt="">
                 <div class="header__li">
                     <div class="header_check"><i class='bx bx-check'></i></div>
                     <p>Стоимость вашей недвижимости</p>
@@ -204,12 +204,13 @@
 
 
             <div class="header__buttons">
-                <div 
-                     class="header__buttons__first">
-                     <div class="Country_input  inputGrey" type="text">
-                        <div onmouseleave="document.querySelector('.Country_input__modal').style='display:none'"
-                            class="Country_input__modal">
-                            <div onclick="document.querySelector('.Country_input__modal').style='display:none'"
+                <div style="position: relative;"
+                     class="">
+                     <div style="background-color: #1e1e1e;" class="Country_input  inputGrey" type="text">
+                        <div onmouseleave="document.querySelector('.Country_input__modal2').style='display:none'"
+                            class="Country_input__modal Country_input__modal2">
+                            <div 
+                            onclick="document.querySelector('.Country_input__modal2').style='display:none'"
                                 class="Country_input__modal__active">
 
                                 <div class="Country_input__modal__select"><img style="width: 27px;"
@@ -219,24 +220,24 @@
                                 <i class='bx bx-chevron-up'></i>
                             </div>
                             <div class="Country_input__modal__option"
-                                onclick="selectFlag('/img/Frame 2085655518.svg','+375')"><img style="width: 27px;"
+                                onclick="selectFlag2('/img/Frame 2085655518.svg','+375')"><img style="width: 27px;"
                                     src="/img/Frame 2085655518.svg" alt="">
                                 <div class="Country_input__phone">+375</div>
                             </div>
                             <div class="Country_input__modal__option"
-                                onclick="selectFlag('/img/24х24_interface.png','+75')"><img style="width: 27px;"
+                                onclick="selectFlag2('/img/24х24_interface.png','+75')"><img style="width: 27px;"
                                     src="/img/24х24_interface.png" alt="">
                                 <div class="Country_input__phone">+75</div>
                             </div>
 
                         </div>
                         <div class="Country_input_action"
-                            onclick="document.querySelector('.Country_input__modal').style='display:block'">
+                            onclick="document.querySelector('.Country_input__modal2').style='display:block'">
                             <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i
                                 class='bx bx-chevron-down'></i>
                         </div>
                         <div class="Country_input__phone Country_input__phone_12">+375</div>
-                        <input id="phone-input" onkeyup="data_plus()" placeholder="(_) ___-__-__" type="text">
+                        <input id="phone-input" onkeyup="data_plus2()" placeholder="(_) ___-__-__" type="text">
                     </div>
 
                 </div>
@@ -248,27 +249,16 @@
     </header>
     
     <script>
-        function ClickBtn(params) {
-            let buttonClick = document.querySelectorAll('.header__buttons button')
-            for (let i = 0; i < buttonClick.length; i++) {
-                if (i == params) {
-                    buttonClick[i].style = 'background-color:#303030'
-                } else {
-                    buttonClick[i].style = 'background: #E2E4E9;border:1px solid #E2E4E9;color:black '
-
-                }
-            }
-        }
-        function selectFlag(flag, numberp) {
+        function selectFlag2(flag, numberp) {
             document.querySelector(".header__buttons .Country_input_action").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
             document.querySelector(".header__buttons .Country_input__modal__select").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""> 
                        <div class="Country_input__phone">${numberp}</div></div>
                        `
             document.querySelector(".header__buttons .Country_input__phone_12").innerHTML = numberp
-            document.querySelector('.header__buttons .Country_input__modal').style = 'display:none'
+            document.querySelector('.header__buttons .Country_input__modal2').style = 'display:none'
         }
 
-        function data_plus() {
+        function data_plus2() {
             var value1 = document.querySelector('.header__buttons #phone-input').value
             if (value1.length === 0) {
                 value1 = '(' + value1;
@@ -440,23 +430,137 @@
 
                 <div src="/img/Abstract Design.svg" alt="" class="zakaz_homeType__imgAbs"></div>
                 <div class="zakaz__buttons zakaz__buttons__media">
-                    <button class="zakaz__buttons__first">
-                        Укажите номер телефона
-                    </button>
+                    <div style="height: auto;" class="zakaz__buttons__first">
+                        <div style="position: relative;"
+                     class="">
+                     <div class="Country_input Country_input2" type="text">
+                        <div onmouseleave="document.querySelector('.Country_input__modal3').style='display:none'"
+                            class="Country_input__modal Country_input__modal3">
+                            <div 
+                            onclick="document.querySelector('.Country_input__modal3').style='display:none'"
+                                class="Country_input__modal__active">
+
+                                <div class="Country_input__modal__select"><img style="width: 27px;"
+                                        src="/img/Frame 2085655518.svg" alt="">
+                                    <div class="Country_input__phone">+375</div>
+                                </div>
+                                <i class='bx bx-chevron-up'></i>
+                            </div>
+                            <div class="Country_input__modal__option"
+                                onclick="selectFlag3('/img/Frame 2085655518.svg','+375')"><img style="width: 27px;"
+                                    src="/img/Frame 2085655518.svg" alt="">
+                                <div class="Country_input__phone">+375</div>
+                            </div>
+                            <div class="Country_input__modal__option"
+                                onclick="selectFlag3('/img/24х24_interface.png','+75')"><img style="width: 27px;"
+                                    src="/img/24х24_interface.png" alt="">
+                                <div class="Country_input__phone">+75</div>
+                            </div>
+
+                        </div>
+                        <div class="Country_input_action"
+                            onclick="document.querySelector('.Country_input__modal3').style='display:block'">
+                            <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i
+                                class='bx bx-chevron-down'></i>
+                        </div>
+                        <div class="Country_input__phone Country_input__phone_12">+375</div>
+                        <input  id="phone-input" onkeyup="data_plus3()" placeholder="(_) ___-__-__" type="text">
+                    </div>
+
+                </div>
+            </div>
                     <button class="zakaz__buttons__second">
                         Продать недвижимость
                     </button>
                 </div>
             </div>
+               
+    <script>
+        function selectFlag3(flag, numberp) {
+            document.querySelector(".zakaz__buttons__media .Country_input_action").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
+            document.querySelector(".zakaz__buttons__media .Country_input__modal__select").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""> 
+                       <div class="Country_input__phone">${numberp}</div></div>
+                       `
+            document.querySelector(".zakaz__buttons__media .Country_input__phone_12").innerHTML = numberp
+            document.querySelector('.zakaz__buttons__media .Country_input__modal3').style = 'display:none'
+        }
+
+        function data_plus3() {
+            var value1 = document.querySelector('.zakaz__buttons__media #phone-input').value
+            if (value1.length === 0) {
+                value1 = '(' + value1;
+            }
+            document.querySelector('.zakaz__buttons__media #phone-input').value = value1
+        }
+        const phoneInput3 = document.querySelector('.zakaz__buttons__media #phone-input');
+
+
+        phoneInput3.addEventListener('keydown', function (e) {
+            var value = document.querySelector('.zakaz__buttons__media #phone-input').value
+            if (e.key != "Backspace") {
+                if (value.length === 0) {
+                    value = '('
+                } else if (value.length === 3) {
+                    value = value.slice(0, 3) + ') ' + value.slice(3);
+                } else if (value.length === 8) {
+                    value = value.slice(0, 8) + '-' + value.slice(8);
+                } else if (value.length === 11) {
+                    value = value.slice(0, 11) + '-' + value.slice(11);
+                } else if (value.length === 14) {
+                    value = value.slice(0, 13)
+                }
+                phoneInput3.addEventListener('keypress', function (e) {
+                    const allowedChars = /[\+\(\)\d]/;
+                    if (!allowedChars.test(e.key)) {
+                        e.preventDefault();
+                    }
+                });
+
+                this.value = value;
+
+            }
+
+        });
+
+
+    </script>
             <div class="zakaz__buttons">
-                <button onclick="
-                document.querySelector('.CallMe_back_modal').style='display:flex'
-                " class="zakaz__buttons__first">
-                    Укажите номер телефона
-                </button>
-                <button onclick="
-                document.querySelector('.CallMe_back_modal').style='display:flex'
-                " class="zakaz__buttons__second">
+                <div  class="zakaz__buttons__first zakaz__buttons__first_12321">
+                     <div class="Country_input Country_input2" type="text">
+                        <div onmouseleave="document.querySelector('.Country_input__modal4').style='display:none'"
+                            class="Country_input__modal Country_input__modal4">
+                            <div 
+                            onclick="document.querySelector('.Country_input__modal4').style='display:none'"
+                                class="Country_input__modal__active">
+
+                                <div class="Country_input__modal__select"><img style="width: 27px;"
+                                        src="/img/Frame 2085655518.svg" alt="">
+                                    <div class="Country_input__phone">+375</div>
+                                </div>
+                                <i class='bx bx-chevron-up'></i>
+                            </div>
+                            <div class="Country_input__modal__option"
+                                onclick="selectFlag4('/img/Frame 2085655518.svg','+375')"><img style="width: 27px;"
+                                    src="/img/Frame 2085655518.svg" alt="">
+                                <div class="Country_input__phone">+375</div>
+                            </div>
+                            <div class="Country_input__modal__option"
+                                onclick="selectFlag4('/img/24х24_interface.png','+75')"><img style="width: 27px;"
+                                    src="/img/24х24_interface.png" alt="">
+                                <div class="Country_input__phone">+75</div>
+                            </div>
+
+                        </div>
+                        <div class="Country_input_action"
+                            onclick="document.querySelector('.Country_input__modal4').style='display:block'">
+                            <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i
+                                class='bx bx-chevron-down'></i>
+                        </div>
+                        <div class="Country_input__phone Country_input__phone_12">+375</div>
+                        <input  id="phone-input" onkeyup="data_plus4()" placeholder="(_) ___-__-__" type="text">
+                    </div>
+                </div>
+                <button  class="zakaz__buttons__second">
                     Продать недвижимость
                 </button>
             </div>
@@ -478,20 +582,143 @@
                 <div src="/img/Abstract Design.svg" alt="" class="zakaz_homeType__imgAbs"></div>
             </div>
             <div class="zakaz__buttons zakaz__buttons__dr">
-                <button onclick="
-                document.querySelector('.CallMe_back_modal').style='display:flex'
-                " class="zakaz__buttons__first">
-                    Укажите номер телефона
-                </button>
-                <button onclick="
-                document.querySelector('.CallMe_back_modal').style='display:flex'
-                " class="zakaz__buttons__second">
+                <div  class="zakaz__buttons__first  zakaz__buttons__first_123"> 
+                    <div class="Country_input Country_input2" type="text">
+                        <div onmouseleave="document.querySelector('.Country_input__modal5').style='display:none'"
+                            class="Country_input__modal Country_input__modal5">
+                            <div 
+                            onclick="document.querySelector('.Country_input__modal5').style='display:none'"
+                                class="Country_input__modal__active">
+
+                                <div class="Country_input__modal__select"><img style="width: 27px;"
+                                        src="/img/Frame 2085655518.svg" alt="">
+                                    <div class="Country_input__phone">+375</div>
+                                </div>
+                                <i class='bx bx-chevron-up'></i>
+                            </div>
+                            <div class="Country_input__modal__option"
+                                onclick="selectFlag5('/img/Frame 2085655518.svg','+375')"><img style="width: 27px;"
+                                    src="/img/Frame 2085655518.svg" alt="">
+                                <div class="Country_input__phone">+375</div>
+                            </div>
+                            <div class="Country_input__modal__option"
+                                onclick="selectFlag5('/img/24х24_interface.png','+75')"><img style="width: 27px;"
+                                    src="/img/24х24_interface.png" alt="">
+                                <div class="Country_input__phone">+75</div>
+                            </div>
+
+                        </div>
+                        <div class="Country_input_action"
+                            onclick="document.querySelector('.Country_input__modal5').style='display:block'">
+                            <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i
+                                class='bx bx-chevron-down'></i>
+                        </div>
+                        <div class="Country_input__phone Country_input__phone_12">+375</div>
+                        <input  id="phone-input" onkeyup="data_plus5()" placeholder="(_) ___-__-__" type="text">
+                    </div>
+                </div>
+                <button  class="zakaz__buttons__second">
                     Купить недвижимость
                 </button>
             </div>
 
         </div>
+        <script>
+            function selectFlag4(flag, numberp) {
+                document.querySelector(".zakaz__buttons__first_12321 .Country_input_action").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
+                document.querySelector(".zakaz__buttons__first_12321 .Country_input__modal__select").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""> 
+                           <div class="Country_input__phone">${numberp}</div></div>
+                           `
+                document.querySelector(".zakaz__buttons__first_12321 .Country_input__phone_12").innerHTML = numberp
+                document.querySelector('.zakaz__buttons__first_12321 .Country_input__modal4').style = 'display:none'
+            }
+    
+            function data_plus4() {
+                var value1 = document.querySelector('.zakaz__buttons__first_12321 #phone-input').value
+                if (value1.length === 0) {
+                    value1 = '(' + value1;
+                }
+                document.querySelector('.zakaz__buttons__first_12321 #phone-input').value = value1
+            }
+            const phoneInput4 = document.querySelector('.zakaz__buttons__first_12321 #phone-input');
+    
+    
+            phoneInput4.addEventListener('keydown', function (e) {
+                var value = document.querySelector('.zakaz__buttons__first_12321 #phone-input').value
+                if (e.key != "Backspace") {
+                    if (value.length === 0) {
+                        value = '('
+                    } else if (value.length === 3) {
+                        value = value.slice(0, 3) + ') ' + value.slice(3);
+                    } else if (value.length === 8) {
+                        value = value.slice(0, 8) + '-' + value.slice(8);
+                    } else if (value.length === 11) {
+                        value = value.slice(0, 11) + '-' + value.slice(11);
+                    } else if (value.length === 14) {
+                        value = value.slice(0, 13)
+                    }
+                    phoneInput4.addEventListener('keypress', function (e) {
+                        const allowedChars = /[\+\(\)\d]/;
+                        if (!allowedChars.test(e.key)) {
+                            e.preventDefault();
+                        }
+                    });
+    
+                    this.value = value;
+    
+                }
+    
+            });
+    
 
+            function selectFlag5(flag, numberp) {
+                document.querySelector(".zakaz__buttons__first_123 .Country_input_action").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
+                document.querySelector(".zakaz__buttons__first_123 .Country_input__modal__select").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""> 
+                           <div class="Country_input__phone">${numberp}</div></div>
+                           `
+                document.querySelector(".zakaz__buttons__first_123 .Country_input__phone_12").innerHTML = numberp
+                document.querySelector('.zakaz__buttons__first_123 .Country_input__modal5').style = 'display:none'
+            }
+    
+            function data_plus5() {
+                var value1 = document.querySelector('.zakaz__buttons__first_123 #phone-input').value
+                if (value1.length === 0) {
+                    value1 = '(' + value1;
+                }
+                document.querySelector('.zakaz__buttons__first_123 #phone-input').value = value1
+            }
+            const phoneInput5 = document.querySelector('.zakaz__buttons__first_123 #phone-input');
+    
+    
+            phoneInput5.addEventListener('keydown', function (e) {
+                var value = document.querySelector('.zakaz__buttons__first_123 #phone-input').value
+                if (e.key != "Backspace") {
+                    if (value.length === 0) {
+                        value = '('
+                    } else if (value.length === 3) {
+                        value = value.slice(0, 3) + ') ' + value.slice(3);
+                    } else if (value.length === 8) {
+                        value = value.slice(0, 8) + '-' + value.slice(8);
+                    } else if (value.length === 11) {
+                        value = value.slice(0, 11) + '-' + value.slice(11);
+                    } else if (value.length === 14) {
+                        value = value.slice(0, 13)
+                    }
+                    phoneInput5.addEventListener('keypress', function (e) {
+                        const allowedChars = /[\+\(\)\d]/;
+                        if (!allowedChars.test(e.key)) {
+                            e.preventDefault();
+                        }
+                    });
+    
+                    this.value = value;
+    
+                }
+    
+            });
+    
+    
+        </script>
     </section>
     <script>
         const buttons = document.querySelectorAll('.zakaz_homeType__button');
@@ -930,9 +1157,9 @@
 
                     <div class="inputArrowAbsolute1">
                         <div class="Country_input  inputGrey" type="text">
-                            <div onmouseleave="document.querySelector('.Country_input__modal').style='display:none'"
-                                class="Country_input__modal">
-                                <div onclick="document.querySelector('.Country_input__modal').style='display:none'"
+                            <div onmouseleave="document.querySelector('.Country_input__modal1').style='display:none'"
+                                class="Country_input__modal Country_input__modal1">
+                                <div onclick="document.querySelector('.Country_input__modal1').style='display:none'"
                                     class="Country_input__modal__active">
 
                                     <div class="Country_input__modal__select"><img style="width: 27px;"
@@ -954,7 +1181,7 @@
 
                             </div>
                             <div class="Country_input_action"
-                                onclick="document.querySelector('.Country_input__modal').style='display:block'">
+                                onclick="document.querySelector('.Country_input__modal1').style='display:block'">
                                 <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i
                                     class='bx bx-chevron-down'></i>
                             </div>
@@ -996,7 +1223,7 @@
                        <div class="Country_input__phone">${numberp}</div></div>
                        `
             document.querySelector(".inputArrowAbsolute1 .Country_input__phone_12").innerHTML = numberp
-            document.querySelector('.inputArrowAbsolute1 .Country_input__modal').style = 'display:none'
+            document.querySelector('.Country_input__modal1').style = 'display:none'
         }
 
         function data_plus() {
@@ -1373,36 +1600,36 @@
                     </div>
                     <div class="inputArrowAbsolute">
                         <div class="Country_input" type="text">
-                            <div onmouseleave="document.querySelector('.Country_input__modal').style='display:none'"
-                                class="Country_input__modal">
-                                <div onclick="document.querySelector('.Country_input__modal').style='display:none'"
+                            <div onmouseleave="document.querySelector('.Country_input__modal0').style='display:none'"
+                                class="Country_input__modal Country_input__modal0">
+                                <div onclick="document.querySelector('.Country_input__modal0').style='display:none'"
                                     class="Country_input__modal__active">
 
                                     <div class="Country_input__modal__select"><img style="width: 27px;"
                                             src="/img/Frame 2085655518.svg" alt="">
                                         <div class="Country_input__phone">+375</div>
                                     </div>
-                                    <i class='bx bx-chevron-up'></i>
+                                    <i style="color: #1e1e1e;" class='bx bx-chevron-up'></i>
                                 </div>
                                 <div class="Country_input__modal__option"
-                                    onclick="selectFlag('/img/Frame 2085655518.svg','+375')"><img style="width: 27px;"
+                                    onclick="selectFlag1('/img/Frame 2085655518.svg','+375')"><img style="width: 27px;"
                                         src="/img/Frame 2085655518.svg" alt="">
                                     <div class="Country_input__phone">+375</div>
                                 </div>
                                 <div class="Country_input__modal__option"
-                                    onclick="selectFlag('/img/24х24_interface.png','+75')"><img style="width: 27px;"
+                                    onclick="selectFlag1('/img/24х24_interface.png','+75')"><img style="width: 27px;"
                                         src="/img/24х24_interface.png" alt="">
                                     <div class="Country_input__phone">+75</div>
                                 </div>
 
                             </div>
                             <div class="Country_input_action"
-                                onclick="document.querySelector('.Country_input__modal').style='display:block'">
-                                <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i
+                                onclick="document.querySelector('.Country_input__modal0').style='display:block'">
+                                <img style="width: 27px;" src="/img/Frame 2085655518.svg" alt=""><i style="color: #1e1e1e;"
                                     class='bx bx-chevron-down'></i>
                             </div>
                             <div class="Country_input__phone Country_input__phone_12">+375</div>
-                            <input id="phone-input" onkeyup="data_plus()" placeholder="(_) ___-__-__" type="text">
+                            <input id="phone-input" onkeyup="data_plus1()" placeholder="(_) ___-__-__" type="text">
                         </div>
                         <button onclick="
                         document.querySelector('.CallMe_back_modal').style='display:flex'
@@ -1411,16 +1638,16 @@
                     </div>
 
                     <script>
-                        function selectFlag(flag, numberp) {
-                            document.querySelector(".inputArrowAbsolute .Country_input_action").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""><i class='bx bx-chevron-down'></i>`
+                        function selectFlag1(flag, numberp) {
+                            document.querySelector(".inputArrowAbsolute .Country_input_action").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""><i style="color: #1e1e1e;" class='bx bx-chevron-down'></i>`
                             document.querySelector(".inputArrowAbsolute .Country_input__modal__select").innerHTML = `<img style="width: 27px;" src="${flag}" alt=""> 
                        <div class="Country_input__phone">${numberp}</div></div>
                        `
                             document.querySelector(".inputArrowAbsolute .Country_input__phone_12").innerHTML = numberp
-                            document.querySelector('.inputArrowAbsolute .Country_input__modal').style = 'display:none'
+                            document.querySelector('.inputArrowAbsolute .Country_input__modal0').style = 'display:none'
                         }
 
-                        function data_plus() {
+                        function data_plus1() {
                             var value1 = document.querySelector('.inputArrowAbsolute #phone-input').value
                             if (value1.length === 0) {
                                 value1 = '(' + value1;
