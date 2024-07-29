@@ -355,7 +355,7 @@ opacity: 0.5;
     .navbar__logo_img {
         width: 109%;
         margin-left: 4px;
-        margin-top: -10px;
+        margin-top: 0px;
     }
     .navbar__logo_p {
         width: 118%;
@@ -524,8 +524,9 @@ header.header {
         left: 8px;
     }
     .header__li p{
+        height: 58px;
         position: relative;
-        top: 4px;
+        top: 2px;
         left: 3px;
     }
 }
@@ -5278,7 +5279,7 @@ text-align: center;
         display: block;
     }
     .komanda_card_img_second{
-        height: 153px;
+        height: 154px;
         margin-bottom: 0;
         border-radius: 7px;
     }
@@ -5297,7 +5298,7 @@ text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -11px;
+        margin-top: -3px;
         padding-right: 10px;
     }
     .header__body__h1 {
@@ -5344,7 +5345,7 @@ text-align: center;
         margin-bottom: 0px;
     }
     .header__body__h1{
-        margin-top: 0px;
+        margin-top: 3px;
     }
     .header__body {
         padding-top: 63px;
@@ -5461,6 +5462,36 @@ margin-bottom: 32px;
     text-align: center;
     height: 58px;
 }
+.inputGrey input{
+    width: 88% !important;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: Inter;
+font-size: 19.31px;
+font-weight: 400;
+line-height: 27.59px;
+letter-spacing: -0.006em;
+text-align: left;
+
+}
+.inputGrey{
+    display: flex;
+    align-items: center;
+    width: 88% !important;
+    margin: auto;
+    border: 1px solid var(--stroke-soft-200, #F5F5F5);
+    background: #F5F5F5;
+    height: 50px;
+    border-radius: 6px;
+    padding-left: 17px;
+    gap: 11px;
+    position: relative;
+    z-index: 1;
+    margin-top: 4px;
+}
+
 .header__buttons__first {
     width: 90.8%;
     font-family: Montserrat;
@@ -5585,31 +5616,42 @@ text-align: left;
     }
     .posmotry__img img {
         width: 98%;
-        margin-top: 6px;
+        margin-top: 32px;
+        margin-left: 3px;
         margin-bottom: 5px;
         border-radius: 10px;
     }
     .posmotry__actoin__button {
         width: 98%;
+        margin-left: 4px;
+        font-size: 16px;
     }
     .newOffersMarket h1 {
-        width: 88%;
-        margin-left: 7px;
+        width: 87%;
+        margin-left: 16px;
     }
     .app_BgMain {
         padding-top: 62px;
     }
     .select_forMedia select{
-        margin-left: 0;
+        width: 95%;
+        margin-left: 9px;
     }
     .swipper__button_df{
-        max-width: 320px;
+        max-width: 310px;
+        margin-left: 17px;
+    }
+    .swipper__button_df i{
+        color: #000;
     }
     .rielter_header{
         padding-top: 0px;
     }
     .rielter_title h1{
         font-size: 27px;
+        margin-left: 5px;
+        margin-top: -6px;
+        margin-bottom: 37px;
     }
     .rielter_card{
         padding: 0px 0px 0px 0px;
@@ -5734,21 +5776,22 @@ text-align: left;
         line-height: 24px;
         text-align: left;
         position: relative;
-        left: -3px;
+        left: 0px;
+        top: -1px;
     }
     .free__etap__button__img {
-        width: 310px;
-        height: 393px;
+        width: 314px;
+        height: 394px;
         margin-top: 36px;
         position: relative;
-        top: 3px;
-        left: 0px;
+        top: 1px;
+        left: 2px;
     }
     .free__etap__button {
         width: 310px;
         margin-top: 48px;
-        left: 0;
-        top: -27px;
+        left: 5px;
+        top: -30px;
         height: 53px;
         font-family: Inter;
         font-size: 16px;
@@ -5759,8 +5802,8 @@ text-align: left;
     .agent__title__h1 {
         width: 92%;
         margin: auto;
-        padding-top: 63px;
-        margin-left: 11px;
+        padding-top: 62px;
+        margin-left: 14px;
         margin-bottom: 1px;
     }
     .freeEtap__text__p br{
@@ -5935,6 +5978,7 @@ font-weight: 700;
 line-height: 24px;
 text-align: left;
 margin-top: 3px;
+margin-left: 1px;
 display: flex;
     }
     .komanda_card_img{
@@ -5963,10 +6007,10 @@ display: flex;
 
 .header__buttons .Country_input{
     background: none;
-height: 100%;
+    height: 100%;
     width: 77%;
     padding-left: 10px;
-   min-height: 56px;
+    min-height: 56px;
     border-radius: 10px;
     margin-top: 0px;
     outline: none;
@@ -5986,4 +6030,472 @@ height: 100%;
     background: #1e1e1e;
     overflow: hidden;
     display: none;
+}
+@media (max-width:491px) {
+    .navbar_nav__phone {
+        width: 100%;
+        display: block;
+        text-align: right;
+        font-size: 15px;
+        margin-top: -10px;
+        margin-right: 76px;
+    }
+
+    .header__buttons .Country_input {
+        background: none;
+        height: 100%;
+        width: 77%;
+        padding-left: 9px;
+        min-height: 56px;
+        border-radius: 10px;
+        margin-top: 0px;
+        outline: none;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 77px 50px auto;
+        align-items: center;
+        position: relative;
+    }
+}
+.zakaz_title__margin br{
+    display: none;
+}
+.not_need{
+    display: block !important;
+}
+.need{
+    display: none !important;
+}
+.not_none{
+    display: none;
+}
+.none{
+    display: block;
+}
+.opat{
+    display: none;
+}
+@media (max-width:366px) {
+    .navbar_nav__phone {
+        width: 113%;
+        display: block;
+        text-align: right;
+        font-size: 15.8px;
+        margin-top: 37px;
+        margin-right: -17px;
+        position: relative;
+        right: 30px;
+        top: -20px;
+    }
+    .FirstOneBr{
+        display: none;
+    }
+    .header__body__p {
+        position: relative;
+        left: 0px;
+        margin-top: 38px;
+        line-height: 20px;
+    }
+    .header__buttons .Country_input {
+        background: none;
+        height: 100%;
+        width: 77%;
+        padding-left: 9px;
+        min-height: 56px;
+        border-radius: 10px;
+        margin-top: -28px;
+        outline: none;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 77px 50px auto;
+        align-items: center;
+        position: relative;
+        margin-left: 9px;
+    }
+    .header__buttons__second {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        width: 91%;
+        margin-left: 2.5%;
+        line-height: 19.36px;
+        text-align: center;
+        height: 58px;
+        margin-top: -5px;
+    }
+    .chosen__h1 {
+        font-size: 31px;
+        margin-top: 2px;
+        width: 94%;
+        margin-bottom: 61px;
+    }
+    .zakaz_title {
+        padding-top: 68px;
+        padding-bottom: 33px;
+    }
+        .zakaz__h4 {
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: left;
+            color: #1e1e1e;
+            margin-top: 7px;
+            margin-bottom: -8px;
+    }
+        .zakaz__shag {
+            font-family: Montserrat;
+            font-size: 24.4px;
+            font-weight: 700;
+            line-height: 35px;
+            text-align: left;
+            color: #1E1E1E;
+            margin-top: -2px;
+    }
+    
+    .zakaz__select input {
+        width: 90%;
+        background: none;
+        border: none;
+        outline: none;
+        /* color: #CCCCCC; */
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.94px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        height: 40px;
+    }
+.zakaz__select {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 16px 24px;
+    background: #F5F5F5;
+    border-radius: 10px;
+    z-index: 12;
+    position: relative;
+    margin-top: 24px;
+    height: 40px;
+    cursor: pointer;
+}
+    .zakaz__select__h5 {
+        font-size: 16px;
+        min-width: 35px;
+        position: relative;
+        right: -12px;
+    }
+    .zakaz__buttons__media {
+        height: 150px;
+        margin-top: 5px;
+    }
+    .zakaz_title__margin br{
+        display: block;
+        
+    }
+    .zakaz_title__margin{
+        margin-top: 25px;
+    }
+    .our__team__text__item__p {
+        width: 107%;
+        margin-left: 1px;
+        margin-top: -35px;
+        height: 105px;
+    }
+    .our__team__text__item__line img {
+        animation-name: animation;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        position: relative;
+        top: -53px;
+        left: 18px;
+    }
+    .our__team__text__item__line .img_insted_of_line {
+        margin-top: 1px;
+    }
+    .out__team__logos__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #3f3d42b6;
+        height: 61.7px;
+        border-radius: 10px;
+        position: relative;
+        top: -28px;
+    }
+    .out__team__logos__itemYoutobe{
+        display: none;
+    }
+    .out__team__logos__item img {
+        width: auto;
+        max-height: 68%;
+        margin-top: -3px;
+    }
+    .out__team__logos__item .realt{
+        width: 65%;
+        margin-top: -2px;
+    }
+    .out__team__logos__item .domovita{
+        width: 64%;
+        height: 126%;
+        max-height: 200%;
+        margin-top: -2px;
+    }
+    .out__team__logos__item .home{
+        width: 100%;
+        height: 100%;
+        max-height: 78%;
+    }
+    .komanda__title {
+        width: 89%;
+        margin-top: -56px;
+        margin-left: 21px;
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    .komanda_card_img_second{
+        height: 154px;
+        margin-bottom: 7px;
+        border-radius: 7px;
+    }
+    .universal__title {
+        width: 88%;
+        margin: auto;
+        max-width: 1440px;
+        margin-top: -91px;
+        margin-left: 19px;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 41.7px;
+        text-align: left;
+        position: relative;
+        top: 40px;
+    }
+    .title2_m{
+        width: 88%;
+        margin: auto;
+        max-width: 1440px;
+        margin-top: -57px;
+        margin-left: 19px;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34.4px;
+        text-align: left;
+        position: relative;
+        top: 40px;
+    }
+    .free_etap__p {
+        max-width: 310px;
+        width: 95%;
+        margin: auto;
+        padding-top: 13px;
+        padding-left: 3px;
+    }
+    .free_1 {
+        max-width: 310px;
+        width: 95%;
+        margin: auto;
+        padding-top: 52px;
+        padding-left: 3px;
+    }
+    .freeEtap_shugNumber {
+        margin-top: 9px;
+        margin-left: -4px;
+        font-size: 71px;
+        text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;;
+    }
+    .freeEtap__text__h4 {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30.5px;
+        text-align: left;
+        position: relative;
+        top: -7px;
+        left: 0px;
+    }
+    .agent__img {
+        margin-bottom: 11px;
+        margin-top: 0px;
+        margin-left: -3px;
+    }
+    .agent__card__p {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        width: 312px;
+        margin-top: -2px;
+        margin-left: -3px   ;
+    }
+    .ne_podhodit{
+        position: relative;
+        top: 3px;
+    }
+    .agent__border__text {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        width: 85%;
+        margin: auto;
+        margin-top: 24px;
+    }
+    .partnyor {
+        background-color: #2A2A2A;
+        margin-top: -62px;
+        padding-top: 1px;
+    }
+    .yuridik .universal__title {
+        max-width: 312px;
+        margin-top: -45px;
+        margin-bottom: 58px;
+    }
+    .yuridik .free_etap__p {
+        padding-top: 7px;
+        padding-left: 0px;
+    }
+    .oneYuridik_card h3 {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        position: relative;
+        top: 6px;
+        left: -2px;
+    }
+    .oneYuridik_card h2 {
+        margin-bottom: 10px;
+        margin-top: 11px;
+        margin-left: 0px;
+    }
+    .oneYuridik_card p br{
+        display: block;
+    }
+    .not_need{
+        display: none !important;
+    }
+    .need{
+        display: block !important;
+    }
+    .oneYuridik_card p {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        max-width: 281px;
+        margin: auto;
+    }
+    .oneYuridik_card {
+        width: 100%;
+        align-items: center;
+        background: #F5F5F5;
+        padding-bottom: 15px;
+        border-radius: 7px;
+        margin-bottom: 17px;
+    }
+    .kere{
+        position: relative;
+        left: 2px;
+    }
+    .none{
+        display: none;
+    }
+    .not_none{
+        display: block;
+    }
+    .oneYuridik_card h2 br{
+        display: none;
+    }
+    .opat{
+        display: block;
+    }
+     .fourthYuridik_step{
+        margin-left: 5px;
+    }
+    .fourthYuridik_step .miss{
+        width: 90%;
+    }
+    .posmotry__arrow i{
+        color: #000;
+    }
+    .posmotry__arrow {
+        position: relative;
+        left: 4px;
+        top: 27px;
+    }
+    .posmotry__arrow__number {
+        display: flex;
+        width: 114px;
+        margin-right: 20px;
+        margin-top: 24px;
+        align-items: center;
+        position: relative;
+        top: 29px;
+        left: 10px;
+    }
+    .posmotry__arrow__line {
+        height: 5px;
+        width: 40px;
+        background: #F9B807;
+        margin-left: -2px;
+    }
+    .posmotry__text__button {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22.14px;
+        text-align: left;
+        margin-bottom: 9px;
+        margin-left: 4px;
+    }
+    .posmotry__text__p {
+        margin-bottom: 15px;
+        margin-top: 2px;
+        margin-left: 4px;
+    }
+    .nesmotry{
+        width: 99%;
+    } 
+    .RestangleSwipImg {
+        height: 203px;
+        margin-left: -6px;
+        margin-bottom: 4px;
+    }
+    .bodyDescribe_Home h4 {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.68px;
+        text-align: center;
+        margin-top: 1px;
+        margin-left: -10px;
+    }
+    .bodyDescribe_Home {
+        padding-top: 14px;
+        margin-left: -5px;
+    }
+    .bodyDescribe_Home button {
+        margin-left: -11px;
+        position: relative;
+        top: -2px;
+        padding-top: 2px;
+    }
+    .rielter_p p {
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        top: -9px;
+        left: 8px;
+        margin-bottom: 11px;
+    }
 }
